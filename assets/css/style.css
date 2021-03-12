@@ -6,8 +6,35 @@
     background-color: rgba(0, 0, 0, 0);
 }
 
-.menu i {
+.menu i{
     margin-right: 40px;
     font-size: 32px;
     color: red;
+}
+
+.title {
+    font-family: "Cormorant Upright", sans-serif;
+    font-size: 32px;
+    color: #6c53a4;
+    text-align: center;
+}
+
+.rules,
+.level h4 {
+    font-family: "Cormorant Upright", sans-serif;
+    font-size: 1.5rem;
+    color: #6c53a4;
+    text-align: center;
+}
+
+.level h4 {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.home-text {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
 }

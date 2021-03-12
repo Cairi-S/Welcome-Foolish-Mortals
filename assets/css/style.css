@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Pathway+Gothic+One&display=swap');
 
+#hero-haunted-mansion {
+    background-image: url(../images/hero-hm.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
 /*----------
 Header
 ----------*/

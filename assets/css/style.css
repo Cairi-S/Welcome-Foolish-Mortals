@@ -1,16 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Pathway+Gothic+One&display=swap');
 
+/*----------
+Header
+----------*/
+
 .menu {
     margin: 0;
     padding:0;
     background-color: rgba(0, 0, 0, 0);
 }
 
-.menu i{
+.menu i {
     margin-right: 40px;
     font-size: 32px;
     color: red;
 }
+
+/*----------
+Main Body
+----------*/
 
 .title {
     font-family: "Cormorant Upright", sans-serif;
@@ -38,3 +46,26 @@
     color: black;
     text-align: center;
 }
+
+/*----------
+Footer
+----------*/
+
+.inspiration-text {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 12px;
+}
+
+.copyright-info,
+.copyright-info span{
+    font-family: "Pathway Gothic One", sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+.contact-link i {
+    margin-right: 40px;
+    font-size: 32px;
+    color: red;
+}
+

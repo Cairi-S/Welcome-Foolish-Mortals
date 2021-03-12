@@ -15,18 +15,23 @@ Header
 .menu {
     margin: 0;
     padding:0;
-    background-color: rgba(0, 0, 0, 0);
 }
 
 .menu i {
     margin-right: 40px;
     font-size: 32px;
-    color: red;
+    color: #edeffb;
 }
 
 /*----------
 Main Body
 ----------*/
+
+.home-text-container {
+    background-color: rgba(4, 0, 0, 0.5);
+    border: 2px solid #ededef;
+    border-radius: 25px;
+}
 
 .title {
     font-family: "Cormorant Upright", sans-serif;
@@ -51,7 +56,7 @@ Main Body
 .home-text {
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 20px;
-    color: black;
+    color: #edeffb;
     text-align: center;
 }
 
@@ -60,8 +65,10 @@ Footer
 ----------*/
 
 .inspiration-text {
+    padding-left: 14px;
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 12px;
+    color: #ededef;
 }
 
 .copyright-info,
@@ -71,9 +78,14 @@ Footer
     align-items: center;
 }
 
+.copyright-info i,
+.copyright-info span {
+    color: #ededef;
+}
+
 .contact-link i {
     margin-right: 40px;
     font-size: 32px;
-    color: red;
+    color: #edeffb;
 }
 

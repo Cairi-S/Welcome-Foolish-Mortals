@@ -8,6 +8,38 @@
     min-height: 100vh;
 }
 
+.quicksand-men {
+    background-image: url(../images/character-quicksand.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 386px;
+    width: 115px;
+}
+
+.tightrope-walker {
+    background-image: url(../images/character-tightrope.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 386px;
+    width: 115px;
+}
+
+.dynamite-man {
+    background-image: url(../images/character-dynamite.png);
+    background-position: center;
+    background-size: cover;
+    height: 386px;
+    width: 115px;
+}
+
+.widow-tombstone {
+    background-image: url(../images/character-widow.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 386px;
+    width: 115px;
+}
+
 /*----------
 Header
 ----------*/
@@ -38,7 +70,7 @@ section {
 .home-text-container {
     margin-top: 162px;
     margin-bottom: 30px;
-    background-color: rgba(4, 0, 0, 0.5);
+    background-color: rgba(4, 0, 0, 0.8);
     border: 2px solid #ededef;
     border-radius: 25px;
 }
@@ -70,6 +102,10 @@ section {
     text-align: center;
 }
 
+.character-selection {
+    justify-content: space-evenly;
+}
+
 /*----------
 Footer
 ----------*/
@@ -82,13 +118,14 @@ Footer
     background-color: rgba(4, 0, 0, 0.5);
 }
 
-.inspiration-text p{
+.inspiration-text p,
+.inspiration-text a{
     margin-bottom: 10px;
+    padding-bottom: 10px;
     padding-left: 14px;
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 12px;
     color: #ededef;
-    align-items: centers;
 }
 
 .copyright-info,

@@ -67,6 +67,8 @@ Header
 Navbar Modal
 ----------*/
 
+/*With thanks to Travery Media for their guide to creating modals*/
+
 .nav-modal {
     display: none;
     position: fixed;

@@ -224,5 +224,7 @@ The Haunted Mansion is owned and operated by [The Walt Disney Company](https://t
 
 ### Code ###
 
+- [Traversy Media](https://youtu.be/6ophW7Ask_0) - Guide for creating a modal with HTML CSS and JavaScript.
+
 
 ### Acknowledgements ###

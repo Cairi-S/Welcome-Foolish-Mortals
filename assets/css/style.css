@@ -64,6 +64,42 @@ Header
 }
 
 /*----------
+Modal - Header
+----------*/
+
+.nav-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(237, 239, 251, 0.5);
+}
+
+.rule-content{
+    background-color: rgba(4, 0, 0, 0.8);
+    margin: 20% auto;
+    padding: 20px;
+    width: 60%;
+}
+
+.closeNavModal {
+    color: #ededef;
+    float: right;
+    font-size: 20px;
+}
+
+.closeNavModal:hover,
+.closeNavModal:focus {
+    color: #6c53a4;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*----------
 Main Body
 ----------*/
 

@@ -1,15 +1,34 @@
 // Get navbar modal element
-var navbarModal = document.getElementById("ruleModal");
+let navbarModal = document.getElementById("ruleModal");
 
 // Get button that opens modal
-var openBtn = document.getElementById("modalNav");
+let openBtn = document.getElementById("modalNav");
 
 // Get button that closes button
-var closeBtn = document.getElementsByClassName("closeNavModal")[0];
+let closeBtn = document.getElementsByClassName("closeNavModal")[0];
 
-// Event listening for click
+// Event listening for opening click
 openBtn.addEventListener("click", openModal);
 
+// Event listening for closing click
+closeBtn.addEventListener("click", closeModal);
+
+// Event listening for closing click outside of modal box
+window.addEventListener("click", clickOutsideModal);
+
+// Function for opening modal
 function openModal() {
     navbarModal.style.display = "block";
+}
+
+// Function for closing modal
+function closeModal() {
+    navbarModal.style.display = "none";
+}
+
+// Function for closing click outside of modal box
+function clickOutsideModal(event) {
+    if(event.target == navbarModal) {
+      navbarModal.style.display = "none";
+    }
 }

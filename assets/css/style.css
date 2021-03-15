@@ -64,7 +64,7 @@ Header
 }
 
 /*----------
-Modal - Header
+Navbar Modal
 ----------*/
 
 .nav-modal {
@@ -81,15 +81,49 @@ Modal - Header
 
 .rule-content{
     background-color: rgba(4, 0, 0, 0.8);
-    margin: 20% auto;
+    color: #ededef;
+    margin: 10% auto;
     padding: 20px;
     width: 60%;
+    animation-name: homeModalOpen;
+    animation-duration: 1s;
+}
+
+.rules-reminder-header {
+    font-family: "Cormorant Upright", sans-serif;
+    font-size: 50px;
+    color: #6c53a4;
+    text-align: center;
+}
+
+.rules-reminder-body {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 20px;
+    color: #edeffb;
+    text-align: center;
+}
+
+.rules-reminder-body a {
+    font-family: "Cormorant Upright", sans-serif;
+    font-size: 26px;
+    color: #6c53a4;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.rules-reminder-footer,
+.rules-reminder-footer a {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 20px;
+    color: #edeffb;
+    text-align: center;
 }
 
 .closeNavModal {
     color: #ededef;
     float: right;
-    font-size: 20px;
+    font-size: 52px;
 }
 
 .closeNavModal:hover,
@@ -185,5 +219,14 @@ Footer
     margin-right: 40px;
     font-size: 32px;
     color: #edeffb;
+}
+
+/*----------
+Modal animations
+----------*/
+
+@keyframes homeModalOpen{
+    from{opacity: 0}
+    to{ opacity: 1;}
 }
 

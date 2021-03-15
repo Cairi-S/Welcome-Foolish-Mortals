@@ -1,0 +1,7 @@
+function rulesModal() {
+
+};
+
+function selectCharacter() {
+
+};

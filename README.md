@@ -206,12 +206,18 @@ AutoPrefixer
 
 ### Credits ###
 
+The themeing for this website has taken inspiration from [The Walt Disney Company's](https://thewaltdisneycompany.com/) popular attraction [The Haunted Mansion](https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/).
+All likeness is for educational purposes only.
+
 ### Content ###
 
 ### Media ###
 
 ### Images ###
-The Haunted Mansion is owned and operated by The Walt Disney Company.  Images and themes linking to The Haunted Mansion are used for educational purposes only.
+The Haunted Mansion is owned and operated by [The Walt Disney Company](https://thewaltdisneycompany.com/).  Images and themes linking to The Haunted Mansion are used for educational purposes only.
+
+- Home Page Background image - [Photo by Brian McGowan on Unsplash](https://unsplash.com/photos/he0-fswKsXk)
+- Character selection images (the Stretching Room portraits) - Owned by [The Walt Disney Company](https://thewaltdisneycompany.com/) and taken from [Haunted Mansion Fandom](https://hauntedmansion.fandom.com/wiki/Stretching_Room).  Found using [Google Images](https://images.google.com/imghp?hl=en&gl=ar&gws_rd=ssl) and used for educational purposes only.
 
 ### Audio ###
 

@@ -34,3 +34,9 @@ function clickOutsideModal(event) {
       navbarModal.style.display = "none";
     }
 }
+
+// Toggle mute icon on and off 
+$('#toggleMute').click(function() {
+  $("toggleDisplay").toggle('1000');
+  $("i",this).toggleClass('fas fa-volume-up fas fa-volume-mute');
+});

@@ -12,6 +12,14 @@ Images
     min-height: 100vh;
 }
 
+#hero-wallpaper {
+    background-image: url(../images/hero-wallpaper.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
 .quicksand-men {
     background-image: url(../images/character-quicksand.jpeg);
     background-position: center;

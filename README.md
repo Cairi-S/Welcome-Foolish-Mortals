@@ -55,28 +55,35 @@ All fonts are provided by [Google fonts](https://fonts.google.com/).
 
 - [Cormorant Upright](https://fonts.google.com/specimen/Cormorant+Upright?preview.text_type=custom) - Is used the page logo and headings.
 
+![Cormorant Upright example](/assets/images/readme/cormorantupright.png)
+
 - [Pathway Gothic One](https://fonts.google.com/specimen/Pathway+Gothic+One?preview.text_type=custom) - Is used for all other text.
 
+![Pathway Gothic One example](/assets/images/readme/pathwaygothicone.png)
 
 #### Icons ####
 
-All icons are provided by [Font Awesome](https://fontawesome.com/).  These icons have been chosen as they are easy to recognise and are widely understood.
+The favicon taken from [favicon.io](https://favicon.io/emoji-favicons/ghost/) and the open source project [Twemoji](https://twemoji.twitter.com/).
+
+All other icons are provided by [Font Awesome](https://fontawesome.com/).  These icons have been chosen as they are easy to recognise and are widely understood.
 
 - The [HOME](https://fontawesome.com/icons/home?style=solid) takes the player back to the Home page.
 - The [QUESTION MARK](https://fontawesome.com/icons/question-circle?style=regular) gives a modal reminding the player of the rules.
-- The [MUSIC NOTE](https://fontawesome.com/icons/music?style=solid) mutes and unmutes the sound.
+- The [SPEAKER](https://fontawesome.com/icons/volume-up) and [SPEAKER WITH CROSS](<https://fontawesome.com/icons/volume-mute?style=solid) mutes and unmutes the sound.
 
 #### Colours ####
 
 The Haunted Mansion has a clear, easily identifiable color palette. 
 
-IMAGE OF COLOR PALETTE
+![IMAGE OF COLOR PALETTE](/assets/images/readme/disneyhauntedmansioncolorhex.png)
 
 The background color for the header, footer and sidebar tie in with the background. 
 
 The color of the text stands out against the background.
 
-The colors of the boxer are the most identifiable colors from the attractions theming
+The colors of the boxes are the most identifiable colors from the attractions theming.
+
+Many thanks to [color-hex.com](https://www.color-hex.com/color-palette/93407) and user [Lazaefair](https://www.color-hex.com/member/lazaefair) for help with sourcing the color palette.
 
 #### Backgrounds ####
 The Home screen background image is of the outside of the Haunted Mansion attraction inviting players in to the game.
@@ -84,6 +91,8 @@ The Background of the game is of the iconic Haunted Mansion wallpaper.
 
 #### Avatar images ####
 The avatar images chosen are the four infamous stretching room paintings (or the three hitchhiking ghosts tbc) and will appeal to any fan of the attraction.
+
+![IMAGE OF STRETCH ROOM PORTRAITS](/assets/images/readme/stretchroomportraits.png)
  
 #### Audio files ####
 The notes used in the gameplay are taken from the attractions soundtrack - Grim Grinning Ghosts.  These are A, E, D# and B.
@@ -216,6 +225,7 @@ All likeness is for educational purposes only.
 ### Images ###
 The Haunted Mansion is owned and operated by [The Walt Disney Company](https://thewaltdisneycompany.com/).  Images and themes linking to The Haunted Mansion are used for educational purposes only.
 
+- Favicon - Taken from [favicon.io](https://favicon.io/emoji-favicons/ghost/) and the open source project [Twemoji](https://twemoji.twitter.com/).
 - Home Page Background image - [Photo by Brian McGowan on Unsplash](https://unsplash.com/photos/he0-fswKsXk)
 - Character selection images (the Stretching Room portraits) - Owned by [The Walt Disney Company](https://thewaltdisneycompany.com/) and taken from [Haunted Mansion Fandom](https://hauntedmansion.fandom.com/wiki/Stretching_Room).  Found using [Google Images](https://images.google.com/imghp?hl=en&gl=ar&gws_rd=ssl) and used for educational purposes only.
 

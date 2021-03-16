@@ -1,3 +1,5 @@
+// With thanks to Travery Media for their guide to creating modals
+
 // Get navbar modal element
 let navbarModal = document.getElementById("ruleModal");
 

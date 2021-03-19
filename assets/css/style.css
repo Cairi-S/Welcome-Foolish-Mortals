@@ -216,8 +216,6 @@ Navbar Modal
     cursor: pointer;
 }
 
-
-
 /*----------
 Main Body
 ----------*/
@@ -286,6 +284,36 @@ Levels - Dashboard
     top: 0;
     height: calc(100vh - 195px);
 }
+
+.dashboard-headers {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 30px;
+    color: #ededef;
+    text-align: center;
+}
+
+.dash-pad {
+    padding-bottom: 20px;
+}
+
+.dashboard-difficulty {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 20px;
+    color: #494747;
+    
+}
+
+.active {
+    color: #ededef;
+}
+
+.dashboard-score {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 20px;
+    color: #ededef;
+    text-align: center;
+}
+
 
 /*----------
 Modal animations

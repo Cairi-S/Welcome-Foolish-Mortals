@@ -211,6 +211,10 @@ AutoPrefixer
 
 ### Testing ###
 
+### Bugs ###
+
+- When creating the dashboard the text continued to scroll despite position being fixed.  Solved - changed the calc value on the section element which caused content to remain stationary.
+
 ### Deployment ###
 
 ### Credits ###

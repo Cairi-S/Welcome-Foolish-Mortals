@@ -52,6 +52,14 @@ Images
     width: 115px;
 }
 
+.imgPlaceholder {
+    background-image: url(../images/character-tightrope.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 193px;
+    width: 58px;
+}
+
 /*----------
 Header
 ----------*/
@@ -216,7 +224,7 @@ Main Body
 
 section,
 main {
-    min-height: calc(100vh - 160px);
+    min-height: calc(100vh - 175px);
 }
 
 .home-text-container {
@@ -269,7 +277,7 @@ Levels - Dashboard
     bottom: 60px;
     top: 100px;
     z-index: 100;
-    padding: 70px 0 0 10px;
+    padding: 20px 0 0 10px;
     background-color: rgba(4, 0, 0, 0.5);
 }
 
@@ -278,8 +286,6 @@ Levels - Dashboard
     top: 0;
     height: calc(100vh - 160px);
 }
-
-
 
 /*----------
 Modal animations

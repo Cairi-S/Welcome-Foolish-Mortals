@@ -56,8 +56,23 @@ Images
 Header
 ----------*/
 
-#menu-bar {
-    height: 60px;
+#menu-bar,
+#menu-bar-levels {
+    height: 100px;
+}
+
+#menu-bar-levels {
+    background-color: rgba(4, 0, 0, 0.5);
+}
+
+.site-title {
+    font-family: "Cormorant Upright", sans-serif;
+    font-size: 50px;
+    color: #ededef;
+}
+
+.site-title:hover {
+    color: #6c53a4;
 }
 
 .menu {
@@ -69,6 +84,56 @@ Header
     margin-right: 40px;
     font-size: 32px;
     color: #edeffb;
+}
+
+/*----------
+Footer
+----------*/
+
+#footer {
+    height: 60px;
+    margin: 0;
+    line-height: 0;
+    padding-top: 10px;
+    background-color: rgba(4, 0, 0, 0.5);
+}
+
+.inspiration-text p,
+.inspiration-text a{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 12px;
+    color: #ededef;
+}
+
+.copyright-info,
+.copyright-info span{
+    font-family: "Pathway Gothic One", sans-serif;
+    text-align: center;
+}
+
+.copyright-info i,
+.copyright-info span {
+    color: #ededef;
+    
+}
+
+.contact-link i {
+    margin-right: 40px;
+    font-size: 32px;
+    color: #edeffb;
+}
+
+/*----------
+Hover functionality
+----------*/
+
+.site-title:hover,
+.menu i:hover,
+.contact-link i:hover {
+    color: #6c53a4;
 }
 
 /*----------
@@ -143,12 +208,15 @@ Navbar Modal
     cursor: pointer;
 }
 
+
+
 /*----------
 Main Body
 ----------*/
 
-section {
-    min-height: calc(100vh - 120px);
+section,
+main {
+    min-height: calc(100vh - 160px);
 }
 
 .home-text-container {
@@ -192,44 +260,26 @@ section {
 }
 
 /*----------
-Footer
+Levels - Dashboard
 ----------*/
 
-#footer {
-    height: 60px;
-    margin: 0;
-    line-height: 0;
-    padding-top: 10px;
+.dashboard {
+    position: fixed;
+    left: 0;
+    bottom: 60px;
+    top: 100px;
+    z-index: 100;
+    padding: 70px 0 0 10px;
     background-color: rgba(4, 0, 0, 0.5);
 }
 
-.inspiration-text p,
-.inspiration-text a{
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    padding-left: 14px;
-    font-family: "Pathway Gothic One", sans-serif;
-    font-size: 12px;
-    color: #ededef;
+.left-dashboard {
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 160px);
 }
 
-.copyright-info,
-.copyright-info span{
-    font-family: "Pathway Gothic One", sans-serif;
-    text-align: center;
-}
 
-.copyright-info i,
-.copyright-info span {
-    color: #ededef;
-    
-}
-
-.contact-link i {
-    margin-right: 40px;
-    font-size: 32px;
-    color: #edeffb;
-}
 
 /*----------
 Modal animations

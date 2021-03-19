@@ -220,9 +220,8 @@ Navbar Modal
 Main Body
 ----------*/
 
-section,
-main {
-    min-height: calc(100vh - 175px);
+section {
+    min-height: calc(100vh - 160px);
 }
 
 .home-text-container {
@@ -299,8 +298,7 @@ Levels - Dashboard
 .dashboard-difficulty {
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 20px;
-    color: #494747;
-    
+    color: #494747;  
 }
 
 .active {
@@ -310,6 +308,13 @@ Levels - Dashboard
 .dashboard-score {
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 20px;
+    color: #ededef;
+    text-align: center;
+}
+
+.turns {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 30px;
     color: #ededef;
     text-align: center;
 }

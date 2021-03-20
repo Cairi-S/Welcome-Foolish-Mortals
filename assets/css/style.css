@@ -55,9 +55,9 @@ Images
 .imgPlaceholder {
     background-image: url(../images/character-tightrope.jpeg);
     background-position: center;
-    background-size: cover;
-    height: 193px;
-    width: 58px;
+    background-size: contain;
+    height: 168px;
+    width: auto;
 }
 
 /*----------
@@ -303,6 +303,10 @@ Levels - Dashboard
 
 .active {
     color: #ededef;
+}
+
+.db-hs {
+    margin-top: 62px;
 }
 
 .dashboard-score {

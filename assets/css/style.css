@@ -313,10 +313,17 @@ Levels - Dashboard
 }
 
 .turns {
+    margin: 0;
+    padding-top: 20px;
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 30px;
     color: #ededef;
     text-align: center;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    margin-top: 30px;
+    padding: 4.5rem 10rem;
 }
 
 

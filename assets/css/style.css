@@ -74,6 +74,7 @@ Header
 }
 
 .site-title {
+    padding-left: 60px;
     font-family: "Cormorant Upright", sans-serif;
     font-size: 50px;
     color: #ededef;
@@ -128,7 +129,7 @@ Footer
 }
 
 .contact-link i {
-    margin-right: 40px;
+    margin-right: 48px;
     font-size: 32px;
     color: #edeffb;
 }
@@ -311,13 +312,17 @@ Levels - Dashboard
     text-align: center;
 }
 
+/*----------
+Levels - Gameboard
+----------*/
+
 .turns {
     margin: 0;
-    padding-top: 20px;
+    padding: 20px 48px 0 0;
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 30px;
     color: #ededef;
-    text-align: center;
+    text-align: right;
 }
 
 .btn-group-lg>.btn, .btn-lg {
@@ -327,28 +332,28 @@ Levels - Dashboard
 
 .btn-teal {
     background-color: #4ea0ae;
-    border: #ededef;
+    border: 1px solid #ededef;
 }
 
 .btn-white {
     background-color: #edeffb;
-    border: #ededef;
+    border: 1px solid #ededef;
 }
 
 .btn-purple {
     background-color: #6c53a4;
-    border: #ededef;
+    border: 1px solid #ededef;
 }
 
 .btn-grey {
     background-color: #040000;
-    border: #ededef;
+    border: 1px solid #ededef;
 }
 
 .submit-btn {
     margin-top: 30px;
     background-color: #077f51;
-    border: #ededef;
+    border: 1px solid #ededef;
 }
 
 

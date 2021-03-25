@@ -6,13 +6,16 @@ let navbarModal = document.getElementById("ruleModal");
 // Get button that opens modal
 let openBtn = document.getElementById("modalNav");
 
-// Get button that closes button
+// Get button that closes modal
 let closeBtn = document.getElementsByClassName("closeNavModal")[0];
 
-// Event listening for opening click
+// Get button that starts the game
+let startBtn = document.getElementById("startBtn");
+
+// Event listening for opening click on modal
 openBtn.addEventListener("click", openModal);
 
-// Event listening for closing click
+// Event listening for closing click on modal
 closeBtn.addEventListener("click", closeModal);
 
 // Event listening for closing click outside of modal box
@@ -35,8 +38,13 @@ function clickOutsideModal(event) {
     }
 }
 
+// Changes turn counter to 0 on click 
+$("#startBtn").click(function() {
+    $("#turnsTaken").text("0");
+});
+
 // Toggle mute icon on and off 
 $('#toggleMute').click(function() {
-  $("toggleDisplay").toggle('1000');
+  $("toggleSound").toggle('1000');
   $("i",this).toggleClass('fas fa-volume-up fas fa-volume-mute');
 });

@@ -354,10 +354,19 @@ Levels - Gameboard
     border: 1px solid #ededef;
 }
 
-.submit-btn {
+.btn-start {
     margin-top: 30px;
-    background-color: #077f51;
+    padding: 6px 24px;
+    font-family: "Pathway Gothic One", sans-serif;
+    color: #ededef;
+    font-size: 28px;
+    background-color: rgba(7, 127, 81, 0.75);
     border: 1px solid #ededef;
+}
+
+.btn-start:hover,
+.btn-start:focus {
+    background-color: rgba(7, 127, 81, 1);
 }
 
 

@@ -1,5 +1,7 @@
-// With thanks to Travery Media for their guide to creating modals
+// Mute/Sound functionalty
+let soundOn = true;
 
+// With thanks to Travery Media for their guide to creating modals
 // Get navbar modal element
 let navbarModal = document.getElementById("ruleModal");
 
@@ -36,6 +38,7 @@ function clickOutsideModal(event) {
     }
 }
 
+
 // Toggle mute icon on and off 
 $('#toggleMute').click(function() {
   $("toggleSound").toggle('1000');
@@ -46,8 +49,8 @@ $('#toggleMute').click(function() {
 // Changes turn counter to 0 on click 
 $("#startBtn").click(function() {
     $("#turnsTaken").text("0");
-    $(".btn-teal").css("background-color", "#4ea0ae");
-    $(".btn-white").css("background-color", "#edeffb");
-    $(".btn-purple").css("background-color", "#6c53a4");
-    $(".btn-grey").css("background-color", "#040000");
+    $(".btn-teal").css("background-color", "rgba(78, 160, 174, 0.5)");
+    $(".btn-white").css("background-color", "rgba(237, 239, 251, 0.5)");
+    $(".btn-purple").css("background-color", "rgba(108, 83, 164, 0.5)");
+    $(".btn-grey").css("background-color", "rgba(4, 0, 0, 0.5)");
 });

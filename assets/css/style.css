@@ -335,22 +335,22 @@ Levels - Gameboard
 }
 
 .btn-teal {
-    background-color: rgba(78, 160, 174, 0.5);
+    background-color: #4ea0ae;
     border: 1px solid #ededef;
 }
 
 .btn-white {
-    background-color: rgba(237, 239, 251, 0.5);
+    background-color: #edeffb;
     border: 1px solid #ededef;
 }
 
 .btn-purple {
-    background-color: rgba(108, 83, 164, 0.5);
+    background-color: #6c53a4;
     border: 1px solid #ededef;
 }
 
 .btn-grey {
-    background-color: rgba(4, 0, 0, 0.5);
+    background-color: #040000;
     border: 1px solid #ededef;
 }
 

@@ -1,6 +1,3 @@
-// Mute/Sound functionalty
-let soundOn = true;
-
 // With thanks to Travery Media for their guide to creating modals
 // Get navbar modal element
 let navbarModal = document.getElementById("ruleModal");
@@ -36,6 +33,54 @@ function clickOutsideModal(event) {
     if(event.target == navbarModal) {
       navbarModal.style.display = "none";
     }
+}
+
+function gameStart() {
+
+}
+
+function buttonTeal() {
+
+}
+
+function buttonWhite() {
+
+}
+
+function buttonPurple() {
+
+}
+
+function buttonGrey() {
+
+}
+
+function computerTurn() {
+
+}
+
+function userTurn() {
+
+}
+
+function originalColor() {
+
+}
+
+function flashColor() {
+
+}
+
+function checkAnswer() {
+
+}
+
+function increaseTurn() {
+
+}
+
+function gameWin() {
+    
 }
 
 

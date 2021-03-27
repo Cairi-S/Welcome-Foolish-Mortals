@@ -1,3 +1,6 @@
+// Game variables
+const startButton = document.querySelector('#startBtn');
+
 // With thanks to Travery Media for their guide to creating modals
 // Get navbar modal element
 let navbarModal = document.getElementById("ruleModal");
@@ -18,6 +21,8 @@ closeBtn.addEventListener("click", closeModal);
 // Event listening for closing click outside of modal box
 window.addEventListener("click", clickOutsideModal);
 
+startButton.addEventListener('click', startGame);
+
 // Function for opening modal
 function openModal() {
     navbarModal.style.display = "block";
@@ -34,3 +39,16 @@ function clickOutsideModal(event) {
       navbarModal.style.display = "none";
     }
 };
+
+function startGame() {
+  startButton.classList.add('hide-content');
+  $("#turnsTaken").text("0");
+  flashColor();
+}
+
+function flashColor() {
+    $(".btn-teal").css("background-color", "rgba(78, 160, 174, 0.5)");
+    $(".btn-white").css("background-color", "rgba(237, 239, 251, 0.5)");
+    $(".btn-purple").css("background-color", "rgba(108, 83, 164, 0.5)");
+    $(".btn-grey").css("background-color", "rgba(4, 0, 0, 0.5)");
+}

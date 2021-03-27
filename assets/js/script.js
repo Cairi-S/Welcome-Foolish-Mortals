@@ -1,5 +1,6 @@
-let gameOrder = [];
-let playerOrder = [];
+// Game variables
+let gameSequence = [];
+let playerSequence = [];
 let flash;
 let noteLength;
 let turnCount;
@@ -7,7 +8,18 @@ let correctAnswer;
 let completed;
 let computerPlay;
 let userPlay;
+let gamePlay = false;
+let sound = true;
+let on = false;
 
+
+// Audio files
+const tealAudio = new Audio("assets/audio/AEighth.mp3");
+const whiteAudio = new Audio("assets/audio/EEighth.mp3");
+const purpleAudio = new Audio("assets/audio/DEighth.mp3");
+const greyAudio = new Audio("assets/audio/BEighth.mp3");
+
+const teal = $(".btn-teal");
 
 // With thanks to Travery Media for their guide to creating modals
 // Get navbar modal element
@@ -59,15 +71,15 @@ $(document).ready(function() {
 function gameStart() {
 
     completed = false
-    gameOrder = [];
-    playerOrder = [];
+    gameSequence = [];
+    playerSequence = [];
     turnCount = 0;
     flash = 0;
     noteLength = 0;
     correctAnswer = true;
 
     for (var i = 0; i < 100; i++) {
-        gameOrder.push(Math.floor(Math.random() * 4) + 1);
+        gameSequence.push(Math.floor(Math.random() * 4) + 1);
     }
     
     computerPlay = true;
@@ -75,12 +87,37 @@ function gameStart() {
     noteLength = setInterval(computerTurn, 1000);
 }
 
-function buttonTeal() {
+// Test to check audio linked successfully
+$(".btn-teal").click(function() {
+      console.log('clicked')
+      $(".btn-teal").css("background-color", "rgba(78, 160, 174, 0.5)");
+      tealAudio.play();
+    });
 
+    $(".btn-white").click(function() {
+      console.log('clicked')
+      $(".btn-white").css("background-color", "rgba(237, 239, 251, 0.5)");
+      whiteAudio.play();
+    });
+
+    $(".btn-purple").click(function() {
+      console.log('clicked')
+      $(".btn-purple").css("background-color", "rgba(108, 83, 164, 0.5)");
+      purpleAudio.play();
+    });
+
+    $(".btn-grey").click(function() {
+      console.log('clicked')
+      $(".btn-grey").css("background-color", "rgba(4, 0, 0, 0.5)");
+      greyAudio.play();
+    });
+
+function buttonTeal() {
+   
 }
 
 function buttonWhite() {
-
+    
 }
 
 function buttonPurple() {
@@ -88,16 +125,13 @@ function buttonPurple() {
 }
 
 function buttonGrey() {
-
+    
 }
 
-function computerTurn() {
-
+function gameTurn() {
+ 
 }
 
-function userTurn() {
-
-}
 
 function originalColor() {
     $(".btn-teal").css("background-color", "#4ea0ae");
@@ -106,6 +140,7 @@ function originalColor() {
     $(".btn-grey").css("background-color", "#040000");
 }
 
+// Changes button opacity on button clicks or 
 function flashColor() {
     $(".btn-teal").css("background-color", "rgba(78, 160, 174, 0.5)");
     $(".btn-white").css("background-color", "rgba(237, 239, 251, 0.5)");

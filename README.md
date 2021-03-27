@@ -215,6 +215,8 @@ AutoPrefixer
 
 - When creating the dashboard the text continued to scroll despite position being fixed.  Solved - changed the calc value on the section element which caused content to remain stationary.
 
+- Linking audio files to buttons. Solved - Moved where the audio i taken from html to JavaScript variables. 
+
 ### Deployment ###
 
 ### Credits ###

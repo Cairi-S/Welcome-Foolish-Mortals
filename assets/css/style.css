@@ -369,6 +369,9 @@ Levels - Gameboard
     background-color: rgba(7, 127, 81, 1);
 }
 
+.hide-content {
+  display: none !important;
+}
 
 /*----------
 Modal animations

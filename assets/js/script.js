@@ -65,7 +65,7 @@ function startGame() {
   startButton.classList.add('hide-content');
   resetButton.classList.remove('hide-content');
   $("#turnsTaken").text("0");
-  flashColor();
+  originalColor();
   beginGame();
 }
 
@@ -83,16 +83,18 @@ function beginGame() {
     for (let i = 0 ; i < 100 ; i++) {
         sequence.push(Math.floor(Math.random() * 4) + 1);
     }
+    console.log(sequence);
     
     computerPlay = true;
 
-    turnSpeed = setInterval(gamePlay, 500);
+    turnSpeed = setInterval(gamePlay, 800);
 }
 
 function gamePlay() {
     if (flash == turn) {
         clearInterval(turnSpeed);
         computerPlay = false;
+        originalColor();
     }
 
     if (computerPlay) {
@@ -102,7 +104,7 @@ function gamePlay() {
             if (sequence[flash] == 3) purple();
             if (sequence[flash] == 4) grey();
             flash++;
-        }, 300);
+        }, 200);
     }
 }
 
@@ -139,14 +141,14 @@ function grey() {
 }
 
 // Makes all buttons opacity change
-function flashColor() {
+function originalColor() {
     $(".btn-teal").css("background-color", "rgba(78, 160, 174, 0.5)");
     $(".btn-white").css("background-color", "rgba(237, 239, 251, 0.5)");
     $(".btn-purple").css("background-color", "rgba(108, 83, 164, 0.5)");
     $(".btn-grey").css("background-color", "rgba(4, 0, 0, 0.5)");
 }
 
-function originalColor() {
+function flashColor() {
     $(".btn-teal").css("background-color", "#4ea0ae");
     $(".btn-white").css("background-color", "#edeffb");
     $(".btn-purple").css("background-color", "#6c53a4");

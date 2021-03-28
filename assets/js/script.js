@@ -4,9 +4,10 @@ let playerSequence = [];
 let flash;
 let turnSpeed;
 let turn;
+let computerPlay;
 let playerTurn = false;
 let sound = true;
-let good;
+let correct;
 let win;
 
 // Audio files
@@ -208,6 +209,37 @@ $(".btn-teal").click(function() {
         }
       } 
     });
+
+// Checks whether the player answer during gameplay
+function checkAnswer() {
+    // Checks if the player sequence equals the computer sequence
+    if (playerSequence[playerSequence.length - 1] !== sequence[playerSequence.length - 1])
+    correct = false;
+
+    // checks if the player sequence has met the win game criteria and calls game win function
+    if (playerSequence.length == 20 && correct == true) {
+        winGame();
+    }
+
+    // If the player sequence does not match the computer sequence
+    if (correct == false) {
+        flashColor();
+        setTimeout(() =>{
+            originalColor
+        }, 800);
+        // what else to happen, lose modal, sound??
+    }
+
+    // If the player is correct in their sequence but has not met the win criteria
+    if (turn == playerSequence.length && correct && !win) {
+        turn++;
+        playerSequence = [];
+        computerPlay = true;
+        flash = 0;
+        turnCounter.innerHTML = turn;
+        turnSpeed = setInterval(gamePlay, 800);
+    }
+}
 
 // Makes all buttons opacity change
 function originalColor() {

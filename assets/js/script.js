@@ -1,11 +1,11 @@
 // Game variables
-let compSequence = [];
-let turn = 0;
+
 
 
 
 // Gets the start button
 const startButton = document.querySelector('#startBtn');
+const resetButton = document.querySelector('#resetBtn');
 
 // With thanks to Travery Media for their guide to creating modals
 // Get navbar modal element
@@ -47,23 +47,10 @@ function clickOutsideModal(event) {
     }
 };
 
-// Increases the number of button presses in the sequence
-function increaseSequence() {
-    const buttons = ["teal", "white", "purple", "grey"];
-    const randomiser = buttons[Math.floor(Math.random() * buttons.length)];
-    return randomiser;
-}
-
-// Increases the turn counter by 1, copies the previous order of button presses and increases by 1
-function increaseTurn() {
-    turn += 1;
-    const contSequence = [...compSequence];
-    contSequence.push(increaseSequence());
-}
-
 // Starts the game by changing button color, the number in the turn counter and hiding the start button on click
 function startGame() {
   startButton.classList.add('hide-content');
+  resetButton.classList.remove('hide-content');
   $("#turnsTaken").text("0");
   flashColor();
 }

@@ -1,11 +1,18 @@
 // Game variables
+let sequence = [];
+let playerSequence = [];
+let flash;
+let turnSpeed;
+let turn;
+let good;
+let win;
 
 
 
-
-// Gets the start button
+// Gets different html elements
 const startButton = document.querySelector('#startBtn');
 const resetButton = document.querySelector('#resetBtn');
+const turnCounter = document.querySelector('#turnsTaken');
 
 // With thanks to Travery Media for their guide to creating modals
 // Get navbar modal element
@@ -53,6 +60,27 @@ function startGame() {
   resetButton.classList.remove('hide-content');
   $("#turnsTaken").text("0");
   flashColor();
+  beginGame();
+}
+
+// Starts the first turn resetting the game, creating the randomised sequence and passing to the computer.
+function beginGame() {
+    win = false;
+    sequence = [];
+    playerSequence = [];
+    flash = 0;
+    turnSpeed = 0;
+    turn = 1;
+    turnCounter.innerHTML = 1;
+    good = true;
+
+    for (let i = 0 ; i < 100 ; i++) {
+        sequence.push(Math.floor(Math.random() * 4) + 1);
+    }
+    
+    computerPlay = true;
+
+    turnSpeed = setInterval(gamePlay, 1000);
 }
 
 // Makes all buttons opacity change

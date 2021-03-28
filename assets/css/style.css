@@ -354,7 +354,8 @@ Levels - Gameboard
     border: 1px solid #ededef;
 }
 
-.btn-start {
+.btn-start,
+.btn-reset {
     margin-top: 30px;
     padding: 6px 24px;
     font-family: "Pathway Gothic One", sans-serif;
@@ -365,7 +366,9 @@ Levels - Gameboard
 }
 
 .btn-start:hover,
-.btn-start:focus {
+.btn-start:focus,
+.btn-reset:hover,
+.btn-reset:focus {
     background-color: rgba(7, 127, 81, 1);
 }
 

@@ -80,7 +80,7 @@ function beginGame() {
     turnSpeed = 0;
     turn = 1;
     turnCounter.innerHTML = 1;
-    good = true;
+    correct = true;
 
     for (let i = 0 ; i < 100 ; i++) {
         sequence.push(Math.floor(Math.random() * 4) + 1);
@@ -213,20 +213,23 @@ $(".btn-teal").click(function() {
 // Checks whether the player answer during gameplay
 function checkAnswer() {
     // Checks if the player sequence equals the computer sequence
-    if (playerSequence[playerSequence.length - 1] !== sequence[playerSequence.length - 1])
-    correct = false;
+    if (playerSequence[playerSequence.length - 1] !== sequence[playerSequence.length - 1]) correct = false;
 
     // checks if the player sequence has met the win game criteria and calls game win function
-    if (playerSequence.length == 20 && correct == true) {
+    if (playerSequence.length == 20 && correct) {
         winGame();
     }
 
     // If the player sequence does not match the computer sequence
     if (correct == false) {
         flashColor();
+        turnCounter.innerHTML = "NO!";
         setTimeout(() =>{
-            originalColor
+            turnCounter.innerHTML = turn;
+            originalColor();
         }, 800);
+
+        sound = false;
         // what else to happen, lose modal, sound??
     }
 
@@ -255,4 +258,11 @@ function flashColor() {
     $(".btn-white").css("background-color", "#edeffb");
     $(".btn-purple").css("background-color", "#6c53a4");
     $(".btn-grey").css("background-color", "#040000");
+}
+
+function winGame(){
+    flashColor();
+    turnCounter.innerHTML = "Win"
+    playerTurn = false;
+    win = true;
 }

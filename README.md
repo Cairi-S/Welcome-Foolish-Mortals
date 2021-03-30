@@ -215,7 +215,11 @@ AutoPrefixer
 
 - When creating the dashboard the text continued to scroll despite position being fixed.  Solved - changed the calc value on the section element which caused content to remain stationary.
 
-- Linking audio files to buttons. Solved - Moved where the audio i taken from html to JavaScript variables. 
+- Linking audio files to buttons - originally JavaScript was not playing the html sourced audio on button clicks. Solved - Moved where the audio is taken from index.html to JavaScript variables.
+
+- Audio was not playing consistently for repeated notes, e.g. if the sequence was 1, 1, 1 the audio would only trigger play, mute, play.  Solved - shortened the length of the audio to allow for retrigger time between notes.
+
+- Reset button was causing a new sequence to trigger on to of the existing sequence.  Solved - On reset button click all sequences are reset and the player must manually restart the game by hitting the start button.
 
 ### Deployment ###
 

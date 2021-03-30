@@ -11,10 +11,10 @@ let correct;
 let win;
 
 // Audio files
-const tealAudio = new Audio("assets/audio/AEighth.mp3");
-const whiteAudio = new Audio("assets/audio/EEighth.mp3");
-const purpleAudio = new Audio("assets/audio/DEighth.mp3");
-const greyAudio = new Audio("assets/audio/BEighth.mp3");
+const tealAudio = new Audio("assets/audio/Ashort.mp3");
+const whiteAudio = new Audio("assets/audio/Eshort.mp3");
+const purpleAudio = new Audio("assets/audio/Dsharpshort.mp3");
+const greyAudio = new Audio("assets/audio/Bshort.mp3");
 
 
 // Gets different html elements
@@ -106,6 +106,7 @@ function gamePlay() {
 
     // If it is the computers turn a time is set for the flashes
     if (computerPlay) {
+        originalColor();
         setTimeout(() => {
             // Links the sequence numbers to the buttons, answering functions below
             if (sequence[flash] == 1) teal();
@@ -114,6 +115,7 @@ function gamePlay() {
             if (sequence[flash] == 4) grey();
             flash++;
         }, 200);
+
     }
 }
 

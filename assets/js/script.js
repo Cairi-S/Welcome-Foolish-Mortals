@@ -45,6 +45,9 @@ window.addEventListener("click", clickOutsideModal);
 //Event listening for click on start button
 startButton.addEventListener("click", startGame);
 
+//Event listening for click on reset button
+resetButton.addEventListener("click", resetGame);
+
 // Function for opening modal
 function openModal() {
     navbarModal.style.display = "block";
@@ -70,6 +73,17 @@ function startGame() {
   originalColor();
   beginGame();
 }
+// Resets the game clearing sequences, intervals and turns.  Reset button is hidden and start button appears prompting player to restart
+
+function resetGame() {
+  sequence = [];
+  playerSequence = [];
+  turn = 0;
+  clearInterval(turnSpeed);
+  clearTimeout();
+  resetButton.classList.add('hide-content');
+  startButton.classList.remove('hide-content');
+}
 
 // Starts the first turn resetting the game, creating the randomised sequence and passing to the computer.
 function beginGame() {
@@ -82,7 +96,7 @@ function beginGame() {
     turnCounter.innerHTML = 1;
     correct = true;
 
-    for (let i = 0 ; i < 100 ; i++) {
+    for (let i = 0 ; i < 5 ; i++) {
         sequence.push(Math.floor(Math.random() * 4) + 1);
     }
     console.log(sequence);
@@ -218,7 +232,7 @@ function checkAnswer() {
     if (playerSequence[playerSequence.length - 1] !== sequence[playerSequence.length - 1]) correct = false;
 
     // checks if the player sequence has met the win game criteria and calls game win function
-    if (playerSequence.length == 20 && correct) {
+    if (playerSequence.length == 5 && correct) {
         winGame();
     }
 

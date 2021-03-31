@@ -228,6 +228,7 @@ AutoPrefixer
 The themeing for this website has taken inspiration from [The Walt Disney Company's](https://thewaltdisneycompany.com/) popular attraction [The Haunted Mansion](https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/).
 All likeness is for educational purposes only.
 
+
 ### Content ###
 
 ### Media ###
@@ -246,5 +247,11 @@ The Haunted Mansion is owned and operated by [The Walt Disney Company](https://t
 
 - [Traversy Media](https://youtu.be/6ophW7Ask_0) - Guide for creating a modal with HTML CSS and JavaScript.
 
+- Thank you to freeCodeCamp.org for their [Simon Video Tutorial](https://www.freecodecamp.org/news/simon-javascript-game-tutorial/) - inspiration and, in my most frustrated moments, hope was taken from this video.
+
+- Thank you to freshman.tech for their [Simon JavaScript Walkthrough](https://freshman.tech/simon-game/).
+
 
 ### Acknowledgements ###
+
+- The CI tutor support team, in particular Igor_ci.

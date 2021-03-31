@@ -12,13 +12,13 @@ let win;
 
 // Audio files
 const tealAudio = new Audio("assets/audio/Ashort.mp3");
-tealAudio.muted = true;
+tealAudio.muted = false;
 const whiteAudio = new Audio("assets/audio/Eshort.mp3");
-whiteAudio.muted = true;
+whiteAudio.muted = false;
 const purpleAudio = new Audio("assets/audio/Dsharpshort.mp3");
-purpleAudio.muted = true;
+purpleAudio.muted = false;
 const greyAudio = new Audio("assets/audio/Bshort.mp3");
-greyAudio.muted = true;
+greyAudio.muted = false;
 
 
 // Gets different html elements
@@ -55,19 +55,19 @@ resetButton.addEventListener("click", resetGame);
 // Function for opening modal
 function openModal() {
     navbarModal.style.display = "block";
-};
+}
 
 // Function for closing modal
 function closeModal() {
     navbarModal.style.display = "none";
-};
+}
 
 // Function for closing click outside of modal box
 function clickOutsideModal(event) {
     if(event.target == navbarModal) {
       navbarModal.style.display = "none";
     }
-};
+}
 
 // Toggle mute icon on and off 
 $('#toggleMute').click(function() {
@@ -124,7 +124,7 @@ function beginGame() {
 
 // Checks whether it's the players turn
 function gamePlay() {
-    playerTurn = false
+    playerTurn = false;
 
     // When the number of flashes is equal to number of turns interval cleared the computers turn is over and the game is reset for the user to play
     if (flash == turn) {
@@ -194,7 +194,7 @@ $(".btn-teal").click(function() {
             setTimeout(() => {
                 originalColor();
             }, 300);
-        console.log('clicked')
+        console.log('clicked');
         }
       } 
     });
@@ -208,7 +208,7 @@ $(".btn-teal").click(function() {
             setTimeout(() => {
                 originalColor();
             }, 300);
-        console.log('clicked')
+        console.log('clicked');
         }
       } 
     });
@@ -223,7 +223,7 @@ $(".btn-teal").click(function() {
             setTimeout(() => {
                 originalColor();
             }, 300);
-        console.log('clicked')
+        console.log('clicked');
         }
       } 
     });
@@ -237,7 +237,7 @@ $(".btn-teal").click(function() {
             setTimeout(() => {
                 originalColor();
             }, 300);
-        console.log('clicked')
+        console.log('clicked');
         }
       } 
     });
@@ -294,7 +294,7 @@ function flashColor() {
 
 function winGame(){
     flashColor();
-    turnCounter.innerHTML = "Win"
+    turnCounter.innerHTML = "Win";
     playerTurn = false;
     win = true;
 }

@@ -12,9 +12,13 @@ let win;
 
 // Audio files
 const tealAudio = new Audio("assets/audio/Ashort.mp3");
+tealAudio.muted = true;
 const whiteAudio = new Audio("assets/audio/Eshort.mp3");
+whiteAudio.muted = true;
 const purpleAudio = new Audio("assets/audio/Dsharpshort.mp3");
+purpleAudio.muted = true;
 const greyAudio = new Audio("assets/audio/Bshort.mp3");
+greyAudio.muted = true;
 
 
 // Gets different html elements
@@ -65,6 +69,17 @@ function clickOutsideModal(event) {
     }
 };
 
+// Toggle mute icon on and off 
+$('#toggleMute').click(function() {
+  $("i",this).toggleClass('fas fa-volume-up fas fa-volume-mute');
+  tealAudio.muted = !(tealAudio.muted);
+  whiteAudio.muted = !(whiteAudio.muted);
+  purpleAudio.muted = !(purpleAudio.muted);
+  greyAudio.muted = !(greyAudio.muted);
+});
+
+
+
 // Starts the game by changing button color, the number in the turn counter and hiding the start button on click
 function startGame() {
   startButton.classList.add('hide-content');
@@ -81,6 +96,7 @@ function resetGame() {
   turn = 0;
   clearInterval(turnSpeed);
   clearTimeout();
+  $("#turnsTaken").text("-");
   resetButton.classList.add('hide-content');
   startButton.classList.remove('hide-content');
 }
@@ -237,7 +253,7 @@ function checkAnswer() {
     }
 
     // If the player sequence does not match the computer sequence
-    if (correct == false) {
+    if (!correct) {
         flashColor();
         turnCounter.innerHTML = "NO!";
         setTimeout(() =>{

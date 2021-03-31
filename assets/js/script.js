@@ -139,47 +139,29 @@ function gamePlay() {
         originalColor();
         setTimeout(() => {
             // Links the sequence numbers to the buttons, answering functions below
-            if (sequence[flash] == 1) teal();
-            if (sequence[flash] == 2) white();
-            if (sequence[flash] == 3) purple();
-            if (sequence[flash] == 4) grey();
+            if (sequence[flash] === 1) {
+                playColorAudio(flashTeal, '#4ea0ae', tealAudio);
+            }
+            if (sequence[flash] === 2) {
+                playColorAudio(flashWhite, '#edeffb', whiteAudio);
+            }
+            if (sequence[flash] === 3) {
+                playColorAudio(flashPurple, '#6c53a4', purpleAudio);
+            }
+            if (sequence[flash] === 4) {
+                playColorAudio(flashGrey, '#040000', greyAudio);
+            }
             flash++;
         }, 200);
 
     }
 }
 
-// Answering functions for linking to sequence numbers
-function teal() {
+function playColorAudio(colorFunction, colorHex, varAudio) {
+    colorFunction();
     if (sound) {
-      tealAudio.play();
+    varAudio.play();
     }
-    sound = true;
-    $(".btn-teal").css("background-color", "#4ea0ae");
-}
-
-function white() {
-    if (sound) {
-    whiteAudio.play();
-    }
-    sound = true;
-    $(".btn-white").css("background-color", "#edeffb");
-}
-
-function purple() {
-    if (sound) {
-      purpleAudio.play();
-    }
-    sound = true;
-    $(".btn-purple").css("background-color", "#6c53a4");
-}
-
-function grey() {
-    if (sound) {
-      greyAudio.play();
-    }
-    sound = true;
-    $(".btn-grey").css("background-color", "#040000");
 }
 
 // Event Listeners for buttons during gameplay.  Checks if it's the players turn to allow clicks.
@@ -189,7 +171,7 @@ $(".btn-teal").click(function() {
       if (playerTurn) {
         playerSequence.push(1);
         checkAnswer();
-        teal();
+        playColorAudio(flashTeal, '#4ea0ae', tealAudio)
         if(!win) {
             setTimeout(() => {
                 originalColor();
@@ -203,7 +185,7 @@ $(".btn-teal").click(function() {
           if (playerTurn) {
         playerSequence.push(2);
         checkAnswer();
-        white();
+        playColorAudio(flashWhite, '#edeffb', whiteAudio);
         if(!win) {
             setTimeout(() => {
                 originalColor();
@@ -218,7 +200,7 @@ $(".btn-teal").click(function() {
       if (playerTurn) {
         playerSequence.push(3);
         checkAnswer();
-        purple();
+        playColorAudio(flashPurple, '#6c53a4', purpleAudio);
         if(!win) {
             setTimeout(() => {
                 originalColor();
@@ -232,7 +214,7 @@ $(".btn-teal").click(function() {
       if (playerTurn) {
         playerSequence.push(4);
         checkAnswer();
-        grey();
+        playColorAudio(flashGrey, '#040000', greyAudio);
         if(!win) {
             setTimeout(() => {
                 originalColor();
@@ -254,7 +236,7 @@ function checkAnswer() {
 
     // If the player sequence does not match the computer sequence
     if (!correct) {
-        flashColor();
+        flashAll();
         turnCounter.innerHTML = "NO!";
         setTimeout(() =>{
             turnCounter.innerHTML = turn;
@@ -276,6 +258,32 @@ function checkAnswer() {
     }
 }
 
+// Makes all buttons return to full opacity
+
+
+function flashTeal() {
+    $(".btn-teal").css("background-color", "#4ea0ae");
+}
+
+function flashWhite() {
+    $(".btn-white").css("background-color", "#edeffb");
+}
+
+function flashPurple() {
+    $(".btn-purple").css("background-color", "#6c53a4");
+}
+
+function flashGrey() {
+    $(".btn-grey").css("background-color", "#040000");
+}
+
+function flashAll() {
+   flashTeal();
+   flashWhite();
+   flashPurple();
+   flashGrey();
+}
+
 // Makes all buttons opacity change
 function originalColor() {
     $(".btn-teal").css("background-color", "rgba(78, 160, 174, 0.5)");
@@ -284,16 +292,9 @@ function originalColor() {
     $(".btn-grey").css("background-color", "rgba(4, 0, 0, 0.5)");
 }
 
-// Makes all buttons return to full opacity
-function flashColor() {
-    $(".btn-teal").css("background-color", "#4ea0ae");
-    $(".btn-white").css("background-color", "#edeffb");
-    $(".btn-purple").css("background-color", "#6c53a4");
-    $(".btn-grey").css("background-color", "#040000");
-}
 
 function winGame(){
-    flashColor();
+    flashAll();
     turnCounter.innerHTML = "Win";
     playerTurn = false;
     win = true;

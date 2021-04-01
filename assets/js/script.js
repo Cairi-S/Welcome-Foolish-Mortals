@@ -29,6 +29,8 @@ const turnCounter = document.querySelector("#turnsTaken");
 // Get navbar modal element
 let navbarModal = document.getElementById("ruleModal");
 
+let winModal = document.getElementById("winModal");
+
 // Get button that opens modal
 let openBtn = document.getElementById("modalNav");
 
@@ -290,4 +292,9 @@ function winGame() {
   turnCounter.innerHTML = "Win";
   playerTurn = false;
   win = true;
+  winModalTrigger();
+}
+
+function winModalTrigger() {
+    winModal.style.display = "block";
 }

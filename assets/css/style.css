@@ -103,18 +103,25 @@ Footer
     height: 60px;
     margin: 0;
     line-height: 0;
-    padding-top: 20px;
+    padding-top: 16px;
     background-color: rgba(4, 0, 0, 0.5);
 }
 
-.inspiration-text p,
-.inspiration-text a {
+.inspiration-text p {
+    display: block;
     margin-bottom: 10px;
     padding: 0 0 10px 14px;
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 12px;
     color: #ededef;
+    text-align: center;
 }
+
+.inspiration-text a {
+    color: #ededef;
+}
+
+
 
 .copyright-info,
 .copyright-info span {
@@ -431,6 +438,18 @@ Modal animations
 
 .turns {
     padding: 10px 12px 0;
+}
+
+.inspiration-text p {
+    display: none;
+}
+
+.copyright-info,
+.copyright-info span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
 }
 }
 

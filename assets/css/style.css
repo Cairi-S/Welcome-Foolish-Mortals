@@ -157,7 +157,8 @@ Navbar Modal
 /*With thanks to Traversy Media for their guide to creating modals*/
 
 .nav-modal,
-.win-modal {
+.win-modal ,
+.lose-modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -170,7 +171,8 @@ Navbar Modal
 }
 
 .rule-content,
-.win-content {
+.win-content,
+.lose-content {
     background-color: rgba(4, 0, 0, 0.8);
     color: #ededef;
     margin: 10% auto;
@@ -181,7 +183,8 @@ Navbar Modal
 }
 
 .rules-reminder-header,
-.win-header {
+.win-header,
+.lose-header {
     font-family: "Cormorant Upright", sans-serif;
     font-size: 50px;
     color: #6c53a4;
@@ -189,15 +192,17 @@ Navbar Modal
 }
 
 .rules-reminder-body,
-.win-body {
+.win-body,
+.win-body a,
+.lose-body,
+.lose-body a {
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 20px;
     color: #edeffb;
     text-align: center;
 }
 
-.rules-reminder-body a,
-.win-body a {
+.rules-reminder-body a {
     font-family: "Cormorant Upright", sans-serif;
     font-size: 26px;
     color: #6c53a4;
@@ -208,7 +213,8 @@ Navbar Modal
 
 .rules-reminder-footer,
 .rules-reminder-footer a,
-.win-footer {
+.win-footer,
+.lose-footer {
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 20px;
     color: #edeffb;
@@ -216,7 +222,8 @@ Navbar Modal
 }
 
 .closeNavModal,
-.closeWinModal {
+.closeWinModal,
+.closeLoseModal {
     color: #ededef;
     float: right;
     font-size: 52px;
@@ -225,7 +232,9 @@ Navbar Modal
 .closeNavModal:hover,
 .closeNavModal:focus,
 .closeWinModal:hover,
-.closeWinModal:focus {
+.closeWinModal:focus,
+.closeLoseModal:hover,
+.closeLoseModal:focus {
     color: #6c53a4;
     text-decoration: none;
     cursor: pointer;

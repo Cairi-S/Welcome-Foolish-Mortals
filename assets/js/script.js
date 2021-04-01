@@ -29,6 +29,7 @@ const turnCounter = document.querySelector("#turnsTaken");
 // Get navbar modal element
 let navbarModal = document.getElementById("ruleModal");
 let winModal = document.getElementById("winModal");
+let loseModal = document.getElementById("loseModal");
 
 // Get button that opens modal
 let openBtn = document.getElementById("modalNav");
@@ -36,6 +37,7 @@ let openBtn = document.getElementById("modalNav");
 // Get buttons that close modals
 let closeBtn = document.getElementsByClassName("closeNavModal")[0];
 let closeWinBtn = document.getElementsByClassName("closeWinModal")[0];
+let closeLoseBtn = document.getElementsByClassName("closeLoseModal")[0];
 
 // Event listening for opening click on modal
 openBtn.addEventListener("click", openModal);
@@ -43,6 +45,7 @@ openBtn.addEventListener("click", openModal);
 // Event listening for closing click on modals
 closeBtn.addEventListener("click", closeModal);
 closeWinBtn.addEventListener("click", closeWinModal);
+closeLoseBtn.addEventListener("click", closeLoseModal);
 
 // Event listening for closing click outside of modal box
 window.addEventListener("click", clickOutsideModal);
@@ -62,6 +65,10 @@ function winModalTrigger() {
     winModal.style.display = "block";
 }
 
+function loseModalTrigger() {
+    loseModal.style.display = "block";
+}
+
 // Function for closing modals
 function closeModal() {
   navbarModal.style.display = "none";
@@ -69,6 +76,10 @@ function closeModal() {
 
 function closeWinModal() {
     winModal.style.display = "none";
+}
+
+function closeLoseModal() {
+    loseModal.style.display = "none";
 }
 
 // Function for closing click outside of modal box
@@ -255,7 +266,8 @@ function checkAnswer() {
     }, 800);
 
     sound = false;
-    // what else to happen, lose modal, sound??
+    
+    loseModalTrigger();
   }
 
   // If the player is correct in their sequence but has not met the win criteria

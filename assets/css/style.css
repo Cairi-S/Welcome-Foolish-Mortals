@@ -215,14 +215,17 @@ Navbar Modal
     text-align: center;
 }
 
-.closeNavModal {
+.closeNavModal,
+.closeWinModal {
     color: #ededef;
     float: right;
     font-size: 52px;
 }
 
 .closeNavModal:hover,
-.closeNavModal:focus {
+.closeNavModal:focus,
+.closeWinModal:hover,
+.closeWinModal:focus {
     color: #6c53a4;
     text-decoration: none;
     cursor: pointer;

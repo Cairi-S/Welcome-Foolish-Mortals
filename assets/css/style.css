@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Pathway+Gothic+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Pathway+Gothic+One&display=swap");
 
 /*----------
 Images
@@ -86,7 +86,7 @@ Header
 
 .menu {
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
 .menu i {
@@ -108,7 +108,7 @@ Footer
 }
 
 .inspiration-text p,
-.inspiration-text a{
+.inspiration-text a {
     margin-bottom: 10px;
     padding: 0 0 10px 14px;
     font-family: "Pathway Gothic One", sans-serif;
@@ -117,7 +117,7 @@ Footer
 }
 
 .copyright-info,
-.copyright-info span{
+.copyright-info span {
     font-family: "Pathway Gothic One", sans-serif;
     text-align: center;
 }
@@ -125,7 +125,6 @@ Footer
 .copyright-info i,
 .copyright-info span {
     color: #ededef;
-    
 }
 
 .contact-link i {
@@ -148,7 +147,7 @@ Hover functionality
 Navbar Modal
 ----------*/
 
-/*With thanks to Travery Media for their guide to creating modals*/
+/*With thanks to Traversy Media for their guide to creating modals*/
 
 .nav-modal {
     display: none;
@@ -162,7 +161,7 @@ Navbar Modal
     background-color: rgba(237, 239, 251, 0.5);
 }
 
-.rule-content{
+.rule-content {
     background-color: rgba(4, 0, 0, 0.8);
     color: #ededef;
     margin: 10% auto;
@@ -298,7 +297,7 @@ Levels - Dashboard
 .dashboard-difficulty {
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 20px;
-    color: #494747;  
+    color: #494747;
 }
 
 .active {
@@ -329,7 +328,8 @@ Levels - Gameboard
     text-align: right;
 }
 
-.btn-group-lg>.btn, .btn-lg {
+.btn-group-lg > .btn,
+.btn-lg {
     margin-top: 30px;
     padding: 4.5rem 10rem;
 }
@@ -373,15 +373,18 @@ Levels - Gameboard
 }
 
 .hide-content {
-  display: none !important;
+    display: none !important;
 }
 
 /*----------
 Modal animations
 ----------*/
 
-@keyframes homeModalOpen{
-    from{opacity: 0}
-    to{ opacity: 1;}
+@keyframes homeModalOpen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-

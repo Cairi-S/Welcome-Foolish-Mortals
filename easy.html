@@ -99,7 +99,10 @@
             <section>
                 <!--Gameboard-->
                 <div class="row g-0">
-                    <div class="col-md-3 offset-md-9">
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <h4 class="highscore">Highest Score:<span id="highScore"> - </span></h4>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
                         <h4 class="turns">Turn Counter:<span id="turnsTaken"> - </span></h4>
                     </div>
                 </div>
@@ -126,6 +129,8 @@
                     </div>
                 </div>
 
+
+                <!-- Winning and Losing modals for game end-->
                 <div id="winModal" class="nav-modal">
                     <div class="win-content">
                         <div class="win-header">

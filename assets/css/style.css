@@ -388,3 +388,47 @@ Modal animations
         opacity: 1;
     }
 }
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .site-title {
+    margin: 0; 
+    padding-left: 12px;
+    font-family: "Cormorant Upright", sans-serif;
+    font-size: 30px;
+    color: #ededef;
+}
+
+.navbar {
+    justify-content: center;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-nav a,
+.navbar-nav button {
+    padding: 0;
+}
+
+.navbar-collapse {
+    justify-content: center!important;
+}
+
+.menu i {
+    font-size: 26px;
+    margin: 0;
+}
+
+.mobile-padding {
+    padding-right: 16px;
+}
+
+.turns {
+    padding: 10px 12px 0;
+}
+}

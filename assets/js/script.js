@@ -4,6 +4,7 @@ let playerSequence = [];
 let flash;
 let turnSpeed;
 let turn;
+let highscore;
 let computerPlay;
 let playerTurn = false;
 let sound = true;
@@ -24,6 +25,7 @@ greyAudio.muted = false;
 const startButton = document.querySelector("#startBtn");
 const resetButton = document.querySelector("#resetBtn");
 const turnCounter = document.querySelector("#turnsTaken");
+const highScore = document.querySelector("#highScore");
 
 // With thanks to Travery Media for their guide to creating modals
 // Get navbar modal element
@@ -92,9 +94,6 @@ function clickOutsideModal(event) {
   }
 }
 
-
-
-
 // Toggle mute icon on and off
 $("#toggleMute").click(function () {
   $("i", this).toggleClass("fas fa-volume-up fas fa-volume-mute");
@@ -134,6 +133,8 @@ function beginGame() {
   turnSpeed = 0;
   turn = 1;
   turnCounter.innerHTML = 1;
+  highscore = 1;
+  highScore.innerHTML = 1;
   correct = true;
 
   for (let i = 0; i < 5; i++) {
@@ -273,10 +274,12 @@ function checkAnswer() {
   // If the player is correct in their sequence but has not met the win criteria
   if (turn == playerSequence.length && correct && !win) {
     turn++;
+    highscore++;
     playerSequence = [];
     computerPlay = true;
     flash = 0;
     turnCounter.innerHTML = turn;
+    highScore.innerHTML = highscore;
     turnSpeed = setInterval(gamePlay, 800);
   }
 }

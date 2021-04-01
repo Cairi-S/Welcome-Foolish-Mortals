@@ -28,20 +28,21 @@ const turnCounter = document.querySelector("#turnsTaken");
 // With thanks to Travery Media for their guide to creating modals
 // Get navbar modal element
 let navbarModal = document.getElementById("ruleModal");
-
 let winModal = document.getElementById("winModal");
 
 // Get button that opens modal
 let openBtn = document.getElementById("modalNav");
 
-// Get button that closes modal
+// Get buttons that close modals
 let closeBtn = document.getElementsByClassName("closeNavModal")[0];
+let closeWinBtn = document.getElementsByClassName("closeWinModal")[0];
 
 // Event listening for opening click on modal
 openBtn.addEventListener("click", openModal);
 
-// Event listening for closing click on modal
+// Event listening for closing click on modals
 closeBtn.addEventListener("click", closeModal);
+closeWinBtn.addEventListener("click", closeWinModal);
 
 // Event listening for closing click outside of modal box
 window.addEventListener("click", clickOutsideModal);
@@ -57,9 +58,17 @@ function openModal() {
   navbarModal.style.display = "block";
 }
 
-// Function for closing modal
+function winModalTrigger() {
+    winModal.style.display = "block";
+}
+
+// Function for closing modals
 function closeModal() {
   navbarModal.style.display = "none";
+}
+
+function closeWinModal() {
+    winModal.style.display = "none";
 }
 
 // Function for closing click outside of modal box
@@ -67,7 +76,13 @@ function clickOutsideModal(event) {
   if (event.target == navbarModal) {
     navbarModal.style.display = "none";
   }
+  if (event.target == winModal) {
+    winModal.style.display = "none";
+  }
 }
+
+
+
 
 // Toggle mute icon on and off
 $("#toggleMute").click(function () {
@@ -226,7 +241,7 @@ function checkAnswer() {
   if (playerSequence[playerSequence.length - 1] !== sequence[playerSequence.length - 1]) correct = false;
 
   // checks if the player sequence has met the win game criteria and calls game win function
-  if (playerSequence.length == 5 && correct) {
+  if (playerSequence.length == 3 && correct) {
     winGame();
   }
 
@@ -295,6 +310,4 @@ function winGame() {
   winModalTrigger();
 }
 
-function winModalTrigger() {
-    winModal.style.display = "block";
-}
+

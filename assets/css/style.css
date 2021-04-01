@@ -346,13 +346,20 @@ Levels - Dashboard
 Levels - Gameboard
 ----------*/
 
-.turns {
-    margin: 0;
-    padding: 20px 48px 0 0;
+.turns,
+.highscore {
+    padding: 20px 0 0 0;
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 30px;
     color: #ededef;
-    text-align: right;
+}
+
+.highscore {
+    margin-left: 56px;
+}
+
+.turns {
+    margin-right: 56px;
 }
 
 .btn-group-lg > .btn,
@@ -527,7 +534,14 @@ Modal animations
 
 @media (min-width: 320px) and (max-width: 360px) {
     .btn-group-lg > .btn,
-.btn-lg {
-    padding: 46px;
+    .btn-lg {
+        padding: 46px;
+    }
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .highscore,
+    .turns {
+        margin: 0;
+    }
 }

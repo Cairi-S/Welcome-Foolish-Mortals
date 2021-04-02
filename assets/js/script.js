@@ -3,9 +3,10 @@ let computerSequence = [];
 let playerSequence = [];
 
 let flashCounter;
-//let flashInterval = 1000; CHECK HOW TO IMPLEMENT THIS
+let flashInterval = 800;
 
 let intervalRef;
+let maxFlashes = 10;
 
 let turn;
 
@@ -57,6 +58,7 @@ function resetGame() {
   computerSequence = [];
   playerSequence = [];
   turn = 0;
+  isMuted = false;
   clearInterval(intervalRef);
   clearTimeout();
   $("#turnsTaken").text("-");
@@ -67,6 +69,7 @@ function resetGame() {
 // Prepares the game, setting the variables, creating the sequence to be copied and starts the first turn.
 function prepareGame() {
   hasPlayerWon = false;
+  isMuted = false;
   computerSequence = [];
   playerSequence = [];
   flashCounter = 0;
@@ -77,13 +80,13 @@ function prepareGame() {
   highScore.innerHTML = 1;
   hasSequenceMatched = true;
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < maxFlashes; i++) {
     computerSequence.push(Math.floor(Math.random() * 4) + 1);
   }
 
   isComputerTurn = true;
 
-  intervalRef = setInterval(gamePlay, 800); // Runs gamePlay function every 800ms.  Light will flash every 800ms
+  intervalRef = setInterval(gamePlay, flashInterval); // Runs gamePlay function every 800ms.  Light will flash every 800ms
 }
 
 // Checks whether it's the players turn or computer turn
@@ -140,7 +143,7 @@ $(".btn-teal").click(function () {
     if (!hasPlayerWon) {
       setTimeout(() => {
         originalColor();
-      }, 300); //length of flash on player click
+      }, 300); // Color user clicks clears after this amount of time
   }
 });
 
@@ -187,7 +190,7 @@ $(".btn-grey").click(function () {
 
 // Checks whether the player answer during gameplay
 function checkAnswer() {
-  // Checks if the player sequence equals the computer sequence
+  // Checks if the player sequence and computer sequence do not match, if they don't the the !hasSequenceMatched is called
   if (playerSequence[playerSequence.length - 1] !== computerSequence[playerSequence.length - 1]) hasSequenceMatched = false;
 
   // checks if the player sequence has met the win game criteria and calls game win function
@@ -198,13 +201,13 @@ function checkAnswer() {
   // If the player sequence does not match the computer sequence
   if (!hasSequenceMatched) {
     flashAll();
-    turnCounter.innerHTML = "NO!";
+    turnCounter.innerHTML = "GHASTLY!";
     setTimeout(() => {
       turnCounter.innerHTML = turn;
       originalColor();
-    }, 800); //sets the time for the turn counter and buttons to return to original color
+    }, flashInterval); //sets the time for the turn counter and buttons to return to original color
 
-    isMuted = false;
+    isMuted = true;
     
     loseModalTrigger();
   }
@@ -218,7 +221,7 @@ function checkAnswer() {
     flashCounter = 0;
     turnCounter.innerHTML = turn;
     highScore.innerHTML = highestScoreCounter;
-    intervalRef = setInterval(gamePlay, 800); //sets speed of note repetition
+    intervalRef = setInterval(gamePlay, flashInterval); //sets speed of note repetition
   }
 }
 

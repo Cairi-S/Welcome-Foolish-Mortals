@@ -49,10 +49,10 @@ function startGame() {
   resetButton.classList.remove("hide-content");
   $("#turnsTaken").text("0");
   originalColor();
-  beginGame();
+  prepareGame();
 }
-// Resets the game clearing sequences, intervals and turns.  Reset button is hidden and start button appears prompting player to restart
 
+// Resets the game clearing sequences, intervals and turns.  Reset button is hidden and start button appears prompting player to restart
 function resetGame() {
   computerSequence = [];
   playerSequence = [];
@@ -64,8 +64,8 @@ function resetGame() {
   startButton.classList.remove("hide-content");
 }
 
-// Starts the first turn resetting the game, creating the randomised sequence and passing to the computer.
-function beginGame() {
+// Prepares the game, setting the variables, creating the sequence to be copied and starts the first turn.
+function prepareGame() {
   hasPlayerWon = false;
   computerSequence = [];
   playerSequence = [];
@@ -83,14 +83,14 @@ function beginGame() {
 
   isComputerTurn = true;
 
-  intervalRef = setInterval(gamePlay, 800); //sets how long it takes for game to start
+  intervalRef = setInterval(gamePlay, 800); // Runs gamePlay function every 800ms.  Light will flash every 800ms
 }
 
-// Checks whether it's the players turn
+// Checks whether it's the players turn or computer turn
 function gamePlay() {
   isPlayerTurn = false;
 
-  // When the number of flashes is equal to number of turns interval cleared the computers turn is over and the game is reset for the user to play
+  // When the number of flashes is equal to number of turns the interval cleared the computers turn is over and the game is set for the user to play
   if (flashCounter === turn) {
     clearInterval(intervalRef);
     isComputerTurn = false;
@@ -100,6 +100,7 @@ function gamePlay() {
 
   // If it is the computers turn a time is set for the flashes
   if (isComputerTurn) {
+    isPlayerTurn = false;
     originalColor();
     setTimeout(() => {
       // Links the sequence numbers to the buttons, answering functions below
@@ -116,7 +117,7 @@ function gamePlay() {
         playColorAudio(flashGrey, greyAudio);
       }
       flashCounter++;
-    }, 200); //length of flash on computer turn
+    }, 200); // waits 200ms and then flashes the number/color/audio.
   }
 }
 

@@ -21,6 +21,8 @@ purpleAudio.muted = false;
 const greyAudio = new Audio("assets/audio/Bshort.mp3");
 greyAudio.muted = false;
 
+const audioFileArray = [tealAudio, whiteAudio, purpleAudio, greyAudio];
+
 // Gets different html elements
 const startButton = document.querySelector("#startBtn");
 const resetButton = document.querySelector("#resetBtn");
@@ -30,10 +32,9 @@ const highScore = document.querySelector("#highScore");
 // Toggle mute icon on and off
 $("#toggleMute").click(function () {
   $("i", this).toggleClass("fas fa-volume-up fas fa-volume-mute");
-  tealAudio.muted = !tealAudio.muted;
-  whiteAudio.muted = !whiteAudio.muted;
-  purpleAudio.muted = !purpleAudio.muted;
-  greyAudio.muted = !greyAudio.muted;
+  audioFileArray.forEach(eachAudio => {
+      eachAudio.muted = !eachAudio.muted;
+  });
 });
 
 // Starts the game by changing button color, the number in the turn counter and hiding the start button on click

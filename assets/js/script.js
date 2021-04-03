@@ -3,10 +3,10 @@ let computerSequence = [];
 let playerSequence = [];
 
 let flashCounter;
-let flashInterval = 800;
+let flashInterval;
 
 let intervalRef;
-let maxFlashes = 10;
+let maxFlashes = 15;
 
 let turn;
 
@@ -89,6 +89,16 @@ function prepareGame() {
   intervalRef = setInterval(gamePlay, flashInterval); // Runs gamePlay function every 800ms.  Light will flash every 800ms
 }
 
+function checkForLevelIncrement(flashCounter) {
+  if (flashCounter < 6) {
+    flashInterval = 1500;
+  } else if (flashCounter < 12) {
+      flashInterval = 900;
+  } else if (flashCounter < 16) {
+      flashInterval = 500;
+  }
+}
+
 // Checks whether it's the players turn or computer turn
 function gamePlay() {
   isPlayerTurn = false;
@@ -104,6 +114,7 @@ function gamePlay() {
   // If it is the computers turn a time is set for the flashes
   if (isComputerTurn) {
     isPlayerTurn = false;
+    checkForLevelIncrement(flashCounter);
     originalColor();
     setTimeout(() => {
       // Links the sequence numbers to the buttons, answering functions below
@@ -131,8 +142,8 @@ function playColorAudio(colorFunction, varAudio) {
   }
 }
 
-// Event Listeners for buttons during gameplay.  Checks if it's the players turn to allow clicks.
-// iterates through the player sequence, checks if the player was correct and then calls that futtons function.
+// Event Listeners for player clicking buttons during gameplay.  Checks if it's the players turn to allow clicks.
+// iterates through the player sequence, checks if the player was correct and then calls that buttons function.
 // If not a win then after a set amount of time the color returns to the original color.
 function playerBtnClick (playerSeqPushNumber, btnFlashColor, btnFlashAudio) {
     if (isPlayerTurn) {
@@ -169,7 +180,7 @@ function checkAnswer() {
   if (playerSequence[playerSequence.length - 1] !== computerSequence[playerSequence.length - 1]) hasSequenceMatched = false;
 
   // checks if the player sequence has met the win game criteria and calls game win function
-  if (playerSequence.length == 10 && hasSequenceMatched) {
+  if (playerSequence.length == maxFlashes && hasSequenceMatched) {
     winGame();
   }
 
@@ -240,5 +251,3 @@ function winGame() {
   hasPlayerWon = true;
   winModalTrigger();
 }
-
-

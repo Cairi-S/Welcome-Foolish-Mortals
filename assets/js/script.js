@@ -134,58 +134,33 @@ function playColorAudio(colorFunction, varAudio) {
 // Event Listeners for buttons during gameplay.  Checks if it's the players turn to allow clicks.
 // iterates through the player sequence, checks if the player was correct and then calls that futtons function.
 // If not a win then after a set amount of time the color returns to the original color.
-$(".btn-teal").click(function () {
-  if (isPlayerTurn) {
-    playerSequence.push(1);
-    checkAnswer();
-    playColorAudio(flashTeal, tealAudio);
+function playerBtnClick (playerSeqPushNumber, btnFlashColor, btnFlashAudio) {
+    if (isPlayerTurn) {
+      playerSequence.push(playerSeqPushNumber);
+      checkAnswer();
+      playColorAudio(btnFlashColor, btnFlashAudio);
     }
     if (!hasPlayerWon) {
       setTimeout(() => {
         originalColor();
-      }, 300); // Color user clicks clears after this amount of time
-  }
+      }, 300); //length of flash on player click
+    }
+}
+
+$(".btn-teal").click(function () {
+  playerBtnClick (1, flashTeal, tealAudio);
 });
 
 $(".btn-white").click(function () {
-  if (isPlayerTurn) {
-    playerSequence.push(2);
-    checkAnswer();
-    playColorAudio(flashWhite, whiteAudio);
-    }
-    if (!hasPlayerWon) {
-      setTimeout(() => {
-        originalColor();
-      }, 300); //length of flash on player click
-  }
+  playerBtnClick (2, flashWhite, whiteAudio);
 });
 
 $(".btn-purple").click(function () {
-  if (isPlayerTurn) {
-    playerSequence.push(3);
-    checkAnswer();
-    playColorAudio(flashPurple, purpleAudio);
-    
-    }
-    if (!hasPlayerWon) {
-      setTimeout(() => {
-        originalColor();
-      }, 300); //length of flash on player click
-  }
+  playerBtnClick (3, flashPurple, purpleAudio);
 });
 
 $(".btn-grey").click(function () {
-  if (isPlayerTurn) {
-    playerSequence.push(4);
-    checkAnswer();
-    playColorAudio(flashGrey, greyAudio);
-    
-    }
-    if (!hasPlayerWon) {
-      setTimeout(() => {
-        originalColor();
-      }, 300); //length of flash on player click
-  }
+  playerBtnClick (4, flashGrey, greyAudio);
 });
 
 // Checks whether the player answer during gameplay

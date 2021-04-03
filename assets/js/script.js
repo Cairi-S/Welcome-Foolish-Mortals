@@ -3,7 +3,7 @@ let computerSequence = [];
 let playerSequence = [];
 
 let flashCounter;
-let flashInterval;
+let flashInterval = 1500;
 
 let intervalRef;
 let maxFlashes = 15;
@@ -89,13 +89,13 @@ function prepareGame() {
   intervalRef = setInterval(gamePlay, flashInterval); // Runs gamePlay function every 800ms.  Light will flash every 800ms
 }
 
-function checkForLevelIncrement(flashCounter) {
-  if (flashCounter < 6) {
+function checkForLevelIncrement(turn) {
+  if (turn <= 3) {
     flashInterval = 1500;
-  } else if (flashCounter < 12) {
-      flashInterval = 900;
-  } else if (flashCounter < 16) {
-      flashInterval = 500;
+  } else if (turn >= 4 && turn < 6) {
+    flashInterval = 900;
+  } else if (turn >= 6 && turn < 16) {
+    flashInterval = 500;
   }
 }
 
@@ -114,7 +114,6 @@ function gamePlay() {
   // If it is the computers turn a time is set for the flashes
   if (isComputerTurn) {
     isPlayerTurn = false;
-    checkForLevelIncrement(flashCounter);
     originalColor();
     setTimeout(() => {
       // Links the sequence numbers to the buttons, answering functions below
@@ -201,6 +200,7 @@ function checkAnswer() {
   // If the player is correct in their sequence but has not met the win criteria
   if (turn == playerSequence.length && hasSequenceMatched && !hasPlayerWon) {
     turn++;
+    checkForLevelIncrement(turn);
     highestScoreCounter++;
     playerSequence = [];
     isComputerTurn = true;

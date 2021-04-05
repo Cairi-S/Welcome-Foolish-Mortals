@@ -215,13 +215,24 @@ AutoPrefixer
 
 ### Bugs ###
 
-- When creating the dashboard the text continued to scroll despite position being fixed.  Solved - changed the calc value on the section element which caused content to remain stationary.
+- When creating the dashboard the text continued to scroll despite position being fixed.  
 
-- Linking audio files to buttons - originally JavaScript was not playing the html sourced audio on button clicks. Solved - Moved where the audio is taken from index.html to JavaScript variables.
+*Solved* - I tested various methods using [css-tricks.com](https://css-tricks.com/couple-takes-sticky-footer/).  From this article the suggestion that worked best for me was setting the height of the section element calc(100vh - x) which caused content to remain stationary.
 
-- Audio was not playing consistently for repeated notes, e.g. if the sequence was 1, 1, 1 the audio would only trigger play, mute, play.  Solved - shortened the length of the audio to allow for retrigger time between notes.
+- Linking audio files to buttons - initially when I added my audio to the html document when the JavaScript file was not able to set the audio to play without using visible audio controls which would not provide good UX for the game. 
 
-- Reset button was causing a new sequence to trigger on to of the existing sequence.  Solved - On reset button click all sequences are reset and the player must manually restart the game by hitting the start button.
+*Solved* - I researched and discovered that often there can be an issue with playing audio when using iOS (I use a Mac) To solve this I moved the audio from index.html to the JavaScript file and placed each audio file in a variable.  When this variable is called in it's own function and attached to the .play() method it works nicely.
+
+- The audio was not playing consistently if the suquence required repetition of notes, e.g. if the sequence was 1, 1, 1 the audio would only trigger play, mute, play.  
+*Solved* - To make sure each note is played I shortened the length of the audio in each file to allow for retrigger time between notes.
+
+- Pressing the reset button was causing a new sequence to trigger on to of the existing sequence so you would have 2 sequences playing on top of one another.  
+
+*Solved* - On reset button click all sequences are cleared and the start button is displayed to prompt the player to manually restart the game.  The start button begins the game again and makes sure that the game is fully reset.
+
+- When implementing increasing speed the speed jump wasn't happening when requested e.g I was asking after test turns 3, 6 and 9 yet the speed jump was happening at turns 5, 7 and 11.
+
+*Solved* - Initially I had the function which controls the speed increase (checkForLevelIncrement()) set to pass in the flashCounter variable, using the flashCounter and calling the function where the flashCounter incremented during the computer play.  As I actually wanted the speed to increase with the turn counter I changed the variable passed in to checkForLevelIncrement() to turn and moved where this was called to after the turn is incremented as part of the checkAnswer() function.  This made the speed increase as expected.  I also checked and ensured that all statements in checkForLevelIncrement() were always going to be true.
 
 ### Deployment ###
 

@@ -292,4 +292,7 @@ The Haunted Mansion is owned and operated by [The Walt Disney Company](https://t
 
 ### Acknowledgements ###
 
-- The CI tutor support team, in particular Igor_ci.
+- The CI tutor support team, in particular Igor_ci and Jo_ci.
+- The Slack community for endless support and encouragement.
+- My mentor for all their help and guidance throughout this project.
+- And honestly, The Walt Disney Company, I love all things Disney but this ride is my 'must do' on a trip to any of their parks.

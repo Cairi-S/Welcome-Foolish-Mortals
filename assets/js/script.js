@@ -6,17 +6,19 @@ let flashCounter;
 let flashInterval = 1500;
 
 let intervalRef;
-let maxFlashes = 30;
+let maxFlashes = 25;
 
 let turn;
 
-let highestScoreCounter;
 let isComputerTurn;
 let isPlayerTurn = false;
 let isMuted = false;
 
 let hasSequenceMatched;
 let hasPlayerWon;
+
+let highestScoreCounter = 0;
+// let highScoreStored = 0;
 
 // Audio files
 const tealAudio = new Audio("assets/audio/Ashort.mp3");
@@ -44,13 +46,16 @@ $("#toggleMute").click(function () {
   });
 });
 
-// Starts the game by changing button color, the number in the turn counter and hiding the start button on click
+
+// Starts the game when start button is pressed, it changes button color, the number in the turn counter and hiding the start button on click
 function startGame() {
   startButton.classList.add("hide-content");
   resetButton.classList.remove("hide-content");
   $("#turnsTaken").text("0");
+  localStorage.getItem(highScore);
   originalColor();
   prepareGame();
+  //highScore.innerHTML = localStorage.setItem(highScoreStored);
 }
 
 // Resets the game clearing sequences, intervals and turns.  Reset button is hidden and start button appears prompting player to restart
@@ -89,18 +94,19 @@ function prepareGame() {
   intervalRef = setInterval(gamePlay, flashInterval); // Runs gamePlay function every 800ms.  Light will flash every 800ms
 }
 
+// Increments the speed after the turn counter reaches specific break points.
 function checkForLevelIncrement(turn) {
-  if (turn <= 5) {
+  if (turn <= 3) {
     flashInterval = 1500;
-  } else if (turn >= 6 && turn < 9) {
+  } else if (turn >= 4 && turn < 7) {
     flashInterval = 1200;
-  }else if (turn >= 10 && turn < 13) {
+  }else if (turn >= 8 && turn < 11) {
     flashInterval = 900;
-  } else if (turn >= 14 && turn < 17) {
+  } else if (turn >= 12 && turn < 15) {
     flashInterval = 700;
-  } else if (turn >= 18 && turn < 21) {
+  } else if (turn >= 16 && turn < 19) {
     flashInterval = 500;
-  } else if (turn >= 22 && turn <= maxFlashes) {
+  } else if (turn >= 20 && turn <= maxFlashes) {
     flashInterval = 300;
   }
 }
@@ -214,8 +220,20 @@ function checkAnswer() {
     turnCounter.innerHTML = turn;
     highScore.innerHTML = highestScoreCounter;
     intervalRef = setInterval(gamePlay, flashInterval); //sets speed of note repetition
+    // checkForNewHighScore()
   }
 }
+
+/*function checkForNewHighScore() {
+    if (highestScoreCounter > highScoreStored) {
+        highScoreStored = highestScoreCounter;
+        localStorage.setItem("highScoreStored", highestScoreCounter);
+        console.log(highScoreStored)
+        return true;
+    } else {
+        return false;
+    }
+}*/
 
 // Makes all buttons return to full opacity
 

@@ -88,11 +88,6 @@ Many thanks to [color-hex.com](https://www.color-hex.com/color-palette/93407) an
 #### Backgrounds ####
 The Home screen background image is of the outside of the Haunted Mansion attraction inviting players in to the game.
 The Background of the game is of the iconic Haunted Mansion wallpaper.
-
-#### Avatar images ####
-The avatar images chosen are the four infamous stretching room paintings (or the three hitchhiking ghosts tbc) and will appeal to any fan of the attraction.
-
-![IMAGE OF STRETCH ROOM PORTRAITS](/assets/images/readme/stretchroomportraits.png)
  
 #### Audio files ####
 The notes used in the gameplay are taken from the attractions soundtrack - Grim Grinning Ghosts.  These are A, E, D# and B.
@@ -184,10 +179,17 @@ A simple contact form will be available for any suggest
 
 ### Future Features ###
 
-Difficulty level only on one page with the difficulty increasing over time (time between sound getting quicker).
-Player being able to create an account to log username, chosen avatar and Highest Score.
-Multiplayer setting (versus, one after the other).
-Unlock rewards e.g. play as other characters.
+- Being able to select the speed difficulty level you begin on so you don't always have to start from easy mode if you have completed the game a few times.
+
+- Player being able to create an account to log username, chosen avatar and Highest Score.
+
+The initial avatar images I had thought of are the four infamous stretching room paintings and will appeal to any fan of the attraction.
+
+![IMAGE OF STRETCH ROOM PORTRAITS](/assets/images/readme/stretchroomportraits.png)
+
+- Unlock rewards for e.g after specific highest scores or game played 5, 10, 15 times the reward could be 
+ - play as other characters like the hitchhiking ghosts.
+ - additional music e.g. winning and losing music.
 
 ### Features Left to Implement ###
 

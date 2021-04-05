@@ -6,7 +6,7 @@ let flashCounter;
 let flashInterval = 1500;
 
 let intervalRef;
-let maxFlashes = 15;
+let maxFlashes = 30;
 
 let turn;
 
@@ -90,12 +90,18 @@ function prepareGame() {
 }
 
 function checkForLevelIncrement(turn) {
-  if (turn <= 3) {
+  if (turn <= 5) {
     flashInterval = 1500;
-  } else if (turn >= 4 && turn < 6) {
+  } else if (turn >= 6 && turn < 9) {
+    flashInterval = 1200;
+  }else if (turn >= 10 && turn < 13) {
     flashInterval = 900;
-  } else if (turn >= 6 && turn < 16) {
+  } else if (turn >= 14 && turn < 17) {
+    flashInterval = 700;
+  } else if (turn >= 18 && turn < 21) {
     flashInterval = 500;
+  } else if (turn >= 22 && turn <= maxFlashes) {
+    flashInterval = 300;
   }
 }
 

@@ -1,6 +1,7 @@
 # Welcome Foolish Mortals #
 
-![Welcome Foolish Mortals Homepage](/assets/images/readme/responsive.png)
+![Welcome Foolish Mortals Homepage](/assets/images/readme/responsive-home.png)
+![Welcome Foolish Mortals Gamepage](/assets/images/readme/responsive-game.png)
 ## An Audio memory game ##
 
 Welcome Foolish Mortals is an audio visual Memory game inspired by the popular Disney theme park attraction, [The Haunted Mansion](https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/). 
@@ -9,7 +10,7 @@ Image of game
 
 The target audience for this game is Disney fans, particularly fans of The Haunted Mansion, and fans of memory games.  As the ride can be a little spooky, some of the sounds and images in the game may spook younger players so it is recommended for ages 8+.
 
-### UX ###
+### UX ##
 
 #### Player goals ####
 

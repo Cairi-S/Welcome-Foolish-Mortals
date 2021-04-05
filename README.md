@@ -1,7 +1,9 @@
 # Welcome Foolish Mortals #
 
 ![Welcome Foolish Mortals Homepage](/assets/images/readme/responsive-home.png)
+
 ![Welcome Foolish Mortals Gamepage](/assets/images/readme/responsive-game.png)
+
 ## An Audio memory game ##
 
 Welcome Foolish Mortals is an audio visual Memory game inspired by the popular Disney theme park attraction, [The Haunted Mansion](https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/). 
@@ -196,6 +198,11 @@ The initial avatar images I had thought of are the four infamous stretching room
 
 ### Features Left to Implement ###
 
+- Dashboard to left of game storing:
+1. Username
+2. Avatar
+3. Difficulty Level
+4. Highest Score
 
 
 ### Technologies Used ###

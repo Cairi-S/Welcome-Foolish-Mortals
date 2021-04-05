@@ -1,4 +1,6 @@
 # Welcome Foolish Mortals #
+
+![Welcome Foolish Mortals Homepage](/assets/images/readme/responsive.png)
 ## An Audio memory game ##
 
 Welcome Foolish Mortals is an audio visual Memory game inspired by the popular Disney theme park attraction, [The Haunted Mansion](https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/). 
@@ -235,6 +237,21 @@ AutoPrefixer
 *Solved* - Initially I had the function which controls the speed increase (checkForLevelIncrement()) set to pass in the flashCounter variable, using the flashCounter and calling the function where the flashCounter incremented during the computer play.  As I actually wanted the speed to increase with the turn counter I changed the variable passed in to checkForLevelIncrement() to turn and moved where this was called to after the turn is incremented as part of the checkAnswer() function.  This made the speed increase as expected.  I also checked and ensured that all statements in checkForLevelIncrement() were always going to be true.
 
 ### Deployment ###
+
+This project was developed using [Gitpod](https://www.gitpod.io/), committed to Git and pushed to GitHub using the built in functionality.
+
+**Publishing**
+
+This website was published using GitHub Pages. The procedure is outlined below.
+
+1. Go to the **[GitHub](https://github.com/)** website and log in.
+2. On the top right hand corner **click the dropdown icon** next to your avatar, and **select 'Your repositories'**. 
+3. **Select the appropriate repository** (for this project the repository would be 'Welcome-Foolish-Mortals').
+4. The header of your chosen repository will have a menu of different pages you can select (you automaticall should be on 'Code').  **Click on 'Settings'** located on the far right hand side.
+5. **Scroll down** until you see the heading **'GitHub Pages'**. 
+6. Under the subheading 'Source' there is a **dropdown menu titled 'Branch'** - click on this and **select 'master branch'**. 
+7. The page will reload and you will see the **link of your published page displayed within a green banner** under 'GitHub pages'.  The text will say 'Your site is published at *website*' (in this instance https://cairi-s.github.io/Welcome-Foolish-Mortals/).
+8. **Please note** it can take a few minutes for the site to be published, you must wait until the 'GitHub pages' banner turns green before trying to open the link.
 
 ### Credits ###
 

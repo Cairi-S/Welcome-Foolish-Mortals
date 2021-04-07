@@ -17,8 +17,8 @@ let isMuted = false;
 let hasSequenceMatched;
 let hasPlayerWon;
 
-let highestScoreCounter = 0;
-// let highScoreStored = 0;
+//let highestScoreCounter = 0;
+//let storedHighScore = 0;
 
 // Audio files
 const tealAudio = new Audio("assets/audio/Ashort.mp3");
@@ -55,7 +55,7 @@ function startGame() {
   localStorage.getItem(highScore);
   originalColor();
   prepareGame();
-  //highScore.innerHTML = localStorage.setItem(highScoreStored);
+  setNewHighScore();
 }
 
 // Resets the game clearing sequences, intervals and turns.  Reset button is hidden and start button appears prompting player to restart
@@ -81,8 +81,7 @@ function prepareGame() {
   intervalRef = 0;
   turn = 1;
   turnCounter.innerHTML = 1;
-  highestScoreCounter = 1;
-  highScore.innerHTML = 1;
+  //highestScoreCounter = 1;
   hasSequenceMatched = true;
 
   for (let i = 0; i < maxFlashes; i++) {
@@ -213,27 +212,32 @@ function checkAnswer() {
   if (turn == playerSequence.length && hasSequenceMatched && !hasPlayerWon) {
     turn++;
     checkForLevelIncrement(turn);
-    highestScoreCounter++;
+    //highestScoreCounter++;
     playerSequence = [];
     isComputerTurn = true;
     flashCounter = 0;
     turnCounter.innerHTML = turn;
-    highScore.innerHTML = highestScoreCounter;
     intervalRef = setInterval(gamePlay, flashInterval); //sets speed of note repetition
-    // checkForNewHighScore()
+    
   }
+    checkForNewHighScore();
 }
 
-/*function checkForNewHighScore() {
-    if (highestScoreCounter > highScoreStored) {
-        highScoreStored = highestScoreCounter;
-        localStorage.setItem("highScoreStored", highestScoreCounter);
-        console.log(highScoreStored)
+const updateHighScore = sessionStorage.getItem("newHighScore");
+
+function checkForNewHighScore() {
+    if (turn > highScore.innerHTML) {
+        turn.toString();
+        sessionStorage.setItem("newHighScore", turn);
         return true;
-    } else {
-        return false;
     }
-}*/
+}
+
+function setNewHighScore() {
+    if (turn > highScore.innerHTML) {
+        highScore.innerHTML = updateHighScore;
+    }
+}
 
 // Makes all buttons return to full opacity
 

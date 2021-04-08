@@ -2,7 +2,7 @@
 // Get navbar modal element
 let navbarModal = document.getElementById("ruleModal");
 let winModal = document.getElementById("winModal");
-let loseModal = document.getElementById("loseModal");
+// let loseModal = document.getElementById("loseModal");
 
 // Get button that opens modal
 let openBtn = document.getElementById("modalNav");
@@ -10,7 +10,7 @@ let openBtn = document.getElementById("modalNav");
 // Get buttons that close modals
 let closeBtn = document.getElementsByClassName("closeNavModal")[0];
 let closeWinBtn = document.getElementsByClassName("closeWinModal")[0];
-let closeLoseBtn = document.getElementsByClassName("closeLoseModal")[0];
+// let closeLoseBtn = document.getElementsByClassName("closeLoseModal")[0];
 
 // Event listening for opening click on modal
 openBtn.addEventListener("click", openModal);
@@ -18,7 +18,7 @@ openBtn.addEventListener("click", openModal);
 // Event listening for closing click on modals
 closeBtn.addEventListener("click", closeModal);
 closeWinBtn.addEventListener("click", closeWinModal);
-closeLoseBtn.addEventListener("click", closeLoseModal);
+// closeLoseBtn.addEventListener("click", closeLoseModal);
 
 // Event listening for closing click outside of modal box
 window.addEventListener("click", clickOutsideModal);
@@ -36,11 +36,13 @@ function openModal() {
 
 function winModalTrigger() {
     winModal.style.display = "block";
+    endTurn.innerHTML = turn;
+    setNewHighScore();
 }
 
-function loseModalTrigger() {
+/*function loseModalTrigger() {
     loseModal.style.display = "block";
-}
+}*/
 
 // Function for closing modals
 function closeModal() {
@@ -51,9 +53,9 @@ function closeWinModal() {
     winModal.style.display = "none";
 }
 
-function closeLoseModal() {
+/*function closeLoseModal() {
     loseModal.style.display = "none";
-}
+}*/
 
 // Function for closing click outside of modal box
 function clickOutsideModal(event) {
@@ -63,7 +65,7 @@ function clickOutsideModal(event) {
   if (event.target == winModal) {
     winModal.style.display = "none";
   }
-  if (event.target == loseModal) {
+  /*if (event.target == loseModal) {
     loseModal.style.display = "none";
-  }
+  }*/
 }

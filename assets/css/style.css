@@ -165,17 +165,21 @@ Navbar Modal
 
 .rule-content,
 .win-content {
-    background-color: rgba(4, 0, 0, 0.8);
+    background-color: rgba(4, 0, 0, 0.9);
+    border: 2px solid #ededef;
+    border-radius: 25px;
     color: #ededef;
     margin: 10% auto;
     padding: 20px;
-    width: 60%;
+    width: 64%;
+    height: 70%;
     animation-name: homeModalOpen;
     animation-duration: 1s;
 }
 
-.rules-reminder-header,
+.rules-reminder-header h3,
 .win-header {
+    margin-top: 40px;
     font-family: "Cormorant Upright", sans-serif;
     font-size: 50px;
     color: #6c53a4;
@@ -185,8 +189,9 @@ Navbar Modal
 .rules-reminder-body,
 .win-body,
 .win-body a {
+    padding: 30px 0 30px 0;
     font-family: "Pathway Gothic One", sans-serif;
-    font-size: 20px;
+    font-size: 26px;
     color: #edeffb;
     text-align: center;
 }
@@ -200,7 +205,7 @@ Navbar Modal
     text-underline-position: under;
 }
 
-.rules-reminder-footer,
+.rules-reminder-footer p,
 .rules-reminder-footer a,
 .win-footer {
     font-family: "Pathway Gothic One", sans-serif;

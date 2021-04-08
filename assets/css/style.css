@@ -418,18 +418,36 @@ Modal animations
 
 /* ------------ Sizing game buttons at different media device breakpoints */
 
+/*---------------------------Laptop and iPad Pro */
+
 @media (min-width: 900px) and (max-width: 1024px) {
+    .menu {
+        margin-top: 20px;
+    }
+    #modalNav {
+        margin: 0 12px 0 12px;
+    }
     .btn-group-lg > .btn,
 .btn-lg {
     padding: 72px 160px 72px 120px;
 }
 }
 
+/*---------------------------iPad */
 @media (min-width: 768px) and (max-width: 900px) {
+   .menu {
+        margin-top: 20px;
+    }
+    #modalNav {
+        margin: 0 12px 0 12px;
+    }
+    .title {
+        font-size: 46px;
+    }
     .btn-group-lg > .btn,
-.btn-lg {
-    padding: 72px 120px;
-}
+    .btn-lg {
+        padding: 72px 120px;
+    }
 }
 
 @media (min-width: 668px) and (max-width: 768px) {
@@ -460,15 +478,35 @@ Modal animations
 }
 }
 
-
+/*---------------------------Moto G4, Galaxy S5, Pixel 2/XL, iPhone 6/7/8/+
+Plus/X  */
 @media (min-width: 360px) and (max-width: 480px) {
+    .menu {
+        margin-top: 20px;
+    }
+    #modalNav {
+        margin: 0 12px 0 12px;
+    }
+    .title {
+        font-size: 34px;
+    }
     .btn-group-lg > .btn,
-.btn-lg {
-    padding: 52px;
-}
+    .btn-lg {
+        padding: 52px;
+    }
 }
 
+/*---------------------------iPhone 5/SE  */
 @media (min-width: 320px) and (max-width: 360px) {
+    .menu {
+        margin-top: 20px;
+    }
+    #modalNav {
+        margin: 0 12px 0 12px;
+    }
+    .title {
+        font-size: 30px;
+    }
     .btn-group-lg > .btn,
     .btn-lg {
         padding: 46px;
@@ -476,7 +514,7 @@ Modal animations
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-    .highscore,
+    .gameLevel,
     .turns {
         margin: 0;
     }

@@ -34,9 +34,8 @@
                                     <h3>Don't loose your head, the rules are...</h3>
                                 </div>
                                 <div class="rules-reminder-body">
-                                    <p><a href="game.html">Easy</a> 4 seconds between beeps.</p>
-                                    <p><a href="#">Medium</a> 2 seconds between beeps.</p>
-                                    <p><a href="#">Hard</a> 1 second between beeps.</p>
+                                    <p class="home-text">Follow the flashing buttons as the speed increases at a <i>frightening</i> speed</p>
+                                    <p class="home-text">Think you can keep up?</p>
                                 </div>
                                 <div class="rules-reminder-footer">
                                     <p>This game has taken inspiration from the Disney attraction <a href="https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/">The Haunted Mansion </a></p>
@@ -55,7 +54,7 @@
                 <!--Gameboard-->
                 <div class="row g-0">
                     <div class="col-md-6 d-flex justify-content-center">
-                        <h4 class="highscore">Highest Score:<span id="highScore"> 0 </span></h4>
+                        <h4 class="gameLevel">Level:<span id="level"> Easy </span></h4>
                     </div>
                     <div class="col-md-6 d-flex justify-content-center">
                         <h4 class="turns">Turn Counter:<span id="turnsTaken"> - </span></h4>
@@ -85,7 +84,7 @@
                 </div>
 
 
-                <!-- Winning and Losing modals for game end-->
+                <!-- Winning and Final modals for game end-->
                 <div id="winModal" class="nav-modal">
                     <div class="win-content">
                         <div class="win-header">
@@ -93,31 +92,17 @@
                             <h3>You did frightfully well!</h3>
                         </div>
                         <div class="win-body">
-                            <p>The happy haunts shreik in ghoulish delight.</p>
-                            <p>Why not <a href="game.html"> play again</a></p>
+                            <p>Your score is:</p>
+                            <p id="endTurn"> - </p>
+                            <p>The highest score is:</p>
+                            <p id="highScore"> 0 </p>
                         </div>
                         <div class="win-footer">
-                            <p>Hurry back...hurry back...</p>
+                            <p>Hurry back...hurry back...and <a href="game.html"> play again</a></p>
                         </div>
                     </div>
                 </div>
-
-                <div id="loseModal" class="nav-modal">
-                    <div class="lose-content">
-                        <div class="lose-header">
-                            <span class="closeLoseModal">&times;</span>
-                            <h3>You're loosing your head</h3>
-                        </div>
-                        <div class="lose-body">
-                            <p>The happy haunts sense your sympathetic vibrations.</p>
-                            <p>Why not <a href="game.html"> try again</a></p>
-                        </div>
-                        <div class="lose-footer">
-                            <p>Hurry back...hurry back...</p>
-                        </div>
-                    </div>
-                </div>
-            
+        
             </div>
         </section>
 
@@ -132,9 +117,7 @@
                     <p>This game has taken inspiration from the Disney attraction <a href="https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/">The Haunted Mansion.</a></p>
                     <p>All images are used for education purposes only and are owned by <a href="https://thewaltdisneycompany.com/">The Walt Disney Company.</a></p>
                 </div>
-                <!--<div class="col-md-4 contact-link d-flex justify-content-end">
-                    <i class="fas fa-comment"></i>
-                </div>-->
+                
             </div>
         </footer>
 

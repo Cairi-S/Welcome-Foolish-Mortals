@@ -17,8 +17,7 @@ let isMuted = false;
 let hasSequenceMatched;
 let hasPlayerWon;
 
-//let highestScoreCounter = 0;
-//let storedHighScore = 0;
+let highestScoreCounter = 0;
 
 // Audio files
 const tealAudio = new Audio("assets/audio/Ashort.mp3");
@@ -36,6 +35,8 @@ const audioFileArray = [tealAudio, whiteAudio, purpleAudio, greyAudio];
 const startButton = document.querySelector("#startBtn");
 const resetButton = document.querySelector("#resetBtn");
 const turnCounter = document.querySelector("#turnsTaken");
+const gameLevel = document.querySelector("#level");
+const endTurn = document.querySelector("#endTurn");
 const highScore = document.querySelector("#highScore");
 
 // Toggle mute icon on and off
@@ -52,10 +53,8 @@ function startGame() {
   startButton.classList.add("hide-content");
   resetButton.classList.remove("hide-content");
   $("#turnsTaken").text("0");
-  localStorage.getItem(highScore);
   originalColor();
   prepareGame();
-  setNewHighScore();
 }
 
 // Resets the game clearing sequences, intervals and turns.  Reset button is hidden and start button appears prompting player to restart
@@ -81,7 +80,7 @@ function prepareGame() {
   intervalRef = 0;
   turn = 1;
   turnCounter.innerHTML = 1;
-  //highestScoreCounter = 1;
+  highestScoreCounter = 1;
   hasSequenceMatched = true;
 
   for (let i = 0; i < maxFlashes; i++) {
@@ -97,16 +96,19 @@ function prepareGame() {
 function checkForLevelIncrement(turn) {
   if (turn <= 3) {
     flashInterval = 1500;
+    $("#level").text("Easy");
   } else if (turn >= 4 && turn < 7) {
     flashInterval = 1200;
+    $("#level").text("Easy");
   }else if (turn >= 8 && turn < 11) {
     flashInterval = 900;
+    $("#level").text("Medium");
   } else if (turn >= 12 && turn < 15) {
     flashInterval = 700;
+    $("#level").text("Hard");
   } else if (turn >= 16 && turn < 19) {
     flashInterval = 500;
-  } else if (turn >= 20 && turn <= maxFlashes) {
-    flashInterval = 300;
+    $("#level").text("Feindish!");
   }
 }
 
@@ -205,14 +207,15 @@ function checkAnswer() {
 
     isMuted = true;
     
-    loseModalTrigger();
+    winModalTrigger();
+
   }
 
   // If the player is correct in their sequence but has not met the win criteria
   if (turn == playerSequence.length && hasSequenceMatched && !hasPlayerWon) {
     turn++;
     checkForLevelIncrement(turn);
-    //highestScoreCounter++;
+    highestScoreCounter++;
     playerSequence = [];
     isComputerTurn = true;
     flashCounter = 0;
@@ -220,6 +223,7 @@ function checkAnswer() {
     intervalRef = setInterval(gamePlay, flashInterval); //sets speed of note repetition
     
   }
+    
     checkForNewHighScore();
 }
 
@@ -227,6 +231,7 @@ const updateHighScore = sessionStorage.getItem("newHighScore");
 
 function checkForNewHighScore() {
     if (turn > highScore.innerHTML) {
+        highScore.innerHTML = highestScoreCounter;
         turn.toString();
         sessionStorage.setItem("newHighScore", turn);
         return true;

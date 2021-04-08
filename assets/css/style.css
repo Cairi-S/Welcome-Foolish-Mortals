@@ -286,75 +286,20 @@ section {
     text-align: center;
 }
 
-.character-selection {
-    justify-content: space-evenly;
-}
-
-/*----------
-Levels - Dashboard
-----------*/
-
-.dashboard {
-    position: fixed;
-    left: 0;
-    bottom: 60px;
-    top: 100px;
-    z-index: 100;
-    padding: 20px 0 0 10px;
-    background-color: rgba(4, 0, 0, 0.5);
-}
-
-.left-dashboard {
-    position: sticky;
-    top: 0;
-    height: calc(100vh - 195px);
-}
-
-.dashboard-headers {
-    font-family: "Pathway Gothic One", sans-serif;
-    font-size: 30px;
-    color: #ededef;
-    text-align: center;
-}
-
-.dash-pad {
-    padding-bottom: 20px;
-}
-
-.dashboard-difficulty {
-    font-family: "Pathway Gothic One", sans-serif;
-    font-size: 20px;
-    color: #494747;
-}
-
-.active {
-    color: #ededef;
-}
-
-.db-hs {
-    margin-top: 62px;
-}
-
-.dashboard-score {
-    font-family: "Pathway Gothic One", sans-serif;
-    font-size: 20px;
-    color: #ededef;
-    text-align: center;
-}
 
 /*----------
 Levels - Gameboard
 ----------*/
 
 .turns,
-.highscore {
+.gameLevel {
     padding: 20px 0 0 0;
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 30px;
     color: #ededef;
 }
 
-.highscore {
+.gameLevel {
     margin-left: 56px;
 }
 

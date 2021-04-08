@@ -134,19 +134,13 @@ Footer
     color: #ededef;
 }
 
-.contact-link i {
-    margin-right: 48px;
-    font-size: 32px;
-    color: #edeffb;
-}
-
 /*----------
 Hover functionality
 ----------*/
 
 .site-title:hover,
 .menu i:hover,
-.contact-link i:hover {
+.enter-game:hover {
     color: #6c53a4;
 }
 
@@ -157,8 +151,7 @@ Navbar Modal
 /*With thanks to Traversy Media for their guide to creating modals*/
 
 .nav-modal,
-.win-modal ,
-.lose-modal {
+.win-modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -171,8 +164,7 @@ Navbar Modal
 }
 
 .rule-content,
-.win-content,
-.lose-content {
+.win-content {
     background-color: rgba(4, 0, 0, 0.8);
     color: #ededef;
     margin: 10% auto;
@@ -183,8 +175,7 @@ Navbar Modal
 }
 
 .rules-reminder-header,
-.win-header,
-.lose-header {
+.win-header {
     font-family: "Cormorant Upright", sans-serif;
     font-size: 50px;
     color: #6c53a4;
@@ -193,9 +184,7 @@ Navbar Modal
 
 .rules-reminder-body,
 .win-body,
-.win-body a,
-.lose-body,
-.lose-body a {
+.win-body a {
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 20px;
     color: #edeffb;
@@ -213,8 +202,7 @@ Navbar Modal
 
 .rules-reminder-footer,
 .rules-reminder-footer a,
-.win-footer,
-.lose-footer {
+.win-footer {
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 20px;
     color: #edeffb;
@@ -222,8 +210,7 @@ Navbar Modal
 }
 
 .closeNavModal,
-.closeWinModal,
-.closeLoseModal {
+.closeWinModal {
     color: #ededef;
     float: right;
     font-size: 52px;
@@ -232,9 +219,7 @@ Navbar Modal
 .closeNavModal:hover,
 .closeNavModal:focus,
 .closeWinModal:hover,
-.closeWinModal:focus,
-.closeLoseModal:hover,
-.closeLoseModal:focus {
+.closeWinModal:focus {
     color: #6c53a4;
     text-decoration: none;
     cursor: pointer;
@@ -259,6 +244,7 @@ section {
 }
 
 .title {
+    margin-top: 16px;
     font-family: "Cormorant Upright", sans-serif;
     font-size: 50px;
     color: #6c53a4;
@@ -266,7 +252,8 @@ section {
 }
 
 .rules,
-.level h4 {
+.level h4,
+.enter-game {
     margin-top: 16px;
     font-family: "Cormorant Upright", sans-serif;
     font-size: 30px;
@@ -274,8 +261,12 @@ section {
     text-align: center;
 }
 
-.level h4 {
-    text-decoration: underline;
+.enter-game {
+    margin: 16px 0;
+    font-family: "Cormorant Upright", sans-serif;
+    font-size: 30px;
+    color: #edeffb;
+    text-align: center;
     text-underline-position: under;
 }
 

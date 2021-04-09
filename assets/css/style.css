@@ -132,7 +132,7 @@ Navbar Modal
     border-radius: 25px;
     color: #ededef;
     margin: 10% auto;
-    padding: 20px;
+    padding: 0 20px;
     width: 64%;
     height: 70%;
     animation-name: homeModalOpen;
@@ -150,8 +150,9 @@ Navbar Modal
 
 .rules-reminder-body,
 .win-body,
-.win-body a {
-    padding: 30px 0 30px 0;
+.win-body a,
+.win-footer a {
+    padding-top: 20px;
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 26px;
     color: #edeffb;

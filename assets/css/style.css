@@ -178,7 +178,7 @@ Navbar Modal
 }
 
 .closeNavModal,
-.closeWinModal {
+.closeScoreModal {
     color: #ededef;
     float: right;
     font-size: 52px;
@@ -186,8 +186,8 @@ Navbar Modal
 
 .closeNavModal:hover,
 .closeNavModal:focus,
-.closeWinModal:hover,
-.closeWinModal:focus {
+.closeScoreModal:hover,
+.closeScoreModal:focus {
     color: #6c53a4;
     text-decoration: none;
     cursor: pointer;
@@ -496,7 +496,7 @@ Plus/X  */
         padding: 52px;
     }
 
-    .closeWinModal {
+    .closeScoreModal {
         font-size: 46px;
     }
 
@@ -526,7 +526,7 @@ Plus/X  */
         padding: 46px;
     }
 
-    .closeWinModal {
+    .closeScoreModal {
         font-size: 46px;
     }
 

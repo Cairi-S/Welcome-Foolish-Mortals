@@ -68,7 +68,7 @@ All fonts are provided by [Google fonts](https://fonts.google.com/).
 
 #### Icons ####
 
-The favicon taken from [favicon.io](https://favicon.io/emoji-favicons/ghost/) and the open source project [Twemoji](https://twemoji.twitter.com/).
+The favicon is taken from [favicon.io](https://favicon.io/emoji-favicons/ghost/) and the open source project [Twemoji](https://twemoji.twitter.com/).
 
 All other icons are provided by [Font Awesome](https://fontawesome.com/).  These icons have been chosen as they are easy to recognise and are widely understood.
 
@@ -102,8 +102,12 @@ The notes used in the gameplay are taken from the attractions soundtrack - Grim 
 The Wireframes for this project were created during the planning and design phase using [Balsamiq](https://balsamiq.com/).
 
 - WIREFRAME HOME
-- WIREFRAME EASY/MED/HARD
-- CONTACT PAGE
+
+![Welcome Foolish Mortals Wireframe Homepage](/assets/images/readme/homepage-wireframe.png)
+
+- WIREFRAME GAMEPAGE
+
+![Welcome Foolish Mortals Wireframe Gamepage](/assets/images/readme/gamepage-wireframe.png)
 
 ### Features ###
 

@@ -452,7 +452,7 @@ Plus/X  */
         margin: 0 12px 0 12px;
     }
     .title {
-        font-size: 34px;
+        font-size: 30px;
     }
     .btn-group-lg > .btn,
     .btn-lg {
@@ -469,8 +469,8 @@ Plus/X  */
         margin: 0 12px 0 12px;
     }
     .title {
-        font-size: 30px;
-    }
+    font-size: 26px;
+}
     .btn-group-lg > .btn,
     .btn-lg {
         padding: 46px;

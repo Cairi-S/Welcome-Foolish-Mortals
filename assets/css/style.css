@@ -387,6 +387,13 @@ Modal animations
 
 /*---------------------------Laptop and iPad Pro */
 
+@media (max-width: 1024px) and (orientation: portrait) {
+    .turns,
+    .gameLevel {
+        padding-top: 260px;
+    }
+  }
+
 @media (min-width: 900px) and (max-width: 1024px) {
     .menu {
         margin-top: 20px;
@@ -433,6 +440,8 @@ Modal animations
 }
 }
 
+
+/*---------------------------Breakpoints while reducing monitor size on laptop */
 @media (min-width: 668px) and (max-width: 768px) {
     .btn-group-lg > .btn,
 .btn-lg {
@@ -486,6 +495,16 @@ Plus/X  */
     .btn-lg {
         padding: 52px;
     }
+
+    .closeWinModal {
+        font-size: 46px;
+    }
+
+    .win-body,
+    .win-footer a,
+    .win-footer {
+        font-size: 18px;
+    }
 }
 
 /*---------------------------iPhone 5/SE  */
@@ -505,6 +524,19 @@ Plus/X  */
     .btn-group-lg > .btn,
     .btn-lg {
         padding: 46px;
+    }
+
+    .closeWinModal {
+        font-size: 46px;
+    }
+
+    .win-content{
+        height: 80%;
+    }
+    .win-body,
+    .win-footer a,
+    .win-footer {
+        font-size: 18px;
     }
 }
 

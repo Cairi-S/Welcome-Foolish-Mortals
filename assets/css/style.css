@@ -390,7 +390,6 @@ Modal animations
     .menu {
         margin-top: 20px;
     }
-    
     .menu i {
     font-size: 40px;
     }
@@ -398,7 +397,7 @@ Modal animations
         margin: 0 12px 0 12px;
     }
     .site-title{
-        font-size: 34px;
+        font-size: 54px;
     }
     .btn-group-lg > .btn,
 .btn-lg {
@@ -427,6 +426,10 @@ Modal animations
     .btn-lg {
         padding: 72px 120px;
     }
+    .gameLevel,
+.turns {
+    padding-top: 120px;
+}
 }
 
 @media (min-width: 668px) and (max-width: 768px) {

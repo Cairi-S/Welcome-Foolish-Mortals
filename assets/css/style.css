@@ -50,7 +50,8 @@ Header
     padding: 0;
 }
 
-.menu i {
+.menu i,
+.gamepage-menu i {
     margin-right: 40px;
     font-size: 32px;
     color: #edeffb;
@@ -354,7 +355,8 @@ Modal animations
     justify-content: center!important;
 }
 
-.menu i {
+.menu i,
+.gamepage-menu i {
     font-size: 26px;
     margin: 0;
 }
@@ -395,6 +397,9 @@ Modal animations
     #modalNav {
         margin: 0 12px 0 12px;
     }
+    .site-title{
+        font-size: 34px;
+    }
     .btn-group-lg > .btn,
 .btn-lg {
     padding: 72px 160px 72px 120px;
@@ -414,6 +419,9 @@ Modal animations
     }
     .title {
         font-size: 46px;
+    }
+    .site-title{
+        font-size: 34px;
     }
     .btn-group-lg > .btn,
     .btn-lg {
@@ -461,6 +469,9 @@ Plus/X  */
     .menu {
         margin-top: 20px;
     }
+    .gamepage-menu {
+        margin-top: 0;
+    }
     #modalNav {
         margin: 0 12px 0 12px;
     }
@@ -477,6 +488,9 @@ Plus/X  */
 @media (min-width: 320px) and (max-width: 360px) {
     .menu {
         margin-top: 20px;
+    }
+    .gamepage-menu {
+        margin-top: 0;
     }
     #modalNav {
         margin: 0 12px 0 12px;

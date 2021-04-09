@@ -31,6 +31,8 @@ greyAudio.muted = false;
 
 const audioFileArray = [tealAudio, whiteAudio, purpleAudio, greyAudio];
 
+
+
 // Gets different html elements
 const startButton = document.querySelector("#startBtn");
 const resetButton = document.querySelector("#resetBtn");
@@ -115,6 +117,7 @@ function checkForLevelIncrement(turn) {
 // Checks whether it's the players turn or computer turn
 function gamePlay() {
   isPlayerTurn = false;
+  $('.btn-lg').css('cursor', 'pointer');
 
   // When the number of flashes is equal to number of turns the interval cleared the computers turn is over and the game is set for the user to play
   if (flashCounter === turn) {
@@ -127,6 +130,7 @@ function gamePlay() {
   // If it is the computers turn a time is set for the flashes
   if (isComputerTurn) {
     isPlayerTurn = false;
+    $('.btn-lg').css('cursor', 'not-allowed');
     originalColor();
     setTimeout(() => {
       // Links the sequence numbers to the buttons, answering functions below

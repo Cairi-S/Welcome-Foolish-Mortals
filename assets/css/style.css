@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Pathway+Gothic+One&display=swap");
 
+p {
+    margin: 0;
+}
+
 /*----------
 Images
 ----------*/
@@ -63,7 +67,7 @@ Footer
 
 #footer {
     height: 60px;
-    margin: 0 0 4px;
+    margin: 0;
     line-height: 0;
     padding-top: 16px;
     background-color: rgba(4, 0, 0, 0.5);
@@ -71,8 +75,7 @@ Footer
 
 .inspiration-text p {
     display: block;
-    margin-bottom: 10px;
-    padding: 0 0 10px 14px;
+    padding: 2px 0 10px 14px;
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 12px;
     color: #ededef;
@@ -469,6 +472,11 @@ Modal animations
     #modalNav {
         margin: 0 12px 0 12px;
     }
+
+    .turns,
+    .gameLevel {
+        padding-top: 10px;
+    }
     
     .btn-group-lg > .btn,
 .btn-lg {
@@ -490,6 +498,11 @@ Plus/X  */
     }
     .title {
         font-size: 30px;
+    }
+
+    .turns,
+    .gameLevel {
+        padding-top: 10px;
     }
     .btn-group-lg > .btn,
     .btn-lg {
@@ -520,7 +533,13 @@ Plus/X  */
     }
     .title {
     font-size: 26px;
-}
+    }
+
+    .turns,
+    .gameLevel {
+        padding-top: 10px;
+    }
+
     .btn-group-lg > .btn,
     .btn-lg {
         padding: 46px;

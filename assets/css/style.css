@@ -8,6 +8,7 @@ Images
     background-image: url(../images/hero-hm.jpeg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     min-height: 100vh;
 }
@@ -18,46 +19,6 @@ Images
     background-size: cover;
     width: 100%;
     min-height: 100vh;
-}
-
-.quicksand-men {
-    background-image: url(../images/character-quicksand.jpeg);
-    background-position: center;
-    background-size: cover;
-    height: 386px;
-    width: 115px;
-}
-
-.tightrope-walker {
-    background-image: url(../images/character-tightrope.jpeg);
-    background-position: center;
-    background-size: cover;
-    height: 386px;
-    width: 115px;
-}
-
-.dynamite-man {
-    background-image: url(../images/character-dynamite.png);
-    background-position: center;
-    background-size: cover;
-    height: 386px;
-    width: 115px;
-}
-
-.widow-tombstone {
-    background-image: url(../images/character-widow.jpeg);
-    background-position: center;
-    background-size: cover;
-    height: 386px;
-    width: 115px;
-}
-
-.imgPlaceholder {
-    background-image: url(../images/character-tightrope.jpeg);
-    background-position: center;
-    background-size: contain;
-    height: 168px;
-    width: auto;
 }
 
 /*----------
@@ -101,7 +62,7 @@ Footer
 
 #footer {
     height: 60px;
-    margin: 0;
+    margin: 0 0 4px;
     line-height: 0;
     padding-top: 16px;
     background-color: rgba(4, 0, 0, 0.5);
@@ -239,9 +200,7 @@ section {
 }
 
 .home-text-container {
-    /*--if readding character selection no width margin top 162px*/
     width: 60%;
-    margin-top: 60px;
     margin-bottom: 30px;
     background-color: rgba(4, 0, 0, 0.8);
     border: 2px solid #ededef;

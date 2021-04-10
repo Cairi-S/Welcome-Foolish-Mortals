@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Pathway+Gothic+One&display=swap");
 
 p,
@@ -139,8 +146,10 @@ Navbar Modal
     padding: 0 20px;
     width: 64%;
     height: 70%;
-    animation-name: homeModalOpen;
-    animation-duration: 1s;
+    -webkit-animation-name: homeModalOpen;
+            animation-name: homeModalOpen;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
 }
 
 .rules-reminder-header h3,
@@ -324,6 +333,15 @@ Levels - Gameboard
 Modal animations
 ----------*/
 
+@-webkit-keyframes homeModalOpen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes homeModalOpen {
     from {
         opacity: 0;
@@ -344,12 +362,19 @@ Modal animations
 }
 
 .navbar {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
@@ -361,7 +386,9 @@ Modal animations
 }
 
 .navbar-collapse {
-    justify-content: center!important;
+    -webkit-box-pack: center!important;
+        -ms-flex-pack: center!important;
+            justify-content: center!important;
 }
 
 .menu i,
@@ -384,9 +411,16 @@ Modal animations
 
 .copyright-info,
 .copyright-info span {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
 }
 }
@@ -482,6 +516,11 @@ Modal animations
         font-size: 34px;
     }
 
+    .rule-content, .win-content {
+        margin: 18% auto 2%;
+         height: 74%;
+    }
+
     .rules-reminder-header h3, .win-header {
         margin-top: 20px;
         font-size: 34px;
@@ -526,6 +565,11 @@ Plus/X  */
 
     .closeNavModal {
         font-size: 34px;
+    }
+
+    .rule-content, .win-content {
+        margin: 28% auto 2%;
+         height: 74%;
     }
 
     .rules-reminder-header h3, .win-header {
@@ -575,6 +619,11 @@ Plus/X  */
     }
     .title {
     font-size: 26px;
+    }
+
+    .rule-content, .win-content {
+        margin: 28% auto 2%;
+         height: 74%;
     }
 
     .closeNavModal {

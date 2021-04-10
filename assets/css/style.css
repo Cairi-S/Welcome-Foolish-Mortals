@@ -134,7 +134,7 @@ Navbar Modal
     border: 2px solid #ededef;
     border-radius: 25px;
     color: #ededef;
-    margin: 10% auto;
+    margin: 6% auto;
     padding: 0 20px;
     width: 64%;
     height: 70%;
@@ -155,7 +155,7 @@ Navbar Modal
 .win-body,
 .win-body a,
 .win-footer a {
-    padding-top: 20px;
+    padding-top: 60px;
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 26px;
     color: #edeffb;
@@ -169,6 +169,10 @@ Navbar Modal
     text-align: center;
     text-decoration: underline;
     text-underline-position: under;
+}
+
+.rules-reminder-footer {
+    padding-top: 60px;
 }
 
 .rules-reminder-footer p,

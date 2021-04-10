@@ -49,6 +49,12 @@ $("#toggleMute").click(function () {
   });
 });
 
+//Event listening for click on start button
+startButton.addEventListener("click", startGame);
+
+//Event listening for click on reset button
+resetButton.addEventListener("click", resetGame);
+
 
 // Starts the game when start button is pressed, it changes button color, the number in the turn counter and hiding the start button on click
 function startGame() {
@@ -98,22 +104,22 @@ function prepareGame() {
 function checkForLevelIncrement(turn) {
   if (turn <= 1) {
     flashInterval = 1500;
-    $("#level").text("Easy");
+    $("#level").text(" Easy");
   } else if (turn >= 2 && turn < 3) {
-    flashInterval = 1200;
-    $("#level").text("Easy");
+    flashInterval = 1000;
+    $("#level").text(" Easy");
   }else if (turn >= 4 && turn < 5) {
     flashInterval = 900;
-    $("#level").text("Medium");
+    $("#level").text(" Medium");
   } else if (turn >= 6 && turn < 7) {
     flashInterval = 700;
-    $("#level").text("Hard");
+    $("#level").text(" Medium");
   } else if (turn >= 8 && turn < 9) {
     flashInterval = 500;
-    $("#level").text("Feindish!");
+    $("#level").text(" Hard!");
   } else if (turn >= 10 && turn < maxFlashes) {
     flashInterval = 400;
-    $("#level").text("Feindish!");
+    $("#level").text(" Feindish!");
   }
 
   /*if (turn <= 2) {

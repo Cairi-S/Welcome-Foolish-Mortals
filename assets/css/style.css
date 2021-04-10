@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Pathway+Gothic+One&display=swap");
 
-p {
+p,
+h5 {
     margin: 0;
 }
 
@@ -477,6 +478,24 @@ Modal animations
         margin: 0 12px 0 12px;
     }
 
+    .closeNavModal {
+        font-size: 34px;
+    }
+
+    .rules-reminder-header h3, .win-header {
+        margin-top: 20px;
+        font-size: 34px;
+    }
+    .rules-reminder-body, .rules-reminder-footer, .win-body, .win-body a, .win-footer a {
+        padding-top: 30px;
+        font-size: 20px;
+    }
+
+    .rules-reminder-footer p,
+    .rules-reminder-footer a {
+        font-size: 14px;
+    }
+
     .turns,
     .gameLevel {
         padding-top: 10px;
@@ -491,17 +510,36 @@ Modal animations
 /*---------------------------Moto G4, Galaxy S5, Pixel 2/XL, iPhone 6/7/8/+
 Plus/X  */
 @media (min-width: 360px) and (max-width: 480px) {
+    /*----Navbars--*/
     .menu {
         margin-top: 20px;
     }
     .gamepage-menu {
         margin-top: 0;
     }
-    #modalNav {
-        margin: 0 12px 0 12px;
-    }
     .title {
         font-size: 30px;
+    }
+    #modalNav {
+        margin: 0 0 0 12px;
+    }
+
+    .closeNavModal {
+        font-size: 34px;
+    }
+
+    .rules-reminder-header h3, .win-header {
+        margin-top: 20px;
+        font-size: 34px;
+    }
+    .rules-reminder-body, .rules-reminder-footer, .win-body, .win-body a, .win-footer a {
+        padding-top: 30px;
+        font-size: 20px;
+    }
+
+    .rules-reminder-footer p,
+    .rules-reminder-footer a {
+        font-size: 14px;
     }
 
     .turns,
@@ -537,6 +575,24 @@ Plus/X  */
     }
     .title {
     font-size: 26px;
+    }
+
+    .closeNavModal {
+        font-size: 34px;
+    }
+
+    .rules-reminder-header h3, .win-header {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .rules-reminder-body, .rules-reminder-footer, .win-body, .win-body a, .win-footer a {
+        padding-top: 30px;
+        font-size: 18px;
+    }
+
+    .rules-reminder-footer p,
+    .rules-reminder-footer a {
+        font-size: 12px;
     }
 
     .turns,

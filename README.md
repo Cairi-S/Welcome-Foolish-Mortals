@@ -235,7 +235,7 @@ FAVICON
 
 HOME PAGE
 
-Navigation Bar
+*Navigation Bar*
 
 - Hover over navigation icons and ensure there is no discernable change other than the pointer turning to a hand and the icons changing color.
 
@@ -245,7 +245,7 @@ Navigation Bar
 
 - Change the screen size to mobile device to verify that the navigation bar is responsive and switches position from the right of screen to center screen at the appropriate breakpoints.
 
-Navigation bar modal (Rules modal)
+*Navigation bar modal (Rules modal)*
 
 - Click the question mark icon and ensure the rules modal loads.
 
@@ -261,11 +261,11 @@ Navigation bar modal (Rules modal)
 
 - Reduce screen size to various mobile device to verify that the modal is responsive and the modal size and inner text responds appropriately at the relevant breakpoints.
 
-Hero image
+*Hero image*
 
 - Reduce and expand width of window to confirm that the image height and width respond correctly with no horizontal scroll.
 
-Body Text
+*Body Text*
 
 - Reduce and expand width of window to confirm that the dimension of the text box respond appropriately and that the inner text size changes in an approprite manner.
 
@@ -273,7 +273,7 @@ Body Text
 
 - Click on the word 'Enter' to ensure navigation to game.html.
 
-Footer
+*Footer*
 
 - Reduce and expand width of window to confirm that:
   - The Copyright logo and text stays centered on all screen sizes.
@@ -281,30 +281,45 @@ Footer
 
 - Click on links for 'The Haunted Mansion' and 'The Walt Disney Company', ensuring they open to the appropriate web pages in a separate tab.
 
-- Reduce screen size to various mobile device to verify that the modal is responsive and the modal size and inner text responds appropriately at the relevant breakpoints.
-
 GAME PAGE
 
-Logo
+*Logo*
 
 - Hover over logo and ensure there is no discernable change to the logo other than the pointer turning to a hand and the text changing color.
 
 - Click logo and ensure it links to the Home page.
 
-Navigation Bar
+*Navigation Bar*
 
 - Repeated steps listed above.
 
 - Click on the mute sound icon and check it toggles between sound on and off icons.
 
+- Start game and click the sound icon to ensure the sound toggles on and off as icon is pressed.
+
 - Expand and reduce screen size to make sure the logo and navbar become centered and stack at the appropriate breakpoints.
 
+*Hero image*
+
+- Reduce and expand width of window to confirm that the image height and width respond correctly with no horizontal scroll.
+
+*Gameplay area*
+
+- Reduce and expand width of window to confirm that all elements respond appropriately, remain centered and the the level and turn counter stack at the appropriate breakpoints.
+
+- Hover over the start button to make sure that the button opacity changes and that the pointer changes to the hand icon.
+
+- Click the start button to make sure that the button toggles to the reset button but the positioning remains the same.
+
+- Hover over the reset button to make sure that the button opacity changes and that the pointer changes to the hand icon.
+
+- Click the reset button to make sure that the button toggles to the start button but the positioning remains the same.
+
+*Footer*
+
+- Repeated steps listed above.
 
 ### Bugs ###
-
-- When creating the dashboard the text continued to scroll despite position being fixed.  
-
-*Solved* - I tested various methods using [css-tricks.com](https://css-tricks.com/couple-takes-sticky-footer/).  From this article the suggestion that worked best for me was setting the height of the section element calc(100vh - x) which caused content to remain stationary.
 
 - Linking audio files to buttons - initially when I added my audio to the html document when the JavaScript file was not able to set the audio to play without using visible audio controls which would not provide good UX for the game. 
 

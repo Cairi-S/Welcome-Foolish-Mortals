@@ -243,7 +243,7 @@ Navigation Bar
 
 - Clicking the question mark icon and ensure it loads the rules modal.
 
-- Change the screen size to mobile device to verify that the navigation bar is responsive and switches position from the right of screen to center screen at the appropriate breakpoint.
+- Change the screen size to mobile device to verify that the navigation bar is responsive and switches position from the right of screen to center screen at the appropriate breakpoints.
 
 Navigation bar modal (Rules modal)
 
@@ -282,6 +282,23 @@ Footer
 - Click on links for 'The Haunted Mansion' and 'The Walt Disney Company', ensuring they open to the appropriate web pages in a separate tab.
 
 - Reduce screen size to various mobile device to verify that the modal is responsive and the modal size and inner text responds appropriately at the relevant breakpoints.
+
+GAME PAGE
+
+Logo
+
+- Hover over logo and ensure there is no discernable change to the logo other than the pointer turning to a hand and the text changing color.
+
+- Click logo and ensure it links to the Home page.
+
+Navigation Bar
+
+- Repeated steps listed above.
+
+- Click on the mute sound icon and check it toggles between sound on and off icons.
+
+- Expand and reduce screen size to make sure the logo and navbar become centered and stack at the appropriate breakpoints.
+
 
 ### Bugs ###
 

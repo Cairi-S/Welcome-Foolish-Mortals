@@ -466,26 +466,29 @@ All likeness is for educational purposes only.
 
 ### Content ###
 
-### Media ###
+- User [Lazaefair](https://www.color-hex.com/member/lazaefair) for their Haunted Mansion color palette on [color-hex.com](https://www.color-hex.com/color-palette/93407).
 
 ### Images ###
+
 The Haunted Mansion is owned and operated by [The Walt Disney Company](https://thewaltdisneycompany.com/).  Images and themes linking to The Haunted Mansion are used for educational purposes only.
 
 - Favicon - Taken from [favicon.io](https://favicon.io/emoji-favicons/ghost/) and the open source project [Twemoji](https://twemoji.twitter.com/).
-- Home Page Background image - [Photo by Brian McGowan on Unsplash](https://unsplash.com/photos/he0-fswKsXk)
-- Character selection images (the Stretching Room portraits) - Owned by [The Walt Disney Company](https://thewaltdisneycompany.com/) and taken from [Haunted Mansion Fandom](https://hauntedmansion.fandom.com/wiki/Stretching_Room).  Found using [Google Images](https://images.google.com/imghp?hl=en&gl=ar&gws_rd=ssl) and used for educational purposes only.
+- Home Page Background image - [Photo by Brian McGowan on Unsplash](https://unsplash.com/photos/he0-fswKsXk).
+- Game Page Background image - [Traditional Haunted Mansion Wallpaper](https://wallpaperaccess.com/haunted-mansion).
 
 ### Audio ###
 
+- All audio files were created by myself using [Sibelus](http://www.sibelius.com/download/index.html).
 
 ### Code ###
 
-- [Traversy Media](https://youtu.be/6ophW7Ask_0) - Guide for creating a modal with HTML CSS and JavaScript.
+Throughout the project I referenced a few online resources, these were:
 
-- Thank you to freeCodeCamp.org for their [Simon Video Tutorial](https://www.freecodecamp.org/news/simon-javascript-game-tutorial/) - inspiration and, in my most frustrated moments, hope was taken from this video.
+- Thank you to [Traversy Media](https://youtu.be/6ophW7Ask_0) - I referenced their 'Guide for creating a modal with HTML CSS and JavaScript' video when creating the modals on the home and game pages.
+
+- Thank you to freeCodeCamp.org for their [Simon Video Tutorial](https://www.freecodecamp.org/news/simon-javascript-game-tutorial/) - I took inspiration and, when I was most frustrated, hope from this video.
 
 - Thank you to freshman.tech for their [Simon JavaScript Walkthrough](https://freshman.tech/simon-game/).
-
 
 ### Acknowledgements ###
 

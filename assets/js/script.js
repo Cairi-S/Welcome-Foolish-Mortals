@@ -260,13 +260,13 @@ function checkAnswer() {
     checkForNewHighScore();
 }
 
-const updateHighScore = sessionStorage.getItem("newHighScore");
+const updateHighScore = localStorage.getItem("newHighScore");
 
 function checkForNewHighScore() {
     if (turn > highScore.innerHTML) {
         highScore.innerHTML = highestScoreCounter;
         turn.toString();
-        sessionStorage.setItem("newHighScore", turn);
+        localStorage.setItem("newHighScore", turn);
         return true;
     }
 }

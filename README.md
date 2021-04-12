@@ -8,8 +8,6 @@
 
 Welcome Foolish Mortals is an audio visual Memory game inspired by the popular Disney theme park attraction, [The Haunted Mansion](https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/). 
 
-Image of game
-
 The target audience for this game is Disney fans, particularly fans of The Haunted Mansion, and fans of memory games.  As the ride can be a little spooky, some of the sounds and images in the game may spook younger players so it is recommended for ages 8+.
 
 ### UX ##
@@ -71,7 +69,7 @@ All other icons are provided by [Font Awesome](https://fontawesome.com/).  These
 - The [QUESTION MARK](https://fontawesome.com/icons/question-circle?style=regular) gives a modal reminding the player of the rules.
 - The [SPEAKER](https://fontawesome.com/icons/volume-up) and [SPEAKER WITH CROSS](<https://fontawesome.com/icons/volume-mute?style=solid) mutes and unmutes the sound.
 
-#### Colours ####
+#### Colors ####
 
 The Haunted Mansion has a clear, easily identifiable color palette. 
 
@@ -90,11 +88,13 @@ The Home screen background image is of the outside of the Haunted Mansion attrac
 The Background of the game is of the iconic Haunted Mansion wallpaper.
  
 #### Audio files ####
-The notes used in the gameplay are taken from the attractions soundtrack - Grim Grinning Ghosts.  These are A, E, D# and B.
+The notes used in the gameplay are taken from the attractions soundtrack - Grim Grinning Ghosts.  These are A, E, D# and B and were created at home using [Sibelus](http://www.sibelius.com/download/index.html).
 
 ### Wireframes ###
 
 The Wireframes for this project were created during the planning and design phase using [Balsamiq](https://balsamiq.com/).
+
+Some of the features shown in the wireframes, such as the avatar selection and dashboard, have not been included in this version of the game due to time contraints, but are features that will be implemented in the future.  Please see Future Features for more details.
 
 - WIREFRAME HOME
 
@@ -110,19 +110,15 @@ The Wireframes for this project were created during the planning and design phas
 
 **Home page** 
 
-When the Home page loads the player is prompted to:
-- Choose which character to play as.
-- Choose which difficulty level they want to play.
+When the Home page loads the player is given a simplified version of the rules and is prompted to 'Enter' the mansion.
 
-Once both a character and difficulty level have been chosen the user will be redirected to the game screen.
+The Home page will not feature a logo as the games name is prominently featured in the opening text.
 
-The Home page will not feature a logo as the games name is the opening text.
-
-The navigation bar will be visible so players can mute/unmute the music.
+The navigation bar will be visible so players can choose to read a more detailed version of the rules.
 
 **Footer tab**
 
-The footer will feature copyright information and a link to contact the developer.
+The footer will feature copyright information and links to The Walt Disney Company and Haunted mansion pages.
 
 **Gameplay pages**
 
@@ -132,19 +128,9 @@ Returning to traditional website design the top left of the page will feature a 
 
 The right of the page will feature a navigation bar of easily identifiable icons.
 
-- The Home icon - Allows the player to navigate back to the Home page to Change their character and/or the difficulty level.
-- The Questionmark icon - Allows the player to re-read the rules of the game and select a different level if preferred.
-- The Music icon - Allows the player to mute and unmute the games sound.
-
-
-
-**Player info display** 
-
-The left hand side of the page (desktop) or top of the page (mobile/tablet) will display a dashboard showing the players:
-- Selected character
-- Highest score (highest number of repeated patterns)
-
-It will also display the different difficulty levels (easy, medium and hard) highlighting the current selected paying level.
+- The Home icon - Allows the player to navigate back to the Home page.
+- The Questionmark icon - Allows the player to re-read the rules of the game.
+- The Speaker icon - Allows the player to mute and unmute the games sound.
 
 **Game board**
 
@@ -153,7 +139,7 @@ The background of the game board is the classic wallpaper of The Haunted Mansion
 The four buttons for the game are each colored to the attractions color scheme.
 Each button will feature a slight box shadow to give the impression of elevation from the background.
 
-During the computers turn and when on the players click each button will change transparency/use a gradient effect to make the button appear to light up.  This clearly shows the player where they are clicking and allows the player to play with sound muted if preferred. 
+During the computers turn and when on the players click each button will change transparency to make the button appear to light up.  This clearly shows the player where they are clicking and allows the player to play with sound muted if preferred. 
 
 
 **Turns counter**
@@ -162,30 +148,18 @@ The turns Counter allows the user to keep track on how they are progressing thro
 
 The game does not end when they reach the required number of turns to complete the level.  It continues allowing the player to try and also beat their highest score!
 
-**Win modal**
+**High Score modal**
 
-The win modal features fun text inspired by the script from the attraction.
+The high score modal features fun text inspired by the script from the attraction.
 
-If on easy mode the modal will link to the medium and hard levels, if on medium it will link to the hard level.
-
-**Lose modal**
-
-The lose modal features fun text inspired by the script from the attraction.
-
-The modal will encourage the user to retry the level and link to this.
-
-**Contact page**
-
-The contact page will not feature a logo, only the navigation bar.
-
-A simple contact form will be available for any suggest
+It clearly shows the user their turn and the highest score from that device and encourages the user to play again.
 
 
 ### Future Features ###
 
 - Being able to select the speed difficulty level you begin on so you don't always have to start from easy mode if you have completed the game a few times.
 
-- Player being able to create an account to log username, chosen avatar and Highest Score.
+- Player being able to create an account to log username, chosen avatar and Highest Score so multiple players can play on the one device
 
 The initial avatar images I had thought of are the four infamous stretching room paintings and will appeal to any fan of the attraction.
 
@@ -196,6 +170,10 @@ The initial avatar images I had thought of are the four infamous stretching room
  - additional music e.g. winning and losing music.
 
 ### Features Left to Implement ###
+
+- Avatar selection.
+
+- Username input.
 
 - Dashboard to left of game storing:
 1. Username

@@ -227,6 +227,44 @@ AutoPrefixer
 
 ### Testing ###
 
+MANUAL TESTING
+
+HOME PAGE
+
+- There is not a traditional logo on the upper left of this website to test - the logo is featured in the body of the page.
+
+Navigation Bar
+
+- Hover over navigation icons and ensure there is no discernable change other than the pointer turning to a hand and the icons changing color.
+
+- Clicking the home icon and ensure it reloads the "Home" page.
+
+- Clicking the question mark icon and ensure it loads the rules modal.
+
+- Change the screen size to mobile device to verify that the navigation bar is responsive and switches position from the right of screen to center screen at the appropriate breakpoint.
+
+Navigation bar modal (Rules modal)
+
+- Click the question mark icon and ensure the rules modal loads.
+
+- Click the 'x' in the rules modal and make sure it closes the modal.
+
+- Click on multiple positions around the page outside the modal text box to make sure it closes the modal.
+
+- Click inside the modal text box to make sure that the modal only closes on the specified areas above.
+
+- Hover over links for 'The Haunted Mansion' and 'The Walt Disney Company' and make sure the pointer changes from an arrow to a hand.
+
+- Click on links for 'The Haunted Mansion' and 'The Walt Disney Company', ensuring they open to the appropriate web pages in a separate tab.
+
+- Reduce screen size to various mobile device to verify that the modal is responsive and the modal size and inner text responds appropriately at the relevant breakpoints..
+
+Hero image
+
+Body Text
+
+Footer
+
 ### Bugs ###
 
 - When creating the dashboard the text continued to scroll despite position being fixed.  

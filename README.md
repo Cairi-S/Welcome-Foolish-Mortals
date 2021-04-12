@@ -35,7 +35,7 @@ As a fan of memory games I want to:
 
 - Play a fun game.
 - Find clear, easy to follow instructions on gameplay.
-- Be able to access the instruktions from any page.
+- Be able to access the instructions from any page.
 - Have clear audio and visual cues which show where I have clicked.
 - Be able to play with and without audio.
 - Be able to choose my difficulty level.
@@ -218,31 +218,36 @@ This project uses HTML, CSS and JavaScript programming languages.
 
 ### Testing ###
 
+- [W3C HTML Markup Validation service](https://validator.w3.org/) - HTML validator.
+
+- [W3C CSS Validation service](https://jigsaw.w3.org/css-validator/) - CSS validator.
+
+- [JSHint.com](https://jshint.com/)
+
 The most common path through the website would be index.html > game.html via pressing the 'Enter' link on the homepage.  Some users may wish for additional information which can be accessed by clicking the ? icon in the navbar.
 
-TESTING CLIENT STORIES FROM UX SECTION
+TESTING PLAYER AND DEVELOPER GOALS FROM UX SECTION
 
-Players goals:
+Players requirements:
+
 - A game that is fun and exciting to play.
   - With the game increasing in speed rather than the user haveing a set number of turns to complete the user is kept on their toes and in jeapordy as the difficulty increases over time.
 - Easy to use controls on all devices.
   - The buttons which help navigate around the website clearly show their use whilst the game buttons (teal, white, purple and grey) are large for frantic gameplay.
 - Have clear rules for the game for those that need them.
-  - A rough guide to the rules is visible on the Home page, anyone who needs a refresher or is unclear on the rules is able to find more information in the ? icon's modal.
+  - A rough guide to the rules is visible on the Home page, anyone who needs a refresher or is unclear on the rules is able to find more information in the ? icon's modal available from the navbar on both the home and game pages.
+- Have clear audio and visual cues which show where I have clicked.
+  - To stay with the themeing of the site when a game button is clicked the opacity will change to a ghostly 0.5, this is accompanied by the corresponding audio.
+- Be able to play with and without audio.
+  - The player has the option to toggle between the audio being muted and on - this is clearly displayed in the navbar by easily recognisable icons.
 - Get clear feedback on the number of turns the player is on.
   - A turn counter has been implemented so the player can keep track of what turn they are on.
 - Get clear feedback on the users Highest Score.
   - When the user fails a modal is displayed to show them their highest score vs the turn they are currently on.
+- Be able to choose my difficulty level.
+  - The user is not yet able to choose the difficulty level they begin on, however they have clear feedback throughout the game on the difficulty level that they have currently progressed to.
 - Visually rewarding images themed around The Haunted Mansion.
   - The background images and themeing are all centered around the attraction.  Super fans will recognise everything down to the haunting organ notes used for the game play audio (and if you're really lucky the sequence plays in the order that you get the theme!)
-
-Developer Goals are:
-- To create a fun game interactive game that myself and my friends can enjoy.
-  - The game is fun and the developer has enjoyed playing with it as it has progressed.  Friends and family have also enjoyed playing and update me when they beat their high score.
-- To encorporate elements of my favourite attraction at Disney into a project.
-  - The developer has taken delight in encorporating elements of the Disney attraction into the project and look forward to encorporating more easter eggs.
-- To design and develop a project using new-found skills in JavaScript and JQuery.
-  - The developer extensively researched and developed the project using JavaScript and encorporating elements of jQuery to test their understanding.
 
 
 MANUAL TESTING

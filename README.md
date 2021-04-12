@@ -186,17 +186,35 @@ The initial avatar images I had thought of are the four infamous stretching room
 
 This project uses HTML, CSS and JavaScript programming languages.
 
-JQuery
+[GitHub](https://github.com/)
 
-Bootstrap
+[Git](https://git-scm.com/)
 
-Google Fonts
+[Gitpod](https://gitpod.io/)
 
-Font Awesome
+[Balsamiq](https://balsamiq.com/)
 
-GitHub
+[JQuery](https://jquery.com/)
 
-AutoPrefixer
+[Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+
+[Multi Device Website Mockup Generator](http://techsini.com/multi-mockup/index.php) - used for website mockup at top of README.
+
+[Google Fonts](https://fonts.google.com/)
+
+[Font Awesome](https://fontawesome.com/)
+
+[AutoPrefixer](http://autoprefixer.github.io/)
+
+[W3C HTML Markup Validation service](https://validator.w3.org/) - HTML validator.
+
+[W3C CSS Validation service](https://jigsaw.w3.org/css-validator/) - CSS validator.
+
+[JSHint.com](https://jshint.com/)
+
+[TinyPNG](https://tinypng.com/)
+
+[Sibelus](http://www.sibelius.com/download/index.html)
 
 ### Testing ###
 

@@ -229,9 +229,11 @@ AutoPrefixer
 
 MANUAL TESTING
 
-HOME PAGE
+FAVICON
 
-- There is not a traditional logo on the upper left of this website to test - the logo is featured in the body of the page.
+- Check that the Favicon is visible on both the home and game pages.
+
+HOME PAGE
 
 Navigation Bar
 
@@ -257,13 +259,29 @@ Navigation bar modal (Rules modal)
 
 - Click on links for 'The Haunted Mansion' and 'The Walt Disney Company', ensuring they open to the appropriate web pages in a separate tab.
 
-- Reduce screen size to various mobile device to verify that the modal is responsive and the modal size and inner text responds appropriately at the relevant breakpoints..
+- Reduce screen size to various mobile device to verify that the modal is responsive and the modal size and inner text responds appropriately at the relevant breakpoints.
 
 Hero image
 
+- Reduce and expand width of window to confirm that the image height and width respond correctly with no horizontal scroll.
+
 Body Text
 
+- Reduce and expand width of window to confirm that the dimension of the text box respond appropriately and that the inner text size changes in an approprite manner.
+
+- Hover over the word 'Enter' to make sure that the color changes and that the pointer changes to the hand icon.
+
+- Click on the word 'Enter' to ensure navigation to game.html.
+
 Footer
+
+- Reduce and expand width of window to confirm that:
+  - The Copyright logo and text stays centered on all screen sizes.
+  - The Inspiration text becomes hidden on smaller screen sizes.
+
+- Click on links for 'The Haunted Mansion' and 'The Walt Disney Company', ensuring they open to the appropriate web pages in a separate tab.
+
+- Reduce screen size to various mobile device to verify that the modal is responsive and the modal size and inner text responds appropriately at the relevant breakpoints.
 
 ### Bugs ###
 

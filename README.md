@@ -6,6 +6,27 @@
 
 ## An Audio memory game ##
 
+- [Welcome Foolish Mortals](#welcome-foolish-mortals)
+    + [UX](#ux)
+    + [Design](#design)
+    + [Wireframes](#wireframes)
+    + [Features](#features)
+      - [Existing Features](#existing-features)
+      - [Future Features](#future-features)
+      - [Features Left to Implement](#features-left-to-implement)
+    + [Technologies Used](#technologies-used)
+    + [Testing](#testing)
+      - [Bugs](#bugs)
+    + [Deployment](#deployment)
+    + [Credits](#credits)
+      - [Content](#content)
+      - [Images](#images)
+      - [Audio](#audio)
+      - [Code](#code)
+      - [Acknowledgements](#acknowledgements)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 Welcome Foolish Mortals is an audio visual Memory game inspired by the popular Disney theme park attraction, [The Haunted Mansion](https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/). 
 
 The target audience for this game is Disney fans, particularly fans of The Haunted Mansion, and fans of memory games.  As the ride can be a little spooky, some of the sounds and images in the game may spook younger players so it is recommended for ages 8+.

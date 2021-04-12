@@ -113,6 +113,7 @@ Hover functionality
 
 .site-title:hover,
 .menu i:hover,
+.gamepage-menu i:hover,
 .enter-game:hover {
     color: #6c53a4;
 }

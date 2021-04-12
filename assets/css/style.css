@@ -427,7 +427,7 @@ Modal animations
 
 /* ------------ Sizing game buttons at different media device breakpoints */
 
-/*---------------------------Laptop and iPad Pro */
+/*---------------------------iPad Pro portrait*/
 
 @media (max-width: 1024px) and (orientation: portrait) {
     .turns,
@@ -436,6 +436,8 @@ Modal animations
     }
   }
 
+
+/*---------------------------Laptop and iPad Pro */
 @media (min-width: 900px) and (max-width: 1024px) {
     .menu {
         margin-top: 20px;
@@ -445,6 +447,13 @@ Modal animations
     }
     #modalNav {
         margin: 0 12px 0 12px;
+    }
+    .rule-content, .win-content {
+        margin: 6% auto 2%;
+        height: 76%;
+    }
+    .rules-reminder-header h3, .win-header {
+        margin-top: 20px;
     }
     .site-title{
         font-size: 54px;
@@ -466,6 +475,21 @@ Modal animations
     #modalNav {
         margin: 0 12px 0 12px;
     }
+    .rule-content, .win-content {
+        margin: 6% auto 2%;
+        height: 76%;
+    }
+    .rules-reminder-header h3, .win-header {
+        margin-top: 20px;
+        font-size: 40px;
+    }
+
+    .rules-reminder-body, .win-body, .win-body a, .win-footer a {
+        font-size: 20px;
+    }
+    .rules-reminder-footer p, .rules-reminder-footer a, .win-footer {
+        font-size: 16px;
+    }
     .title {
         font-size: 46px;
     }
@@ -485,6 +509,21 @@ Modal animations
 
 /*---------------------------Breakpoints while reducing monitor size on laptop */
 @media (min-width: 668px) and (max-width: 768px) {
+    .rule-content, .win-content {
+        margin: 6% auto 2%;
+        height: 76%;
+    }
+    .rules-reminder-header h3, .win-header {
+        margin-top: 20px;
+        font-size: 40px;
+    }
+
+    .rules-reminder-body, .win-body, .win-body a, .win-footer a {
+        font-size: 20px;
+    }
+    .rules-reminder-footer p, .rules-reminder-footer a, .win-footer {
+        font-size: 16px;
+    }
     .btn-group-lg > .btn,
 .btn-lg {
     padding: 72px 80px 72px 120px;
@@ -492,6 +531,21 @@ Modal animations
 }
 
 @media (min-width: 556px) and (max-width: 668px) {
+    .rule-content, .win-content {
+        margin: 6% auto 2%;
+        height: 76%;
+    }
+    .rules-reminder-header h3, .win-header {
+        margin-top: 20px;
+        font-size: 40px;
+    }
+
+    .rules-reminder-body, .win-body, .win-body a, .win-footer a {
+        font-size: 20px;
+    }
+    .rules-reminder-footer p, .rules-reminder-footer a, .win-footer {
+        font-size: 16px;
+    }
     .btn-group-lg > .btn,
 .btn-lg {
     padding: 72px 80px;
@@ -499,6 +553,21 @@ Modal animations
 }
 
 @media (min-width: 556px) and (max-width: 668px) {
+    .rule-content, .win-content {
+        margin: 6% auto 2%;
+        height: 76%;
+    }
+    .rules-reminder-header h3, .win-header {
+        margin-top: 20px;
+        font-size: 40px;
+    }
+
+    .rules-reminder-body, .win-body, .win-body a, .win-footer a {
+        font-size: 20px;
+    }
+    .rules-reminder-footer p, .rules-reminder-footer a, .win-footer {
+        font-size: 16px;
+    }
     
     .btn-group-lg > .btn,
 .btn-lg {
@@ -509,7 +578,7 @@ Modal animations
 /*---------------------------Surface Duo  */
 @media (min-width: 480px) and (max-width: 556px) {
     #modalNav {
-        margin: 0 12px 0 12px;
+        margin: 0 12px 0;
     }
 
     .closeNavModal {
@@ -615,7 +684,7 @@ Plus/X  */
         margin-top: 0;
     }
     #modalNav {
-        margin: 0 12px 0 12px;
+        margin: 0 0 0 12px;
     }
     .title {
     font-size: 26px;

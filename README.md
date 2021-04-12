@@ -299,6 +299,10 @@ GAME PAGE
 
 - Expand and reduce screen size to make sure the logo and navbar become centered and stack at the appropriate breakpoints.
 
+*Navigation bar modal (Rules modal)*
+
+- Repeated steps listed above.
+
 *Hero image*
 
 - Reduce and expand width of window to confirm that the image height and width respond correctly with no horizontal scroll.
@@ -319,22 +323,100 @@ GAME PAGE
 
 - Repeated steps listed above.
 
+GAME PLAY
+
+*Click start button*
+
+- Check that start button toggles to reset button.
+
+- Check that 'Level' remains at Easy.
+
+- Check that Turn changes to '1'.
+
+*Click reset button*
+
+- Check that reset button toggles to start button.
+
+- Check that 'Level' remains at most recent level.
+
+- Check that Turn changes to '-'.
+
+*Gameplay - Computers Turn*
+
+- Console log the computers sequence and check that it corresponds to the game buttons audio/visual cue's.
+
+- Hover over active buttons during computer's turn to check pointer shows as 'not allowed' (laptop only).
+
+- Watch turn counter increase as the number of turns increases.
+
+- Watch the Level increase as the speed increases.
+
+- Try to press game buttons during the computers turn to make sure that the user cannot play.
+
+- Follow the game through the different speeds to check flash/audio functionality at all levels.
+
+*Gameplay - Players Turn*
+
+- Click on all buttons to make sure that all the audio/visuals linked to the buttons work as expected.
+
+- Follow a correct sequence and check that the game continues.
+
+- Follow an incorrect sequence and check that the high score modal is triggered.
+
+*Highscore Modal*
+
+- Check that the high score modal is triggered when an incorrect sequence is entered.
+
+- Check that the turn count matches that listed on the main page.
+
+- Play the game to set a high score, replay the game and get a lower score to ensure that the previous high score remains, replay the game and get a larger high score to make sure that the highest score is updated.  Repeated multiple times.
+
+FURTHER TESTING
+
+I invited friends and family to view the site on their devices and report any issues they find. Devices used included:
+
+- MacBook
+- MacBook Air
+- MacBook Pro
+- iPad
+- iPad Pro
+- Samsung S20
+- Samsung J6
+- iPhone 6S
+- iPhone XR
+- iPhone SE
+- Pocophone F1 Mio
+- Xiaomi Mi 10T Lite
+
+Reported bugs/glitches included:
+
+Mobile phones: audio - a lag is sometimes apparent, I believe this is more prominent on Apple devices. Noone reported that this negatively affected their gameplay experience however in future I would like to investigate this and implement a fix.  Initial searches suggest that using a library such as Howler.js may help.
+
+Highscore modal: 'x' button - Not closing the modal.  Class checked and renamed to enable responsiveness.
+
+
+
+
+
+
+
 ### Bugs ###
 
 - Linking audio files to buttons - initially when I added my audio to the html document when the JavaScript file was not able to set the audio to play without using visible audio controls which would not provide good UX for the game. 
 
-*Solved* - I researched and discovered that often there can be an issue with playing audio when using iOS (I use a Mac) To solve this I moved the audio from index.html to the JavaScript file and placed each audio file in a variable.  When this variable is called in it's own function and attached to the .play() method it works nicely.
+  - *Solved* - I researched and discovered that often there can be an issue with playing audio when using iOS (I use a Mac) To solve this I moved the audio from index.html to the JavaScript file and placed each audio file in a variable.  When this variable is called in it's own function and attached to the .play() method it works nicely.
 
 - The audio was not playing consistently if the suquence required repetition of notes, e.g. if the sequence was 1, 1, 1 the audio would only trigger play, mute, play.  
-*Solved* - To make sure each note is played I shortened the length of the audio in each file to allow for retrigger time between notes.
+
+  - *Solved* - To make sure each note is played I shortened the length of the audio in each file to allow for retrigger time between notes.
 
 - Pressing the reset button was causing a new sequence to trigger on to of the existing sequence so you would have 2 sequences playing on top of one another.  
 
-*Solved* - On reset button click all sequences are cleared and the start button is displayed to prompt the player to manually restart the game.  The start button begins the game again and makes sure that the game is fully reset.
+  - *Solved* - On reset button click all sequences are cleared and the start button is displayed to prompt the player to manually restart the game.  The start button begins the game again and makes sure that the game is fully reset.
 
 - When implementing increasing speed the speed jump wasn't happening when requested e.g I was asking after test turns 3, 6 and 9 yet the speed jump was happening at turns 5, 7 and 11.
 
-*Solved* - Initially I had the function which controls the speed increase (checkForLevelIncrement()) set to pass in the flashCounter variable, using the flashCounter and calling the function where the flashCounter incremented during the computer play.  As I actually wanted the speed to increase with the turn counter I changed the variable passed in to checkForLevelIncrement() to turn and moved where this was called to after the turn is incremented as part of the checkAnswer() function.  This made the speed increase as expected.  I also checked and ensured that all statements in checkForLevelIncrement() were always going to be true.
+  - *Solved* - Initially I had the function which controls the speed increase (checkForLevelIncrement()) set to pass in the flashCounter variable, using the flashCounter and calling the function where the flashCounter incremented during the computer play.  As I actually wanted the speed to increase with the turn counter I changed the variable passed in to checkForLevelIncrement() to turn and moved where this was called to after the turn is incremented as part of the checkAnswer() function.  This made the speed increase as expected.  I also checked and ensured that all statements in checkForLevelIncrement() were always going to be true.
 
 ### Deployment ###
 

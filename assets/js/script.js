@@ -102,21 +102,18 @@ function prepareGame() {
 
 // Increments the speed after the turn counter reaches specific break points.
 function checkForLevelIncrement(turn) {
-  if (turn <= 3) {
+  if (turn <= 4) {
     flashInterval = 1500;
-    $("#level").text(" 1500");
-  } else if (turn >= 4 && turn < 6) {
+    $("#level").text(" Easy");
+  } else if (turn >= 5 && turn < 9) {
     flashInterval = 1200;
-    $("#level").text(" 1200");
-  }else if (turn >= 7 && turn < 9) {
+    $("#level").text(" Medium");
+  }else if (turn >= 10 && turn < 14) {
     flashInterval = 1000;
-    $("#level").text(" 1000");
-  } else if (turn >= 10 && turn < 15) {
+    $("#level").text(" Hard");
+  } else if (turn >= 15 && turn < maxFlashes) {
     flashInterval = 700;
-    $("#level").text(" 700");
-  } else if (turn >= 16 && turn < maxFlashes) {
-    flashInterval = 500;
-    $("#level").text(" 500!");
+    $("#level").text(" Feindish");
   }
 }
 

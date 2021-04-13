@@ -132,6 +132,14 @@ Hover functionality
     background-color: rgba(7, 127, 81, 1);
 }
 
+.win-footer a:hover {
+    padding: 10px;
+    color: #6c53a4;
+    background-color: #ededef;
+    border: 1px solid #6c53a4;
+    border-radius: 12px;
+}
+
 /*----------
 Navbar Modal
 ----------*/
@@ -187,6 +195,13 @@ Navbar Modal
     text-align: center;
 }
 
+.win-footer a {
+    padding: 10px;
+    background-color: #6c53a4;
+    border: 1px solid #ededef;
+    border-radius: 12px;
+}
+
 .rules-reminder-body a {
     font-family: "Cormorant Upright", sans-serif;
     font-size: 26px;
@@ -214,6 +229,14 @@ Navbar Modal
     color: #ededef;
     float: right;
     font-size: 52px;
+}
+
+.modalChallenge{
+    margin-bottom: 10px;
+}
+
+.modalPrompt{
+    margin-top: 10px;
 }
 
 /*----------

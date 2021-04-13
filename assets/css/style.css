@@ -509,6 +509,12 @@ Modal animations
 
 
 /*---------------------------Breakpoints while reducing monitor size on laptop */
+@media (min-width: 900px) and (max-width: 991px) {
+    #menu-bar-levels {
+        height: 130px;
+    }
+}
+
 @media (min-width: 668px) and (max-width: 768px) {
     .rule-content, .win-content {
         margin: 6% auto 2%;
@@ -529,6 +535,12 @@ Modal animations
 .btn-lg {
     padding: 72px 80px 72px 120px;
 }
+}
+
+@media (min-width: 557px) and (max-width: 677px) {
+    .turns, .gameLevel {
+        padding-top: 20px;
+    }
 }
 
 @media (min-width: 556px) and (max-width: 668px) {

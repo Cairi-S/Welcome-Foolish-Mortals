@@ -24,9 +24,9 @@ function openModal() {
 }
 
 function highScoreModalTrigger() {
-    scoreModal.style.display = "block";
-    endTurn.innerHTML = turn;
-    setNewHighScore();
+  scoreModal.style.display = "block";
+  endTurn.innerHTML = turn;
+  setNewHighScore();
 }
 
 // Function for closing nav modal with 'x'

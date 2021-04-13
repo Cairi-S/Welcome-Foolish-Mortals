@@ -31,8 +31,6 @@ greyAudio.muted = false;
 
 const audioFileArray = [tealAudio, whiteAudio, purpleAudio, greyAudio];
 
-
-
 // Gets different html elements
 const startButton = document.querySelector("#startBtn");
 const resetButton = document.querySelector("#resetBtn");
@@ -44,8 +42,8 @@ const highScore = document.querySelector("#highScore");
 // Toggle mute icon on and off
 $("#toggleMute").click(function () {
   $("i", this).toggleClass("fas fa-volume-up fas fa-volume-mute");
-  audioFileArray.forEach(eachAudio => {
-      eachAudio.muted = !eachAudio.muted;
+  audioFileArray.forEach((eachAudio) => {
+    eachAudio.muted = !eachAudio.muted;
   });
 });
 
@@ -54,7 +52,6 @@ startButton.addEventListener("click", startGame);
 
 //Event listening for click on reset button
 resetButton.addEventListener("click", resetGame);
-
 
 // Starts the game when start button is pressed, it changes button color, the number in the turn counter and hiding the start button on click
 function startGame() {
@@ -108,7 +105,7 @@ function checkForLevelIncrement(turn) {
   } else if (turn >= 5 && turn < 9) {
     flashInterval = 1200;
     $("#level").text(" Medium");
-  }else if (turn >= 10 && turn < 14) {
+  } else if (turn >= 10 && turn < 14) {
     flashInterval = 1000;
     $("#level").text(" Hard");
   } else if (turn >= 15 && turn < maxFlashes) {
@@ -120,7 +117,7 @@ function checkForLevelIncrement(turn) {
 // Checks whether it's the players turn or computer turn
 function gamePlay() {
   isPlayerTurn = false;
-  $('.btn-lg').css('cursor', 'pointer');
+  $(".btn-lg").css("cursor", "pointer");
 
   // When the number of flashes is equal to number of turns the interval cleared the computers turn is over and the game is set for the user to play
   if (flashCounter === turn) {
@@ -133,7 +130,7 @@ function gamePlay() {
   // If it is the computers turn a time is set for the flashes
   if (isComputerTurn) {
     isPlayerTurn = false;
-    $('.btn-lg').css('cursor', 'not-allowed');
+    $(".btn-lg").css("cursor", "not-allowed");
     originalColor();
     setTimeout(() => {
       // Links the sequence numbers to the buttons, answering functions below
@@ -154,6 +151,7 @@ function gamePlay() {
   }
 }
 
+// Function to play combine the audio visual cues when the sound is not muted.
 function playColorAudio(colorFunction, varAudio) {
   colorFunction();
   if (!isMuted) {
@@ -164,33 +162,33 @@ function playColorAudio(colorFunction, varAudio) {
 // Event Listeners for player clicking buttons during gameplay.  Checks if it's the players turn to allow clicks.
 // iterates through the player sequence, checks if the player was correct and then calls that buttons function.
 // If not a win then after a set amount of time the color returns to the original color.
-function playerBtnClick (playerSeqPushNumber, btnFlashColor, btnFlashAudio) {
-    if (isPlayerTurn) {
-      playerSequence.push(playerSeqPushNumber);
-      checkAnswer();
-      playColorAudio(btnFlashColor, btnFlashAudio);
-    }
-    if (!hasPlayerWon) {
-      setTimeout(() => {
-        originalColor();
-      }, 300); //length of flash on player click
-    }
+function playerBtnClick(playerSeqPushNumber, btnFlashColor, btnFlashAudio) {
+  if (isPlayerTurn) {
+    playerSequence.push(playerSeqPushNumber);
+    checkAnswer();
+    playColorAudio(btnFlashColor, btnFlashAudio);
+  }
+  if (!hasPlayerWon) {
+    setTimeout(() => {
+      originalColor();
+    }, 300); //length of flash on player click
+  }
 }
 
 $(".btn-teal").click(function () {
-  playerBtnClick (1, flashTeal, tealAudio);
+  playerBtnClick(1, flashTeal, tealAudio);
 });
 
 $(".btn-white").click(function () {
-  playerBtnClick (2, flashWhite, whiteAudio);
+  playerBtnClick(2, flashWhite, whiteAudio);
 });
 
 $(".btn-purple").click(function () {
-  playerBtnClick (3, flashPurple, purpleAudio);
+  playerBtnClick(3, flashPurple, purpleAudio);
 });
 
 $(".btn-grey").click(function () {
-  playerBtnClick (4, flashGrey, greyAudio);
+  playerBtnClick(4, flashGrey, greyAudio);
 });
 
 // Checks whether the player answer during gameplay
@@ -213,9 +211,8 @@ function checkAnswer() {
     }, flashInterval); //sets the time for the turn counter and buttons to return to original color
 
     isMuted = true;
-    
-    highScoreModalTrigger();
 
+    highScoreModalTrigger();
   }
 
   // If the player is correct in their sequence but has not met the win criteria
@@ -228,27 +225,26 @@ function checkAnswer() {
     flashCounter = 0;
     turnCounter.innerHTML = turn;
     intervalRef = setInterval(gamePlay, flashInterval); //sets speed of note repetition
-    
   }
-    
-    checkForNewHighScore();
+
+  checkForNewHighScore();
 }
 
 const updateHighScore = localStorage.getItem("newHighScore");
 
 function checkForNewHighScore() {
-    if (turn > highScore.innerHTML) {
-        highScore.innerHTML = highestScoreCounter;
-        turn.toString();
-        localStorage.setItem("newHighScore", turn);
-        return true;
-    }
+  if (turn > highScore.innerHTML) {
+    highScore.innerHTML = highestScoreCounter;
+    turn.toString();
+    localStorage.setItem("newHighScore", turn);
+    return true;
+  }
 }
 
 function setNewHighScore() {
-    if (turn > highScore.innerHTML) {
-        highScore.innerHTML = updateHighScore;
-    }
+  if (turn > highScore.innerHTML) {
+    highScore.innerHTML = updateHighScore;
+  }
 }
 
 // Makes all buttons return to full opacity
@@ -257,11 +253,11 @@ function flashTeal() {
   $(".btn-teal").css("background-color", "rgba(78, 160, 174, 0.5)");
 }
 
-function flashWhite() { 
+function flashWhite() {
   $(".btn-white").css("background-color", "rgba(237, 239, 251, 0.5)");
 }
 
-function flashPurple() { 
+function flashPurple() {
   $(".btn-purple").css("background-color", "rgba(108, 83, 164, 0.5)");
 }
 

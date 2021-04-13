@@ -94,8 +94,6 @@ Footer
     color: #ededef;
 }
 
-
-
 .copyright-info,
 .copyright-info span {
     font-family: "Pathway Gothic One", sans-serif;
@@ -148,9 +146,9 @@ Navbar Modal
     width: 64%;
     height: 70%;
     -webkit-animation-name: homeModalOpen;
-            animation-name: homeModalOpen;
+    animation-name: homeModalOpen;
     -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+    animation-duration: 1s;
 }
 
 .rules-reminder-header h3,
@@ -261,7 +259,6 @@ section {
     text-align: center;
 }
 
-
 /*----------
 Levels - Gameboard
 ----------*/
@@ -355,75 +352,75 @@ Modal animations
 /* ------------ Styling navbar and turn counter for media devices */
 @media (min-width: 320px) and (max-width: 1024px) {
     .site-title {
-    margin: 0; 
-    padding-left: 12px;
-    font-family: "Cormorant Upright", sans-serif;
-    font-size: 30px;
-    color: #ededef;
-}
+        margin: 0;
+        padding-left: 12px;
+        font-family: "Cormorant Upright", sans-serif;
+        font-size: 30px;
+        color: #ededef;
+    }
 
-.navbar {
-    -webkit-box-pack: center;
+    .navbar {
+        -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-}
+        justify-content: center;
+    }
 
-.navbar-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
+    .navbar-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
 
-.navbar-nav a,
-.navbar-nav button {
-    padding: 0;
-}
+    .navbar-nav a,
+    .navbar-nav button {
+        padding: 0;
+    }
 
-.navbar-collapse {
-    -webkit-box-pack: center!important;
-        -ms-flex-pack: center!important;
-            justify-content: center!important;
-}
+    .navbar-collapse {
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
 
-.menu i,
-.gamepage-menu i {
-    font-size: 26px;
-    margin: 0;
-}
+    .menu i,
+    .gamepage-menu i {
+        font-size: 26px;
+        margin: 0;
+    }
 
-.mobile-padding {
-    padding-right: 16px;
-}
+    .mobile-padding {
+        padding-right: 16px;
+    }
 
-.turns {
-    padding: 10px 12px 0;
-}
+    .turns {
+        padding: 10px 12px 0;
+    }
 
-.inspiration-text p {
-    display: none;
-}
+    .inspiration-text p {
+        display: none;
+    }
 
-.copyright-info,
-.copyright-info span {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
+    .copyright-info,
+    .copyright-info span {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
+        flex-direction: row;
+        -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-}
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 /* ------------ Sizing game buttons at different media device breakpoints */
@@ -435,8 +432,7 @@ Modal animations
     .gameLevel {
         padding-top: 260px;
     }
-  }
-
+}
 
 /*---------------------------Laptop and iPad Pro */
 @media (min-width: 900px) and (max-width: 1024px) {
@@ -444,57 +440,66 @@ Modal animations
         margin-top: 20px;
     }
     .menu i {
-    font-size: 40px;
+        font-size: 40px;
     }
     #modalNav {
         margin: 0 12px 0 12px;
     }
-    .rule-content, .win-content {
+    .rule-content,
+    .win-content {
         margin: 6% auto 2%;
         height: 76%;
     }
-    .rules-reminder-header h3, .win-header {
+    .rules-reminder-header h3,
+    .win-header {
         margin-top: 20px;
     }
-    .site-title{
+    .site-title {
         font-size: 54px;
     }
     .btn-group-lg > .btn,
-.btn-lg {
-    padding: 72px 160px 72px 120px;
-}
+    .btn-lg {
+        padding: 72px 160px 72px 120px;
+    }
 }
 
 /*---------------------------iPad */
 @media (min-width: 768px) and (max-width: 900px) {
-   .menu {
+    .menu {
         margin-top: 20px;
     }
     .menu i {
-    font-size: 40px;
+        font-size: 40px;
     }
     #modalNav {
         margin: 0 12px 0 12px;
     }
-    .rule-content, .win-content {
+    .rule-content,
+    .win-content {
         margin: 6% auto 2%;
         height: 76%;
     }
-    .rules-reminder-header h3, .win-header {
+    .rules-reminder-header h3,
+    .win-header {
         margin-top: 20px;
         font-size: 40px;
     }
 
-    .rules-reminder-body, .win-body, .win-body a, .win-footer a {
+    .rules-reminder-body,
+    .win-body,
+    .win-body a,
+    .win-footer a {
         font-size: 20px;
     }
-    .rules-reminder-footer p, .rules-reminder-footer a, .win-footer {
+    .rules-reminder-footer p,
+    .rules-reminder-footer a,
+    .win-footer {
         font-size: 16px;
     }
     .title {
         font-size: 46px;
     }
-    .site-title{
+    .site-title {
         font-size: 34px;
     }
     .btn-group-lg > .btn,
@@ -502,11 +507,10 @@ Modal animations
         padding: 72px 120px;
     }
     .gameLevel,
-.turns {
-    padding-top: 120px;
+    .turns {
+        padding-top: 120px;
+    }
 }
-}
-
 
 /*---------------------------Breakpoints while reducing monitor size on laptop */
 @media (min-width: 900px) and (max-width: 991px) {
@@ -516,76 +520,98 @@ Modal animations
 }
 
 @media (min-width: 668px) and (max-width: 768px) {
-    .rule-content, .win-content {
+    .rule-content,
+    .win-content {
         margin: 6% auto 2%;
         height: 76%;
     }
-    .rules-reminder-header h3, .win-header {
+    .rules-reminder-header h3,
+    .win-header {
         margin-top: 20px;
         font-size: 40px;
     }
 
-    .rules-reminder-body, .win-body, .win-body a, .win-footer a {
+    .rules-reminder-body,
+    .win-body,
+    .win-body a,
+    .win-footer a {
         font-size: 20px;
     }
-    .rules-reminder-footer p, .rules-reminder-footer a, .win-footer {
+    .rules-reminder-footer p,
+    .rules-reminder-footer a,
+    .win-footer {
         font-size: 16px;
     }
     .btn-group-lg > .btn,
-.btn-lg {
-    padding: 72px 80px 72px 120px;
-}
+    .btn-lg {
+        padding: 72px 80px 72px 120px;
+    }
 }
 
 @media (min-width: 557px) and (max-width: 677px) {
-    .turns, .gameLevel {
+    .turns,
+    .gameLevel {
         padding-top: 20px;
     }
 }
 
 @media (min-width: 556px) and (max-width: 668px) {
-    .rule-content, .win-content {
+    .rule-content,
+    .win-content {
         margin: 6% auto 2%;
         height: 76%;
     }
-    .rules-reminder-header h3, .win-header {
+    .rules-reminder-header h3,
+    .win-header {
         margin-top: 20px;
         font-size: 40px;
     }
 
-    .rules-reminder-body, .win-body, .win-body a, .win-footer a {
+    .rules-reminder-body,
+    .win-body,
+    .win-body a,
+    .win-footer a {
         font-size: 20px;
     }
-    .rules-reminder-footer p, .rules-reminder-footer a, .win-footer {
+    .rules-reminder-footer p,
+    .rules-reminder-footer a,
+    .win-footer {
         font-size: 16px;
     }
     .btn-group-lg > .btn,
-.btn-lg {
-    padding: 72px 80px;
-}
+    .btn-lg {
+        padding: 72px 80px;
+    }
 }
 
 @media (min-width: 556px) and (max-width: 668px) {
-    .rule-content, .win-content {
+    .rule-content,
+    .win-content {
         margin: 6% auto 2%;
         height: 76%;
     }
-    .rules-reminder-header h3, .win-header {
+    .rules-reminder-header h3,
+    .win-header {
         margin-top: 20px;
         font-size: 40px;
     }
 
-    .rules-reminder-body, .win-body, .win-body a, .win-footer a {
+    .rules-reminder-body,
+    .win-body,
+    .win-body a,
+    .win-footer a {
         font-size: 20px;
     }
-    .rules-reminder-footer p, .rules-reminder-footer a, .win-footer {
+    .rules-reminder-footer p,
+    .rules-reminder-footer a,
+    .win-footer {
         font-size: 16px;
     }
-    
+
     .btn-group-lg > .btn,
-.btn-lg {
-    padding: 72px 80px;
-}
+    .btn-lg {
+        padding: 72px 80px;
+    }
 }
 
 /*---------------------------Surface Duo  */
@@ -598,16 +624,22 @@ Modal animations
         font-size: 34px;
     }
 
-    .rule-content, .win-content {
+    .rule-content,
+    .win-content {
         margin: 18% auto 2%;
-         height: 74%;
+        height: 74%;
     }
 
-    .rules-reminder-header h3, .win-header {
+    .rules-reminder-header h3,
+    .win-header {
         margin-top: 20px;
         font-size: 34px;
     }
-    .rules-reminder-body, .rules-reminder-footer, .win-body, .win-body a, .win-footer a {
+    .rules-reminder-body,
+    .rules-reminder-footer,
+    .win-body,
+    .win-body a,
+    .win-footer a {
         padding-top: 30px;
         font-size: 20px;
     }
@@ -621,11 +653,11 @@ Modal animations
     .gameLevel {
         padding-top: 10px;
     }
-    
+
     .btn-group-lg > .btn,
-.btn-lg {
-    padding: 72px 72px;
-}
+    .btn-lg {
+        padding: 72px 72px;
+    }
 }
 
 /*---------------------------Moto G4, Galaxy S5, Pixel 2/XL, iPhone 6/7/8/+
@@ -649,16 +681,22 @@ Plus/X  */
         font-size: 34px;
     }
 
-    .rule-content, .win-content {
+    .rule-content,
+    .win-content {
         margin: 28% auto 2%;
-         height: 74%;
+        height: 74%;
     }
 
-    .rules-reminder-header h3, .win-header {
+    .rules-reminder-header h3,
+    .win-header {
         margin-top: 20px;
         font-size: 34px;
     }
-    .rules-reminder-body, .rules-reminder-footer, .win-body, .win-body a, .win-footer a {
+    .rules-reminder-body,
+    .rules-reminder-footer,
+    .win-body,
+    .win-body a,
+    .win-footer a {
         padding-top: 30px;
         font-size: 20px;
     }
@@ -700,23 +738,29 @@ Plus/X  */
         margin: 0 0 0 12px;
     }
     .title {
-    font-size: 26px;
+        font-size: 26px;
     }
 
-    .rule-content, .win-content {
+    .rule-content,
+    .win-content {
         margin: 28% auto 2%;
-         height: 74%;
+        height: 74%;
     }
 
     .closeNavModal {
         font-size: 34px;
     }
 
-    .rules-reminder-header h3, .win-header {
+    .rules-reminder-header h3,
+    .win-header {
         margin-top: 20px;
         font-size: 30px;
     }
-    .rules-reminder-body, .rules-reminder-footer, .win-body, .win-body a, .win-footer a {
+    .rules-reminder-body,
+    .rules-reminder-footer,
+    .win-body,
+    .win-body a,
+    .win-footer a {
         padding-top: 30px;
         font-size: 18px;
     }
@@ -740,7 +784,7 @@ Plus/X  */
         font-size: 46px;
     }
 
-    .win-content{
+    .win-content {
         height: 80%;
     }
     .win-body,

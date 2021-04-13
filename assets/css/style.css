@@ -635,37 +635,6 @@ Modal animations
     }
 }
 
-@media (min-width: 556px) and (max-width: 668px) {
-    /*----------Modals--------*/
-    .rule-content,
-    .win-content {
-        margin: 6% auto 2%;
-        height: 76%;
-    }
-    .rules-reminder-header h3,
-    .win-header {
-        margin-top: 20px;
-        font-size: 40px;
-    }
-
-    .rules-reminder-body,
-    .win-body,
-    .win-body a,
-    .win-footer a {
-        font-size: 20px;
-    }
-    .rules-reminder-footer p,
-    .rules-reminder-footer a,
-    .win-footer {
-        font-size: 16px;
-    }
-    /*----------Game button styling--------*/
-    .btn-group-lg > .btn,
-    .btn-lg {
-        padding: 72px 80px;
-    }
-}
-
 /*---------------------------Surface Duo  */
 @media (min-width: 480px) and (max-width: 556px) {
     /*----------Modals--------*/
@@ -738,7 +707,7 @@ Plus/X  */
 
     .rule-content,
     .win-content {
-        margin: 28% auto 2%;
+        margin: 24% auto 2%;
         height: 74%;
     }
 
@@ -750,9 +719,13 @@ Plus/X  */
     .rules-reminder-body,
     .rules-reminder-footer,
     .win-body,
-    .win-body a,
-    .win-footer a {
+    .win-body a {
         padding-top: 30px;
+        font-size: 20px;
+    }
+
+    .win-footer a {
+        padding-top: 10px;
         font-size: 20px;
     }
 
@@ -804,7 +777,7 @@ Plus/X  */
     .rule-content,
     .win-content {
         margin: 28% auto 2%;
-        height: 74%;
+        height: 88%;
     }
 
     .closeNavModal {
@@ -819,9 +792,13 @@ Plus/X  */
     .rules-reminder-body,
     .rules-reminder-footer,
     .win-body,
-    .win-body a,
-    .win-footer a {
+    .win-body a {
         padding-top: 30px;
+        font-size: 18px;
+    }
+
+    .win-footer a {
+        padding-top: 10px;
         font-size: 18px;
     }
 

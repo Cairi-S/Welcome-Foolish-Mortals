@@ -117,9 +117,7 @@ Hover functionality
 }
 
 .closeNavModal:hover,
-.closeNavModal:focus,
-.closeScoreModal:hover,
-.closeScoreModal:focus {
+.closeNavModal:focus {
     color: #6c53a4;
     text-decoration: none;
     cursor: pointer;
@@ -132,7 +130,7 @@ Hover functionality
     background-color: rgba(7, 127, 81, 1);
 }
 
-.win-footer a:hover {
+.score-footer a:hover {
     padding: 10px;
     color: #6c53a4;
     background-color: #ededef;
@@ -146,8 +144,7 @@ Navbar Modal
 
 /*With thanks to Traversy Media for their guide to creating modals*/
 
-.nav-modal,
-.win-modal {
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -160,7 +157,7 @@ Navbar Modal
 }
 
 .rule-content,
-.win-content {
+.score-content {
     background-color: rgba(4, 0, 0, 0.9);
     border: 2px solid #ededef;
     border-radius: 25px;
@@ -176,7 +173,7 @@ Navbar Modal
 }
 
 .rules-reminder-header h3,
-.win-header {
+.score-header {
     margin-top: 40px;
     font-family: "Cormorant Upright", sans-serif;
     font-size: 50px;
@@ -185,9 +182,9 @@ Navbar Modal
 }
 
 .rules-reminder-body,
-.win-body,
-.win-body a,
-.win-footer a {
+.score-body,
+.score-body a,
+.score-footer a {
     padding-top: 60px;
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 26px;
@@ -195,7 +192,7 @@ Navbar Modal
     text-align: center;
 }
 
-.win-footer a {
+.score-footer a {
     padding: 10px;
     background-color: #6c53a4;
     border: 1px solid #ededef;
@@ -217,15 +214,14 @@ Navbar Modal
 
 .rules-reminder-footer p,
 .rules-reminder-footer a,
-.win-footer {
+.score-footer {
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 20px;
     color: #edeffb;
     text-align: center;
 }
 
-.closeNavModal,
-.closeScoreModal {
+.closeNavModal {
     color: #ededef;
     float: right;
     font-size: 52px;
@@ -483,12 +479,12 @@ Modal animations
         margin: 0 12px 0 12px;
     }
     .rule-content,
-    .win-content {
+    .score-content {
         margin: 6% auto 2%;
         height: 76%;
     }
     .rules-reminder-header h3,
-    .win-header {
+    .score-header {
         margin-top: 20px;
     }
     
@@ -518,25 +514,25 @@ Modal animations
         margin: 0 12px 0 12px;
     }
     .rule-content,
-    .win-content {
+    .score-content {
         margin: 6% auto 2%;
         height: 76%;
     }
     .rules-reminder-header h3,
-    .win-header {
+    .score-header {
         margin-top: 20px;
         font-size: 40px;
     }
 
     .rules-reminder-body,
-    .win-body,
-    .win-body a,
-    .win-footer a {
+    .score-body,
+    .score-body a,
+    .score-footer a {
         font-size: 20px;
     }
     .rules-reminder-footer p,
     .rules-reminder-footer a,
-    .win-footer {
+    .score-footer {
         font-size: 16px;
     }
 
@@ -568,25 +564,25 @@ Modal animations
 @media (min-width: 668px) and (max-width: 768px) {
     /*----------Modals--------*/
     .rule-content,
-    .win-content {
+    .score-content {
         margin: 6% auto 2%;
         height: 76%;
     }
     .rules-reminder-header h3,
-    .win-header {
+    .score-header {
         margin-top: 20px;
         font-size: 40px;
     }
 
     .rules-reminder-body,
-    .win-body,
-    .win-body a,
-    .win-footer a {
+    .score-body,
+    .score-body a,
+    .score-footer a {
         font-size: 20px;
     }
     .rules-reminder-footer p,
     .rules-reminder-footer a,
-    .win-footer {
+    .score-footer {
         font-size: 16px;
     }
     /*----------Game button styling--------*/
@@ -607,25 +603,25 @@ Modal animations
 @media (min-width: 556px) and (max-width: 668px) {
     /*----------Modals--------*/
     .rule-content,
-    .win-content {
+    .score-content {
         margin: 6% auto 2%;
         height: 76%;
     }
     .rules-reminder-header h3,
-    .win-header {
+    .score-header {
         margin-top: 20px;
         font-size: 40px;
     }
 
     .rules-reminder-body,
-    .win-body,
-    .win-body a,
-    .win-footer a {
+    .score-body,
+    .score-body a,
+    .score-footer a {
         font-size: 20px;
     }
     .rules-reminder-footer p,
     .rules-reminder-footer a,
-    .win-footer {
+    .score-footer {
         font-size: 16px;
     }
     /*----------Game button styling--------*/
@@ -647,20 +643,20 @@ Modal animations
     }
 
     .rule-content,
-    .win-content {
+    .score-content {
         margin: 18% auto 2%;
         height: 74%;
     }
 
     .rules-reminder-header h3,
-    .win-header {
+    .score-header {
         margin-top: 20px;
         font-size: 34px;
     }
     .rules-reminder-body,
     .rules-reminder-footer,
-    .win-body,
-    .win-body a,
+    .score-body,
+    .score-body a,
     .win-footer a {
         padding-top: 30px;
         font-size: 20px;
@@ -706,25 +702,25 @@ Plus/X  */
     }
 
     .rule-content,
-    .win-content {
+    .score-content {
         margin: 24% auto 2%;
         height: 74%;
     }
 
     .rules-reminder-header h3,
-    .win-header {
+    .score-header {
         margin-top: 20px;
         font-size: 34px;
     }
     .rules-reminder-body,
     .rules-reminder-footer,
-    .win-body,
-    .win-body a {
+    .score-body,
+    .score-body a {
         padding-top: 30px;
         font-size: 20px;
     }
 
-    .win-footer a {
+    .score-footer a {
         padding-top: 10px;
         font-size: 20px;
     }
@@ -734,13 +730,9 @@ Plus/X  */
         font-size: 14px;
     }
 
-    .closeScoreModal {
-        font-size: 46px;
-    }
-
-    .win-body,
-    .win-footer a,
-    .win-footer {
+    .score-body,
+    .score-footer,
+    .score-footer a {
         font-size: 18px;
     }
     /*----------Game page styling--------*/
@@ -775,7 +767,7 @@ Plus/X  */
     }
 
     .rule-content,
-    .win-content {
+    .score-content {
         margin: 28% auto 2%;
         height: 88%;
     }
@@ -785,19 +777,19 @@ Plus/X  */
     }
 
     .rules-reminder-header h3,
-    .win-header {
+    .score-header {
         margin-top: 20px;
         font-size: 30px;
     }
     .rules-reminder-body,
     .rules-reminder-footer,
-    .win-body,
-    .win-body a {
+    .score-body,
+    .score-body a {
         padding-top: 30px;
         font-size: 18px;
     }
 
-    .win-footer a {
+    .score-footer a {
         padding-top: 10px;
         font-size: 18px;
     }
@@ -807,16 +799,12 @@ Plus/X  */
         font-size: 12px;
     }
 
-    .closeScoreModal {
-        font-size: 46px;
-    }
-
-    .win-content {
+    .score-content {
         height: 80%;
     }
-    .win-body,
-    .win-footer a,
-    .win-footer {
+    .score-body,
+    .score-footer,
+    .score-footer a {
         font-size: 18px;
     }
     /*----------Game page styling--------*/

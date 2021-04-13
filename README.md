@@ -415,6 +415,20 @@ GAME PLAY
 
 - Play the game to set a high score, replay the game and get a lower score to ensure that the previous high score remains, replay the game and get a larger high score to make sure that the highest score is updated.  Repeated multiple times.
 
+ADDITIONAL TESTING
+
+Throughout the project I used Google Chrome's DevTools to test styling, features and script.
+
+In addition I have used the Lighthouse feature to check the sites performance, accessibility, best practice and SEO.  At present on a laptop the following are reported.
+
+HOME PAGE
+
+![Screen grab of Homepage Lighthouse scores](/assets/images/readme/homepage-lighthouse.png)
+
+GAME PAGE
+
+![Screen grab of Gamepage Lighthouse scores](/assets/images/readme/gamepage-lighthouse.png)
+
 FURTHER TESTING
 
 I invited friends and family to view the site on their devices and report any issues they find. Devices used included:

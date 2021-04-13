@@ -53,10 +53,6 @@ Header
     color: #ededef;
 }
 
-.site-title:hover {
-    color: #6c53a4;
-}
-
 .menu {
     margin: 0;
     padding: 0;
@@ -114,6 +110,26 @@ Hover functionality
 .gamepage-menu i:hover,
 .enter-game:hover {
     color: #6c53a4;
+}
+
+.site-title:hover {
+    color: #6c53a4;
+}
+
+.closeNavModal:hover,
+.closeNavModal:focus,
+.closeScoreModal:hover,
+.closeScoreModal:focus {
+    color: #6c53a4;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-start:hover,
+.btn-start:focus,
+.btn-reset:hover,
+.btn-reset:focus {
+    background-color: rgba(7, 127, 81, 1);
 }
 
 /*----------
@@ -198,15 +214,6 @@ Navbar Modal
     color: #ededef;
     float: right;
     font-size: 52px;
-}
-
-.closeNavModal:hover,
-.closeNavModal:focus,
-.closeScoreModal:hover,
-.closeScoreModal:focus {
-    color: #6c53a4;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 /*----------
@@ -316,13 +323,6 @@ Levels - Gameboard
     border: 1px solid #ededef;
 }
 
-.btn-start:hover,
-.btn-start:focus,
-.btn-reset:hover,
-.btn-reset:focus {
-    background-color: rgba(7, 127, 81, 1);
-}
-
 .hide-content {
     display: none !important;
 }
@@ -351,6 +351,7 @@ Modal animations
 
 /* ------------ Styling navbar and turn counter for media devices */
 @media (min-width: 320px) and (max-width: 1024px) {
+    /*----------Header--------*/
     .site-title {
         margin: 0;
         padding-left: 12px;
@@ -399,9 +400,13 @@ Modal animations
         padding-right: 16px;
     }
 
+    /*----------Game page styling--------*/
+
     .turns {
         padding: 10px 12px 0;
     }
+
+    /*----------Footer--------*/
 
     .inspiration-text p {
         display: none;
@@ -428,6 +433,8 @@ Modal animations
 /*---------------------------iPad Pro portrait*/
 
 @media (max-width: 1024px) and (orientation: portrait) {
+
+    /*----------Game page styling--------*/
     .turns,
     .gameLevel {
         padding-top: 260px;
@@ -436,12 +443,19 @@ Modal animations
 
 /*---------------------------Laptop and iPad Pro */
 @media (min-width: 900px) and (max-width: 1024px) {
+
+    /*----------Header--------*/
     .menu {
         margin-top: 20px;
     }
     .menu i {
         font-size: 40px;
     }
+    .site-title {
+        font-size: 54px;
+    }
+
+    /*----------Modals--------*/
     #modalNav {
         margin: 0 12px 0 12px;
     }
@@ -454,9 +468,9 @@ Modal animations
     .win-header {
         margin-top: 20px;
     }
-    .site-title {
-        font-size: 54px;
-    }
+    
+
+    /*----------Game button styling--------*/
     .btn-group-lg > .btn,
     .btn-lg {
         padding: 72px 160px 72px 120px;
@@ -465,12 +479,18 @@ Modal animations
 
 /*---------------------------iPad */
 @media (min-width: 768px) and (max-width: 900px) {
+    /*----------Header--------*/
     .menu {
         margin-top: 20px;
     }
     .menu i {
         font-size: 40px;
     }
+
+    .site-title {
+        font-size: 34px;
+    }
+    /*----------Modals--------*/
     #modalNav {
         margin: 0 12px 0 12px;
     }
@@ -496,16 +516,18 @@ Modal animations
     .win-footer {
         font-size: 16px;
     }
+
+    /*----------Home page textbox--------*/
     .title {
         font-size: 46px;
     }
-    .site-title {
-        font-size: 34px;
-    }
+   
+    /*----------Game button styling--------*/
     .btn-group-lg > .btn,
     .btn-lg {
         padding: 72px 120px;
     }
+    /*----------Game page styling--------*/
     .gameLevel,
     .turns {
         padding-top: 120px;
@@ -514,12 +536,14 @@ Modal animations
 
 /*---------------------------Breakpoints while reducing monitor size on laptop */
 @media (min-width: 900px) and (max-width: 991px) {
+    /*----------Game page Header--------*/
     #menu-bar-levels {
         height: 130px;
     }
 }
 
 @media (min-width: 668px) and (max-width: 768px) {
+    /*----------Modals--------*/
     .rule-content,
     .win-content {
         margin: 6% auto 2%;
@@ -542,6 +566,7 @@ Modal animations
     .win-footer {
         font-size: 16px;
     }
+    /*----------Game button styling--------*/
     .btn-group-lg > .btn,
     .btn-lg {
         padding: 72px 80px 72px 120px;
@@ -549,6 +574,7 @@ Modal animations
 }
 
 @media (min-width: 557px) and (max-width: 677px) {
+    /*----------Game page styling--------*/
     .turns,
     .gameLevel {
         padding-top: 20px;
@@ -556,6 +582,7 @@ Modal animations
 }
 
 @media (min-width: 556px) and (max-width: 668px) {
+    /*----------Modals--------*/
     .rule-content,
     .win-content {
         margin: 6% auto 2%;
@@ -578,6 +605,7 @@ Modal animations
     .win-footer {
         font-size: 16px;
     }
+    /*----------Game button styling--------*/
     .btn-group-lg > .btn,
     .btn-lg {
         padding: 72px 80px;
@@ -585,6 +613,7 @@ Modal animations
 }
 
 @media (min-width: 556px) and (max-width: 668px) {
+    /*----------Modals--------*/
     .rule-content,
     .win-content {
         margin: 6% auto 2%;
@@ -607,7 +636,7 @@ Modal animations
     .win-footer {
         font-size: 16px;
     }
-
+    /*----------Game button styling--------*/
     .btn-group-lg > .btn,
     .btn-lg {
         padding: 72px 80px;
@@ -616,6 +645,7 @@ Modal animations
 
 /*---------------------------Surface Duo  */
 @media (min-width: 480px) and (max-width: 556px) {
+    /*----------Modals--------*/
     #modalNav {
         margin: 0 12px 0;
     }
@@ -648,16 +678,17 @@ Modal animations
     .rules-reminder-footer a {
         font-size: 14px;
     }
-
+    /*----------Game page styling--------*/
     .turns,
     .gameLevel {
         padding-top: 10px;
     }
-
+    /*----------Game button styling--------*/
     .btn-group-lg > .btn,
     .btn-lg {
         padding: 72px 72px;
     }
+    
 }
 
 /*---------------------------Moto G4, Galaxy S5, Pixel 2/XL, iPhone 6/7/8/+
@@ -673,6 +704,7 @@ Plus/X  */
     .title {
         font-size: 30px;
     }
+    /*----------Modals--------*/
     #modalNav {
         margin: 0 0 0 12px;
     }
@@ -706,15 +738,6 @@ Plus/X  */
         font-size: 14px;
     }
 
-    .turns,
-    .gameLevel {
-        padding-top: 10px;
-    }
-    .btn-group-lg > .btn,
-    .btn-lg {
-        padding: 52px;
-    }
-
     .closeScoreModal {
         font-size: 46px;
     }
@@ -724,21 +747,35 @@ Plus/X  */
     .win-footer {
         font-size: 18px;
     }
+    /*----------Game page styling--------*/
+    .turns,
+    .gameLevel {
+        padding-top: 10px;
+    }
+    /*----------Game button styling--------*/
+    .btn-group-lg > .btn,
+    .btn-lg {
+        padding: 52px;
+    }
 }
 
 /*---------------------------iPhone 5/SE  */
 @media (min-width: 320px) and (max-width: 360px) {
+    /*----------Header--------*/
     .menu {
         margin-top: 20px;
     }
     .gamepage-menu {
         margin-top: 0;
     }
-    #modalNav {
-        margin: 0 0 0 12px;
-    }
+
+    /*----------Home page text box--------*/
     .title {
         font-size: 26px;
+    }
+    /*----------Modals--------*/
+    #modalNav {
+        margin: 0 0 0 12px;
     }
 
     .rule-content,
@@ -770,16 +807,6 @@ Plus/X  */
         font-size: 12px;
     }
 
-    .turns,
-    .gameLevel {
-        padding-top: 10px;
-    }
-
-    .btn-group-lg > .btn,
-    .btn-lg {
-        padding: 46px;
-    }
-
     .closeScoreModal {
         font-size: 46px;
     }
@@ -792,9 +819,20 @@ Plus/X  */
     .win-footer {
         font-size: 18px;
     }
+    /*----------Game page styling--------*/
+    .turns,
+    .gameLevel {
+        padding-top: 10px;
+    }
+    /*----------Game button styling--------*/
+    .btn-group-lg > .btn,
+    .btn-lg {
+        padding: 46px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
+    /*----------Game page styling--------*/
     .gameLevel,
     .turns {
         margin: 0;

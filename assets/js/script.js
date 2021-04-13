@@ -104,19 +104,19 @@ function prepareGame() {
 function checkForLevelIncrement(turn) {
   if (turn <= 3) {
     flashInterval = 1500;
-    $("#level").text(" Easy");
+    $("#level").text(" 1500");
   } else if (turn >= 4 && turn < 6) {
     flashInterval = 1200;
-    $("#level").text(" Easy");
+    $("#level").text(" 1200");
   }else if (turn >= 7 && turn < 9) {
     flashInterval = 1000;
-    $("#level").text(" Medium");
+    $("#level").text(" 1000");
   } else if (turn >= 10 && turn < 15) {
     flashInterval = 700;
-    $("#level").text(" Hard");
+    $("#level").text(" 700");
   } else if (turn >= 16 && turn < maxFlashes) {
     flashInterval = 500;
-    $("#level").text(" Feindish!");
+    $("#level").text(" 500!");
   }
 }
 

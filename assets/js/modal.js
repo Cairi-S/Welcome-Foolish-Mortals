@@ -2,6 +2,7 @@
 // Get navbar modal element
 let navbarModal = document.getElementById("navbarModal");
 let scoreModal = document.getElementById("scoreModal");
+let winModal = document.getElementById("winModal");
 
 // Get button that opens modal
 let openBtn = document.getElementById("modalNav");
@@ -29,6 +30,10 @@ function highScoreModalTrigger() {
   setNewHighScore();
 }
 
+function winModalTrigger() {
+  winModal.style.display = "block";
+}
+
 // Function for closing nav modal with 'x'
 function closeModal() {
   navbarModal.style.display = "none";
@@ -41,5 +46,8 @@ function clickOutsideModal(event) {
   }
   if (event.target == scoreModal) {
     scoreModal.style.display = "none";
+  }
+  if (event.target == winModal) {
+    winModal.style.display = "none";
   }
 }

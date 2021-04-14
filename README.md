@@ -182,13 +182,14 @@ It clearly shows the user their turn and the highest score from that device and 
 
 - Player being able to create an account to log username, chosen avatar and Highest Score so multiple players can play on the one device
 
-The initial avatar images I had thought of are the four infamous stretching room paintings and will appeal to any fan of the attraction.
+- Being able to choose an avatar to play as.  The initial avatar images I had thought of are the four infamous stretching room paintings and will appeal to any fan of the attraction.
 
 ![IMAGE OF STRETCH ROOM PORTRAITS](/assets/images/readme/stretchroomportraits.png)
 
 - Unlock rewards for e.g after specific highest scores or game played 5, 10, 15 times the reward could be 
  - play as other characters like the hitchhiking ghosts.
- - additional music e.g. winning and losing music.
+
+- Additional music to trigger with the highest score and winning modals.
 
 ### Features Left to Implement ###
 
@@ -207,35 +208,43 @@ The initial avatar images I had thought of are the four infamous stretching room
 
 This project uses HTML, CSS and JavaScript programming languages.
 
-[GitHub](https://github.com/)
+This project was built using [Gitpod](https://gitpod.io/).
 
-[Git](https://git-scm.com/)
+The creation of this website would not have been possible without:
 
-[Gitpod](https://gitpod.io/)
+[GitHub](https://github.com/) - Used to store and share all project code remotely.
 
-[Balsamiq](https://balsamiq.com/)
+[Gitpod](https://gitpod.io/) - Used as the IDE for building the website.
 
-[JQuery](https://jquery.com/)
+[Balsamiq](https://balsamiq.com/) - Used to create wireframes of the project.
 
-[Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+[JQuery](https://jquery.com/) - Used to reduce the amount of JavaScript code written.
+
+[Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Used for their navbar and grid layout.
+
+[Howler.js](https://howlerjs.com/) - Used this library to encorparate smooth audio across all devices.
+
+[cdnjs.com](https://cdnjs.com/) - Used to deliver libraries such as Howler.js and jQuery.
 
 [Multi Device Website Mockup Generator](http://techsini.com/multi-mockup/index.php) - used for website mockup at top of README.
 
-[Google Fonts](https://fonts.google.com/)
+[Google Fonts](https://fonts.google.com/) - Used for font styles, namely XXX and YYY.
 
-[Font Awesome](https://fontawesome.com/)
+[Font Awesome](https://fontawesome.com/) - Used for the home, question mark and speaker/mute icons used in the navbar.
 
-[AutoPrefixer](http://autoprefixer.github.io/)
+[AutoPrefixer](http://autoprefixer.github.io/) - Used for auto generation of CSS prefixes.
 
-[W3C HTML Markup Validation service](https://validator.w3.org/) - HTML validator.
+[W3C HTML Markup Validation service](https://validator.w3.org/) - Used to validate HTML code.
 
-[W3C CSS Validation service](https://jigsaw.w3.org/css-validator/) - CSS validator.
+[W3C CSS Validation service](https://jigsaw.w3.org/css-validator/) - Used to validate CSS code.
 
-[JSHint.com](https://jshint.com/)
+[JSHint.com](https://jshint.com/) - Used to check JavaScript code.
 
-[TinyPNG](https://tinypng.com/)
+[TinyPNG](https://tinypng.com/) - Used to reduce the file sizes of all images.
 
-[Sibelus](http://www.sibelius.com/download/index.html)
+[FreeConvert.com](https://www.freeconvert.com/mp3-to-webm) - Used to convert mp3 audio files for use with Howler.js.
+
+[Sibelus](http://www.sibelius.com/download/index.html) - Used to create the custom audio files.
 
 ### Testing ###
 
@@ -252,7 +261,7 @@ TESTING PLAYER AND DEVELOPER GOALS FROM UX SECTION
 Players requirements:
 
 - A game that is fun and exciting to play.
-  - With the game increasing in speed rather than the user haveing a set number of turns to complete the user is kept on their toes and in jeapordy as the difficulty increases over time.
+  - With the game increasing in speed rather than the user having a set number of turns to complete the user is kept on their toes and in jeapordy as the difficulty increases over time.
 - Easy to use controls on all devices.
   - The buttons which help navigate around the website clearly show their use whilst the game buttons (teal, white, purple and grey) are large for frantic gameplay.
 - Have clear rules for the game for those that need them.

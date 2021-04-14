@@ -485,14 +485,23 @@ Modal animations
     #modalNav {
         margin: 0 12px 0 12px;
     }
-    .rule-content,
-    .score-content {
+    .rule-content {
         margin: 6% auto 2%;
         height: 38%;
+    }
+
+    .score-content {
+        margin: 6% auto 2%;
+        height: 68%;
     }
     .rules-reminder-header h3,
     .score-header {
         margin-top: 20px;
+    }
+
+    .win-header h3 {
+        margin-top: 250px;
+        font-size: 50px;
     }
     
 
@@ -529,6 +538,11 @@ Modal animations
     .score-header {
         margin-top: 20px;
         font-size: 40px;
+    }
+
+    .win-header h3 {
+        margin-top: 160px;
+        font-size: 50px;
     }
 
     .rules-reminder-body,

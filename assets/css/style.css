@@ -567,9 +567,9 @@ Modal animations
 }
 
 /*---------------------------Breakpoints while reducing monitor size on laptop */
-@media (min-width: 900px) and (max-width: 991px) {
+/*@media (min-width: 900px) and (max-width: 991px) {
     /*----------Game page Header--------*/
-    #menu-bar-levels {
+    /*#menu-bar-levels {
         height: 130px;
     }
 }
@@ -582,9 +582,9 @@ Modal animations
     }
 }*/
 
-@media (min-width: 557px) and (max-width: 677px) {
+/*@media (min-width: 557px) and (max-width: 677px) {
     /*----------Game page styling--------*/
-    .turns,
+    /*.turns,
     .gameLevel {
         padding-top: 20px;
     }
@@ -592,7 +592,7 @@ Modal animations
 
 @media (min-width: 556px) and (max-width: 668px) {
     /*----------Modals--------*/
-    .rule-content,
+    /*.rule-content,
     .score-content {
         margin: 6% auto 2%;
         height: 76%;
@@ -615,11 +615,11 @@ Modal animations
         font-size: 16px;
     }
     /*----------Game button styling--------*/
-    .btn-group-lg > .btn,
+    /*.btn-group-lg > .btn,
     .btn-lg {
         padding: 72px 80px;
     }
-}
+}*/
 
 /*---------------------------Surface Duo  */
 @media (min-width: 480px) and (max-width: 556px) {
@@ -639,8 +639,8 @@ Modal animations
     }
 
     .rules-reminder-header h3,
-    .score-header {
-        margin-top: 20px;
+    .score-header h3 {
+        margin-top: 66px;
         font-size: 34px;
     }
     .rules-reminder-body,
@@ -669,8 +669,7 @@ Modal animations
     
 }
 
-/*---------------------------Moto G4, Galaxy S5, Pixel 2/XL, iPhone 6/7/8/+
-Plus/X  */
+/*---------------------------Pixel 2/XL, iPhone 6/7/8/Plus/X  */
 @media (min-width: 360px) and (max-width: 480px) {
     /*----Navbars--*/
     .menu {
@@ -698,7 +697,7 @@ Plus/X  */
     }
 
     .rules-reminder-header h3,
-    .score-header {
+    .score-header h3 {
         margin-top: 20px;
         font-size: 34px;
     }
@@ -737,7 +736,7 @@ Plus/X  */
     }
 }
 
-/*---------------------------iPhone 5/SE  */
+/*---------------------------Moto G4, Galaxy S5 and iPhone 5/SE  */
 @media (min-width: 320px) and (max-width: 360px) {
     /*----------Header--------*/
     .menu {
@@ -753,11 +752,12 @@ Plus/X  */
     }
     /*----------Modals--------*/
     #modalNav {
-        margin: 0 0 0 12px;
+        margin: 0 12px 0 12px;
     }
 
     .rule-content,
-    .score-content {
+    .score-content,
+    .win-content {
         margin: 28% auto 2%;
         height: 76%;
     }
@@ -767,21 +767,25 @@ Plus/X  */
     }
 
     .rules-reminder-header h3,
-    .score-header {
-        margin-top: 20px;
+    .score-header h3,
+    .win-header h3 {
+        margin-top: 32px;
         font-size: 30px;
     }
     .rules-reminder-body,
-    .rules-reminder-footer,
     .score-body,
-    .score-body a {
-        padding-top: 30px;
-        font-size: 18px;
+    .win-body {
+        padding-top: 14px;
+        font-size: 20px;
     }
 
     .play-again {
         padding-top: 10px;
-        font-size: 18px;
+        font-size: 20px;
+    }
+
+    .rules-reminder-footer{
+        padding-top: 14px;
     }
 
     .rules-reminder-footer p,
@@ -789,14 +793,6 @@ Plus/X  */
         font-size: 12px;
     }
 
-    .score-content {
-        height: 80%;
-    }
-    .score-body,
-    .score-footer,
-    .play-again {
-        font-size: 18px;
-    }
     /*----------Game page styling--------*/
     .turns,
     .gameLevel {

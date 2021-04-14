@@ -458,7 +458,7 @@ Modal animations
     }
 }
 
-/*---------------------------Laptop and iPad Pro */
+/*---------------------------iPad Pro */
 @media (min-width: 900px) and (max-width: 1024px) {
 
     /*----------Header--------*/
@@ -510,6 +510,9 @@ Modal animations
     .menu i {
         font-size: 40px;
     }
+    .gamepage-menu i {
+        font-size: 28px;
+    }
 
     .site-title {
         font-size: 34px;
@@ -554,7 +557,7 @@ Modal animations
     /*----------Game button styling--------*/
     .btn-group-lg > .btn,
     .btn-lg {
-        padding: 72px 120px;
+        padding: 72px 80px 72px 120px;
     }
     /*----------Game page styling--------*/
     .gameLevel,
@@ -571,31 +574,13 @@ Modal animations
     }
 }
 
-@media (min-width: 668px) and (max-width: 768px) {
-    /*----------Modals--------*/
-    /*.rule-content,
-    .score-content {
-        margin: 6% auto 2%;
-        height: 50%;
-    }
-
-    .rules-reminder-body,
-    .score-body,
-    .score-body a,
-    .play-again {
-        font-size: 20px;
-    }
-    .rules-reminder-footer p,
-    .rules-reminder-footer a,
-    .score-footer {
-        font-size: 16px;
-    }
+/*@media (min-width: 668px) and (max-width: 768px) {
     /*----------Game button styling--------*/
-    .btn-group-lg > .btn,
+    /*.btn-group-lg > .btn,
     .btn-lg {
         padding: 72px 80px 72px 120px;
     }
-}
+}*/
 
 @media (min-width: 557px) and (max-width: 677px) {
     /*----------Game page styling--------*/

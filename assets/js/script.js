@@ -20,14 +20,28 @@ let hasPlayerWon;
 let highestScoreCounter = 0;
 
 // Audio files
-const tealAudio = new Audio("assets/audio/Ashort.mp3");
+/*const tealAudio = new Audio("assets/audio/Ashort.mp3");
 tealAudio.muted = false;
 const whiteAudio = new Audio("assets/audio/Eshort.mp3");
 whiteAudio.muted = false;
 const purpleAudio = new Audio("assets/audio/Dsharpshort.mp3");
 purpleAudio.muted = false;
 const greyAudio = new Audio("assets/audio/Bshort.mp3");
-greyAudio.muted = false;
+greyAudio.muted = false;*/
+
+const tealAudio = new Howl({
+  src: ["assets/audio/Ashort.webm", "assets/audio/Ashort.mp3"],
+});
+const whiteAudio = new Howl({
+  src: ["assets/audio/Eshort.webm", "assets/audio/Eshort.mp3"],
+});
+const purpleAudio = new Howl({
+  src: ["assets/audio/Dsharpshort.webm", "assets/audio/Dsharpshort.mp3"],
+});
+const greyAudio = new Howl({
+  src: ["assets/audio/Bshort.webm", "assets/audio/Bshort.mp3"],
+});
+
 
 const audioFileArray = [tealAudio, whiteAudio, purpleAudio, greyAudio];
 

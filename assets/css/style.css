@@ -50,7 +50,7 @@ Header
     padding-left: 60px;
     font-family: "Cormorant Upright", sans-serif;
     font-size: 50px;
-    color: #ededef;
+    color: #edeffb;
 }
 
 .menu {
@@ -72,8 +72,8 @@ Footer
 #footer {
     height: 60px;
     margin: 0;
-    line-height: 0;
     padding-top: 16px;
+    line-height: 0;
     background-color: rgba(4, 0, 0, 0.5);
 }
 
@@ -82,23 +82,20 @@ Footer
     padding: 2px 0 10px 14px;
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 12px;
-    color: #ededef;
+    color: #edeffb;
     text-align: center;
-}
-
-.inspiration-text a {
-    color: #ededef;
 }
 
 .copyright-info,
 .copyright-info span {
     font-family: "Pathway Gothic One", sans-serif;
+    color: #edeffb;
     text-align: center;
 }
 
-.copyright-info i,
-.copyright-info span {
-    color: #ededef;
+.inspiration-text a,
+.copyright-info i {
+    color: #edeffb;
 }
 
 /*----------
@@ -108,18 +105,10 @@ Hover functionality
 .site-title:hover,
 .menu i:hover,
 .gamepage-menu i:hover,
-.enter-game:hover {
-    color: #6c53a4;
-}
-
-.site-title:hover {
-    color: #6c53a4;
-}
-
+.enter-game:hover,
 .closeNavModal:hover,
-.closeNavModal:focus {
+.closeNavModal:focus  {
     color: #6c53a4;
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -130,10 +119,10 @@ Hover functionality
     background-color: rgba(7, 127, 81, 1);
 }
 
-.score-footer a:hover {
+.play-again:hover {
     padding: 10px;
     color: #6c53a4;
-    background-color: #ededef;
+    background-color: #edeffb;
     border: 1px solid #6c53a4;
     border-radius: 12px;
 }
@@ -153,16 +142,16 @@ Modals
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(237, 239, 251, 0.5);
+    background-color: rgba(4, 0, 0, 0.5);
 }
 
 .rule-content,
 .score-content,
 .win-content {
     background-color: rgba(4, 0, 0, 0.9);
-    border: 2px solid #ededef;
+    border: 2px solid #edeffb;
     border-radius: 25px;
-    color: #ededef;
+    color: #edeffb;
     margin: 6% auto;
     padding: 0 20px;
     width: 64%;
@@ -186,7 +175,7 @@ Modals
 .rules-reminder-body,
 .score-body,
 .score-body a,
-.score-footer a,
+.play-again,
 .win-body,
 .win-footer {
     padding-top: 60px;
@@ -196,14 +185,14 @@ Modals
     text-align: center;
 }
 
-.score-footer a,
+.play-again,
 .win-body a {
     padding: 10px;
     color: #edeffb;
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 26px;
     background-color: #6c53a4;
-    border: 1px solid #ededef;
+    border: 1px solid #edeffb;
     border-radius: 12px;
 }
 
@@ -230,7 +219,7 @@ Modals
 }
 
 .closeNavModal {
-    color: #ededef;
+    color: #edeffb;
     float: right;
     font-size: 52px;
 }
@@ -255,34 +244,31 @@ section {
     width: 60%;
     margin-bottom: 30px;
     background-color: rgba(4, 0, 0, 0.8);
-    border: 2px solid #ededef;
+    border: 2px solid #edeffb;
     border-radius: 25px;
 }
 
-.title {
+.title,
+.rules,
+.enter-game {
     margin-top: 16px;
     font-family: "Cormorant Upright", sans-serif;
-    font-size: 50px;
     color: #6c53a4;
     text-align: center;
 }
 
+.title {
+    font-size: 50px;
+}
+
 .rules,
-.level h4,
 .enter-game {
-    margin-top: 16px;
-    font-family: "Cormorant Upright", sans-serif;
     font-size: 30px;
-    color: #6c53a4;
-    text-align: center;
 }
 
 .enter-game {
     margin: 16px 0;
-    font-family: "Cormorant Upright", sans-serif;
-    font-size: 30px;
     color: #edeffb;
-    text-align: center;
     text-underline-position: under;
 }
 
@@ -302,7 +288,7 @@ Levels - Gameboard
     padding: 20px 0 0 0;
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 30px;
-    color: #ededef;
+    color: #edeffb;
 }
 
 .gameLevel {
@@ -321,22 +307,22 @@ Levels - Gameboard
 
 .btn-teal {
     background-color: #4ea0ae;
-    border: 1px solid #ededef;
+    border: 1px solid #edeffb;
 }
 
 .btn-white {
     background-color: #edeffb;
-    border: 1px solid #ededef;
+    border: 1px solid #edeffb;
 }
 
 .btn-purple {
     background-color: #6c53a4;
-    border: 1px solid #ededef;
+    border: 1px solid #edeffb;
 }
 
 .btn-grey {
     background-color: #040000;
-    border: 1px solid #ededef;
+    border: 1px solid #edeffb;
 }
 
 .btn-start,
@@ -344,10 +330,10 @@ Levels - Gameboard
     margin: 30px 0 10px;
     padding: 6px 24px;
     font-family: "Pathway Gothic One", sans-serif;
-    color: #ededef;
+    color: #edeffb;
     font-size: 28px;
     background-color: rgba(7, 127, 81, 0.75);
-    border: 1px solid #ededef;
+    border: 1px solid #edeffb;
 }
 
 .hide-content {
@@ -384,7 +370,7 @@ Modal animations
         padding-left: 12px;
         font-family: "Cormorant Upright", sans-serif;
         font-size: 30px;
-        color: #ededef;
+        color: #edeffb;
     }
 
     .navbar {
@@ -548,7 +534,7 @@ Modal animations
     .rules-reminder-body,
     .score-body,
     .score-body a,
-    .score-footer a {
+    .play-again {
         font-size: 20px;
     }
     .rules-reminder-footer p,
@@ -598,7 +584,7 @@ Modal animations
     .rules-reminder-body,
     .score-body,
     .score-body a,
-    .score-footer a {
+    .play-again {
         font-size: 20px;
     }
     .rules-reminder-footer p,
@@ -637,7 +623,7 @@ Modal animations
     .rules-reminder-body,
     .score-body,
     .score-body a,
-    .score-footer a {
+    .play-again {
         font-size: 20px;
     }
     .rules-reminder-footer p,
@@ -741,7 +727,7 @@ Plus/X  */
         font-size: 20px;
     }
 
-    .score-footer a {
+    .play-again {
         padding-top: 10px;
         font-size: 20px;
     }
@@ -753,7 +739,7 @@ Plus/X  */
 
     .score-body,
     .score-footer,
-    .score-footer a {
+    .play-again {
         font-size: 18px;
     }
     /*----------Game page styling--------*/
@@ -810,7 +796,7 @@ Plus/X  */
         font-size: 18px;
     }
 
-    .score-footer a {
+    .play-again {
         padding-top: 10px;
         font-size: 18px;
     }
@@ -825,7 +811,7 @@ Plus/X  */
     }
     .score-body,
     .score-footer,
-    .score-footer a {
+    .play-again {
         font-size: 18px;
     }
     /*----------Game page styling--------*/

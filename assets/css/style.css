@@ -139,7 +139,7 @@ Hover functionality
 }
 
 /*----------
-Navbar Modal
+Modals
 ----------*/
 
 /*With thanks to Traversy Media for their guide to creating modals*/
@@ -157,7 +157,8 @@ Navbar Modal
 }
 
 .rule-content,
-.score-content {
+.score-content,
+.win-content {
     background-color: rgba(4, 0, 0, 0.9);
     border: 2px solid #ededef;
     border-radius: 25px;
@@ -173,7 +174,8 @@ Navbar Modal
 }
 
 .rules-reminder-header h3,
-.score-header {
+.score-header,
+.win-header {
     margin-top: 40px;
     font-family: "Cormorant Upright", sans-serif;
     font-size: 50px;
@@ -184,7 +186,9 @@ Navbar Modal
 .rules-reminder-body,
 .score-body,
 .score-body a,
-.score-footer a {
+.score-footer a,
+.win-body,
+.win-footer {
     padding-top: 60px;
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 26px;
@@ -192,8 +196,12 @@ Navbar Modal
     text-align: center;
 }
 
-.score-footer a {
+.score-footer a,
+.win-body a {
     padding: 10px;
+    color: #edeffb;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 26px;
     background-color: #6c53a4;
     border: 1px solid #ededef;
     border-radius: 12px;

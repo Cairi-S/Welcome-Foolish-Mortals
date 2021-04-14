@@ -6,7 +6,7 @@ let flashCounter;
 let flashInterval = 1500;
 
 let intervalRef;
-let maxFlashes = 25;
+let maxFlashes = 4;
 
 let turn;
 
@@ -20,14 +20,7 @@ let hasPlayerWon;
 let highestScoreCounter = 0;
 
 // Audio files
-/*const tealAudio = new Audio("assets/audio/Ashort.mp3");
-tealAudio.muted = false;
-const whiteAudio = new Audio("assets/audio/Eshort.mp3");
-whiteAudio.muted = false;
-const purpleAudio = new Audio("assets/audio/Dsharpshort.mp3");
-purpleAudio.muted = false;
-const greyAudio = new Audio("assets/audio/Bshort.mp3");
-greyAudio.muted = false;*/
+// https://howlerjs.com/
 
 const tealAudio = new Howl({
   src: ["assets/audio/Ashort.webm", "assets/audio/Ashort.mp3"],
@@ -85,6 +78,7 @@ function resetGame() {
   clearInterval(intervalRef);
   clearTimeout();
   $("#turnsTaken").text("-");
+  $("#level").text("Easy");
   resetButton.classList.add("hide-content");
   startButton.classList.remove("hide-content");
 }
@@ -113,10 +107,10 @@ function prepareGame() {
 
 // Increments the speed after the turn counter reaches specific break points.
 function checkForLevelIncrement(turn) {
-  if (turn <= 4) {
-    flashInterval = 1500;
-    $("#level").text(" Easy");
-  } else if (turn >= 5 && turn < 9) {
+  if (turn <= maxFlashes) {
+    flashInterval = 400;
+    $("#level").text(" Hard");
+  } /*else if (turn >= 5 && turn < 9) {
     flashInterval = 1200;
     $("#level").text(" Medium");
   } else if (turn >= 10 && turn < 14) {
@@ -125,7 +119,7 @@ function checkForLevelIncrement(turn) {
   } else if (turn >= 15 && turn < maxFlashes) {
     flashInterval = 700;
     $("#level").text(" Feindish");
-  }
+  }*/
 }
 
 // Checks whether it's the players turn or computer turn

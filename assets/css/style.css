@@ -163,8 +163,8 @@ Modals
 }
 
 .rules-reminder-header h3,
-.score-header,
-.win-header {
+.score-header h3,
+.win-header h3 {
     margin-top: 40px;
     font-family: "Cormorant Upright", sans-serif;
     font-size: 50px;
@@ -362,6 +362,11 @@ Modal animations
     }
 }
 
+
+
+
+
+/* --------------------------------------- MEDIA QUERIES--------------------------------------- */
 /* ------------ Styling navbar and turn counter for media devices */
 @media (min-width: 320px) and (max-width: 1024px) {
     /*----------Header--------*/
@@ -460,10 +465,12 @@ Modal animations
     .menu {
         margin-top: 20px;
     }
-    .menu i {
+    .menu i,
+    .gamepage-menu i {
         font-size: 40px;
     }
     .site-title {
+        padding-left: 40px;
         font-size: 54px;
     }
 
@@ -471,22 +478,18 @@ Modal animations
     #modalNav {
         margin: 0 12px 0 12px;
     }
-    .rule-content {
-        margin: 6% auto 2%;
-        height: 38%;
+
+    .rule-content,
+    .score-content,
+    .win-content {
+        margin: 10% auto 2%;
+        height: 56%;
     }
 
-    .score-content {
-        margin: 6% auto 2%;
-        height: 68%;
-    }
     .rules-reminder-header h3,
-    .score-header {
-        margin-top: 20px;
-    }
-
+    .score-header h3,
     .win-header h3 {
-        margin-top: 250px;
+        margin-top: 180px;
         font-size: 50px;
     }
     
@@ -517,12 +520,12 @@ Modal animations
     }
     .rule-content,
     .score-content {
-        margin: 6% auto 2%;
+        margin: 12% auto 2%;
         height: 50%;
     }
     .rules-reminder-header h3,
-    .score-header {
-        margin-top: 20px;
+    .score-header h3 {
+        margin-top: 58px;
         font-size: 40px;
     }
 
@@ -570,15 +573,10 @@ Modal animations
 
 @media (min-width: 668px) and (max-width: 768px) {
     /*----------Modals--------*/
-    .rule-content,
+    /*.rule-content,
     .score-content {
         margin: 6% auto 2%;
         height: 50%;
-    }
-    .rules-reminder-header h3,
-    .score-header {
-        margin-top: 20px;
-        font-size: 40px;
     }
 
     .rules-reminder-body,

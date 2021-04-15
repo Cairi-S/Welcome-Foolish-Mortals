@@ -12,14 +12,16 @@
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <meta name="description" content="Homepage for audio memory game Welcome Foolish Mortals inspired by Disneys attraction The Haunted Mansion. Photo by Brian McGowan on Unsplash" />
     </head>
+    <!-- Background image. Photo by Brian McGowan on Unsplash - link in README -->
     <body id="hero-haunted-mansion">
+        <!-- Home page menu. -->
         <header id="menu-bar">
-            <!-- Navbar courtesy of Bootstrap -->
+            <!-- Home page navbar.  Navbar code intially taken from Bootstrap 4 -->
             <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="collapse navbar-collapse d-flex justify-content-end menu" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse d-flex justify-content-end menu-items" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link active" href="index.html" target="_blank"> <i class="fas fa-home mobile-padding"></i> <span class="sr-only">(current)</span></a>
-
+                        <!-- Rules modal start-->
                         <!-- With thanks to Traversy Media for their guide to creating modals-->
                         <button id="modalNav" class="nav-item btn btn-big" aria-label="Rules and information"><i class="far fa-question-circle"></i></button>
 
@@ -46,6 +48,7 @@
             <!--End of navbar-->
         </header>
         <section>
+            <!-- Text container -->
             <div class="container home-text-container">
                 <div class="row g-0">
                     <div class="col-md-8 offset-md-2 home-text">
@@ -54,13 +57,13 @@
                         <p>There's no turning back now.</p>
                     </div>
                 </div>
-
                 <div class="row g-0">
                     <div class="col-md-8 offset-md-2">
                         <h3 class="rules">Rules</h3>
                         <p class="home-text">Follow the beat till you're dead on your feet...</p>
                         <p class="home-text">Follow the flashing buttons as they increase at a frightening speed</p>
                         <p class="home-text">Think you can keep up?</p>
+                        <!-- Link to gameplay page -->
                         <a href="game.html" class="enter-game d-flex justify-content-center">Enter</a>
                     </div>
                 </div>
@@ -68,11 +71,13 @@
         </section>
         <footer id="footer">
             <div class="row g-0">
+                <!-- Copyright information -->
                 <div class="col-md-4 offset-md-4">
                     <p class="copyright-info">
                         <i class="far fa-copyright"><span> Copyright 2021. All Rights Reserved.</span></i>
                     </p>
                 </div>
+                <!-- Game inspiration information -->
                 <div class="col-md-4 inspiration-text d-flex flex-column">
                     <p>This game has taken inspiration from the Walt Disney attraction <a href="https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/" target="_blank">The Haunted Mansion.</a></p>
                     <p>All likeness is credited to the owners <a href="https://thewaltdisneycompany.com/" target="_blank">The Walt Disney Company.</a></p>
@@ -86,6 +91,7 @@
         <audio muted><source src="assets/audio/Dsharpshort.mp3" type="audio/mpeg" /></audio>
         <audio muted><source src="assets/audio/Eshort.mp3" type="audio/mpeg" /></audio>
 
+        <!-- Links to external Howler.js library for smooth audio and internal .js files -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js" integrity="sha512-L6Z/YtIPQ7eU3BProP34WGU5yIRk7tNHk7vaC2dB1Vy1atz6wl9mCkTPPZ2Rn1qPr+vY2mZ9odZLdGYuaBk7dQ==" crossorigin="anonymous"></script>
         <script src="assets/js/modal.js"></script>
     </body>

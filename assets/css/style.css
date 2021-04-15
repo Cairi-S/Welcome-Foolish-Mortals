@@ -683,7 +683,7 @@ Modal animations
     }
     /*----------Modals--------*/
     #modalNav {
-        margin: 0 0 0 12px;
+        margin: 0 12px 0 12px;
     }
 
     .closeNavModal {
@@ -691,20 +691,31 @@ Modal animations
     }
 
     .rule-content,
-    .score-content {
+    .score-content,
+    .win-content {
         margin: 24% auto 2%;
         height: 74%;
     }
 
-    .rules-reminder-header h3,
-    .score-header h3 {
+    .rules-reminder-header h3{
         margin-top: 20px;
         font-size: 34px;
     }
+
     .rules-reminder-body,
-    .rules-reminder-footer,
+    .rules-reminder-footer {
+        padding-top: 16px;
+        font-size: 20px;
+    }
+
+    .score-header h3,
+    .win-header h3 {
+        margin-top: 56px;
+        font-size: 34px;
+    }
+    
     .score-body,
-    .score-body a {
+    .win-body {
         padding-top: 30px;
         font-size: 20px;
     }
@@ -716,14 +727,9 @@ Modal animations
 
     .rules-reminder-footer p,
     .rules-reminder-footer a {
-        font-size: 14px;
+        font-size: 16px;
     }
 
-    .score-body,
-    .score-footer,
-    .play-again {
-        font-size: 18px;
-    }
     /*----------Game page styling--------*/
     .turns,
     .gameLevel {

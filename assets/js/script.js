@@ -6,7 +6,7 @@ let flashCounter;
 let flashInterval = 1500;
 
 let intervalRef;
-let maxFlashes = 4;
+let maxFlashes = 25;
 
 let turn;
 
@@ -20,13 +20,14 @@ let hasPlayerWon;
 let highestScoreCounter = 0;
 
 // Audio files
-// https://howlerjs.com/
+// Thanks to https://howlerjs.com/ for their library to help smooth out audio at high game speeds.
 
 const tealAudio = new Howl({
   src: ["assets/audio/Ashort.webm", "assets/audio/Ashort.mp3"],
 });
 const whiteAudio = new Howl({
   src: ["assets/audio/Eshort.webm", "assets/audio/Eshort.mp3"],
+  
 });
 const purpleAudio = new Howl({
   src: ["assets/audio/Dsharpshort.webm", "assets/audio/Dsharpshort.mp3"],
@@ -35,10 +36,9 @@ const greyAudio = new Howl({
   src: ["assets/audio/Bshort.webm", "assets/audio/Bshort.mp3"],
 });
 
-
 const audioFileArray = [tealAudio, whiteAudio, purpleAudio, greyAudio];
 
-// Gets different html elements
+// Collection of html elements
 const startButton = document.querySelector("#startBtn");
 const resetButton = document.querySelector("#resetBtn");
 const turnCounter = document.querySelector("#turnsTaken");
@@ -46,7 +46,10 @@ const gameLevel = document.querySelector("#level");
 const endTurn = document.querySelector("#endTurn");
 const highScore = document.querySelector("#highScore");
 
-// Toggle mute icon on and off
+// Stores new highest scores
+const updateHighScore = localStorage.getItem("newHighScore");
+
+// Toggle speaker icons on and off
 $("#toggleMute").click(function () {
   $("i", this).toggleClass("fas fa-volume-up fas fa-volume-mute");
   audioFileArray.forEach((eachAudio) => {
@@ -60,7 +63,10 @@ startButton.addEventListener("click", startGame);
 //Event listening for click on reset button
 resetButton.addEventListener("click", resetGame);
 
-// Starts the game when start button is pressed, it changes button color, the number in the turn counter and hiding the start button on click
+// Starts the game when start button is pressed. 
+// This changes the game button color, 
+// Alters the text on Turn and Level text 
+// And hides the start button/shows the reset button on click
 function startGame() {
   startButton.classList.add("hide-content");
   resetButton.classList.remove("hide-content");
@@ -69,7 +75,9 @@ function startGame() {
   prepareGame();
 }
 
-// Resets the game clearing sequences, intervals and turns.  Reset button is hidden and start button appears prompting player to restart
+// Resets the game when reset button is pressed. 
+// This clears the current sequence, interval and turns.  
+// The reset button is hidden and start button appears prompting player.
 function resetGame() {
   computerSequence = [];
   playerSequence = [];
@@ -83,7 +91,8 @@ function resetGame() {
   startButton.classList.remove("hide-content");
 }
 
-// Prepares the game, setting the variables, creating the sequence to be copied and starts the first turn.
+// Prepares the game once start button is pressed. 
+// This sets the variables, creates the sequence to be copied and starts the first turn.
 function prepareGame() {
   hasPlayerWon = false;
   isMuted = false;
@@ -105,21 +114,24 @@ function prepareGame() {
   intervalRef = setInterval(gamePlay, flashInterval); // Runs gamePlay function every 800ms.  Light will flash every 800ms
 }
 
-// Increments the speed after the turn counter reaches specific break points.
+// Increments the speed of the flashes after the turn counter reaches specific break points.
 function checkForLevelIncrement(turn) {
-  if (turn <= maxFlashes) {
-    flashInterval = 400;
-    $("#level").text(" Hard");
-  } /*else if (turn >= 5 && turn < 9) {
+  if (turn <= 4) {
+    flashInterval = 1500;
+    $("#level").text(" Easy");
+  } else if (turn >= 5 && turn < 7) {
     flashInterval = 1200;
     $("#level").text(" Medium");
-  } else if (turn >= 10 && turn < 14) {
+  } else if (turn >= 8 && turn < 10) {
     flashInterval = 1000;
     $("#level").text(" Hard");
-  } else if (turn >= 15 && turn < maxFlashes) {
-    flashInterval = 700;
+  } else if (turn >= 11 && turn < 15) {
+    flashInterval = 800;
     $("#level").text(" Feindish");
-  }*/
+  } else if (turn >= 16 && turn < maxFlashes) {
+    flashInterval = 400;
+    $("#level").text(" Ghastly");
+  }
 }
 
 // Checks whether it's the players turn or computer turn
@@ -155,7 +167,7 @@ function gamePlay() {
         playColorAudio(flashGrey, greyAudio);
       }
       flashCounter++;
-    }, 200); // waits 200ms and then flashes the number/color/audio.
+    }, 200);
   }
 }
 
@@ -179,7 +191,7 @@ function playerBtnClick(playerSeqPushNumber, btnFlashColor, btnFlashAudio) {
   if (!hasPlayerWon) {
     setTimeout(() => {
       originalColor();
-    }, 300); //length of flash on player click
+    }, 300);
   }
 }
 
@@ -216,10 +228,10 @@ function checkAnswer() {
     setTimeout(() => {
       turnCounter.innerHTML = turn;
       originalColor();
-    }, flashInterval); //sets the time for the turn counter and buttons to return to original color
+    }, flashInterval);
 
     isMuted = true;
-
+    // If the game is lost the highest score modal is triggered - stored in modal.js
     highScoreModalTrigger();
   }
 
@@ -232,14 +244,23 @@ function checkAnswer() {
     isComputerTurn = true;
     flashCounter = 0;
     turnCounter.innerHTML = turn;
-    intervalRef = setInterval(gamePlay, flashInterval); //sets speed of note repetition
+    intervalRef = setInterval(gamePlay, flashInterval);
   }
-
+  // Checks to see if a new highest score is reached
   checkForNewHighScore();
 }
 
-const updateHighScore = localStorage.getItem("newHighScore");
+// Instructions for if the player reaches maxFlashes
+function winGame() {
+  flashAll();
+  turnCounter.innerHTML = "Win";
+  isPlayerTurn = false;
+  hasPlayerWon = true;
+  winModalTrigger();
+}
 
+// Local storage of the games highest scores
+// Checks to see if a new highest score is reached
 function checkForNewHighScore() {
   if (turn > highScore.innerHTML) {
     highScore.innerHTML = highestScoreCounter;
@@ -249,14 +270,15 @@ function checkForNewHighScore() {
   }
 }
 
+// Updates the highest score if necessary 
 function setNewHighScore() {
   if (turn > highScore.innerHTML) {
     highScore.innerHTML = updateHighScore;
   }
 }
 
-// Makes all buttons return to full opacity
-
+// Gameplay Button Flashes
+// Makes all buttons opacity change
 function flashTeal() {
   $(".btn-teal").css("background-color", "rgba(78, 160, 174, 0.5)");
 }
@@ -280,18 +302,10 @@ function flashAll() {
   flashGrey();
 }
 
-// Makes all buttons opacity change
+// Makes all buttons return to full opacity
 function originalColor() {
   $(".btn-teal").css("background-color", "#4ea0ae");
   $(".btn-white").css("background-color", "#edeffb");
   $(".btn-purple").css("background-color", "#6c53a4");
   $(".btn-grey").css("background-color", "#040000");
-}
-
-function winGame() {
-  flashAll();
-  turnCounter.innerHTML = "Win";
-  isPlayerTurn = false;
-  hasPlayerWon = true;
-  winModalTrigger();
 }

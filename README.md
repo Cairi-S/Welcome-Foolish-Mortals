@@ -27,9 +27,7 @@
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-Welcome Foolish Mortals is an audio visual Memory game inspired by the popular Disney theme park attraction, [The Haunted Mansion](https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/). 
-
-The target audience for this game is Disney fans, particularly fans of The Haunted Mansion, and fans of memory games.  As the ride can be a little spooky, some of the sounds and images in the game may spook younger players so it is recommended for ages 8+.
+Welcome Foolish Mortals is an audiovisual Memory game inspired by the popular Disney theme park attraction, [The Haunted Mansion](https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/). 
 
 ### UX ##
 
@@ -37,40 +35,38 @@ The target audience for this game is Disney fans, particularly fans of The Haunt
 
 The main target audience for Welcome Foolish Mortals is fans of memory games and fans of Disney Theme Parks, especially for The Haunted Mansion.  Although the game can be enjoyed by everyone younger audiences may find it a little spooky, so it is recommended for ages 8+.
 
-Players goals are:
-- A game that is fun and exciting to play.
-- Easy to use controls on all devices.
-- Have clear rules for the game for those that need them.
-- Get clear feedback on the Number of turns the player is on.
-- Get clear feedback on the users Highest Score.
-- Visually rewarding images themed around The Haunted Mansion.
+Players goals are to:
+- Have a game that is fun and exciting to play.
+- Have easy-to-use controls on all devices.
+- Have clear rules for the game available to those that need them.
+- Get clear feedback on the number of turns the player is on.
+- Get clear feedback on the user's highest score.
+- Have visually rewarding images themed around The Haunted Mansion.
 
-Developer Goals are:
-- To create a fun game interactive game that myself and my friends can enjoy.
-- To encorporate elements of my favourite attraction at Disney into a project.
-- To design and develop a project using new-found skills in JavaScript and JQuery. 
+Developer Goals are to:
+- Create a fun game interactive game that myself and my friends can enjoy.
+- Incorporate elements of my favorite attraction at Disney into a project.
+- Design and develop a project using new-found skills in JavaScript and JQuery.  
 
 #### User Stories ####
 
 As a fan of memory games I want to:
 
 - Play a fun game.
-- Find clear, easy to follow instructions on gameplay.
+- Find clear, easy-to-follow instructions on gameplay.
 - Be able to access the instructions from any page.
 - Have clear audio and visual cues which show where I have clicked.
 - Be able to play with and without audio.
-- Be able to choose my difficulty level.
 - Be able to track my progress while playing.
-- Be able to see my past highest scores.
-- To be able to contact the maker of the game with feedback.
+- Be able to see my past highest score.
 
 ### Design ###
 
-The audio, colors, fonts and styling all take inspiration from The Haunted Mansion.
+The fonts, icons, colors, audio and styling all take inspiration from The Haunted Mansion.
 
 #### Fonts ####
 
-All fonts are provided by [Google fonts](https://fonts.google.com/).
+All fonts are provided by [Google fonts](https://fonts.google.com/) and were chosen for their likeness to those found within the attraction.
 
 - [Cormorant Upright](https://fonts.google.com/specimen/Cormorant+Upright?preview.text_type=custom) - Is used the page logo and headings.
 
@@ -82,9 +78,9 @@ All fonts are provided by [Google fonts](https://fonts.google.com/).
 
 #### Icons ####
 
-The favicon is taken from [favicon.io](https://favicon.io/emoji-favicons/ghost/) and the open source project [Twemoji](https://twemoji.twitter.com/).
+The favicon is taken from [favicon.io](https://favicon.io/emoji-favicons/ghost/) and the open-source project [Twemoji](https://twemoji.twitter.com/).
 
-All other icons are provided by [Font Awesome](https://fontawesome.com/).  These icons have been chosen as they are easy to recognise and are widely understood.
+All other icons are provided by [Font Awesome](https://fontawesome.com/).  These icons have been chosen as they are easy to recognize and are widely understood.
 
 - The [HOME](https://fontawesome.com/icons/home?style=solid) takes the player back to the Home page.
 - The [QUESTION MARK](https://fontawesome.com/icons/question-circle?style=regular) gives a modal reminding the player of the rules.
@@ -96,17 +92,25 @@ The Haunted Mansion has a clear, easily identifiable color palette.
 
 ![IMAGE OF COLOR PALETTE](/assets/images/readme/disneyhauntedmansioncolorhex.png)
 
-The background color for the header, footer and sidebar tie in with the background. 
+The background color for the header, footer, text boxes and modals are dark grey (#040000) and use differing opacities to create a dark atmosphere.
 
-The color of the text stands out against the background.
+The main text color will be white (#edeffb) to stand out against the background.
 
-The colors of the boxes are the most identifiable colors from the attractions theming.
+Text of importance such as headers or text with hover functionality will be purple (#6c53a4).
+
+The colors used for the game-play buttons are the most identifiable colors from the attractions theming: teal, purple, white and grey (#4ea0ae, #6c53a3, #edeffb, #040000).
+
+The start and reset buttons color takes inspiration from the attraction host's costume using the color green (#077f51).  On a hover the opacity of the button will change to make it clear where the user will be clicking
+
+The play again link featured in the highest score and winners modals will be with a purple background and white text to stand out against the surrounding text and background.  On a hover the colors will invert to make it clear to the user where they are clicking.
 
 Many thanks to [color-hex.com](https://www.color-hex.com/color-palette/93407) and user [Lazaefair](https://www.color-hex.com/member/lazaefair) for help with sourcing the color palette.
 
 #### Backgrounds ####
-The Home screen background image is of the outside of the Haunted Mansion attraction inviting players in to the game.
-The Background of the game is of the iconic Haunted Mansion wallpaper.
+
+The Home screen background image is of the outside of the Haunted Mansion attraction chosen to seemingly 'invite' players into the game.  The photo used is by [Brian McGowan on Unsplash](https://unsplash.com/photos/he0-fswKsXk).
+
+The Background of the game is of the iconic [Traditional Haunted Mansion Wallpaper](https://wallpaperaccess.com/haunted-mansion).
  
 #### Audio files ####
 The notes used in the gameplay are taken from the attractions soundtrack - Grim Grinning Ghosts.  These are A, E, D# and B and were created at home using [Sibelus](http://www.sibelius.com/download/index.html).

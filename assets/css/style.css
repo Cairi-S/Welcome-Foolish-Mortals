@@ -152,10 +152,9 @@ Modals
     border: 2px solid #edeffb;
     border-radius: 25px;
     color: #edeffb;
-    margin: 6% auto;
+    margin: 6% auto 30px;
     padding: 0 20px;
     width: 64%;
-    height: 70%;
     -webkit-animation-name: homeModalOpen;
     animation-name: homeModalOpen;
     -webkit-animation-duration: 1s;
@@ -178,7 +177,7 @@ Modals
 .play-again,
 .win-body,
 .win-footer {
-    padding-top: 60px;
+    padding-top: 30px;
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 26px;
     color: #edeffb;
@@ -206,7 +205,7 @@ Modals
 }
 
 .rules-reminder-footer {
-    padding-top: 60px;
+    padding: 60px 0;
 }
 
 .rules-reminder-footer p,
@@ -229,7 +228,7 @@ Modals
 }
 
 .modalPrompt{
-    margin-top: 10px;
+    margin: 10px 0 30px 0;
 }
 
 /*----------
@@ -459,7 +458,7 @@ Modal animations
 }
 
 /*---------------------------iPad Pro */
-@media (min-width: 900px) and (max-width: 1024px) {
+@media (min-width: 900px) and (max-width: 1024px) and (orientation: portrait)  {
 
     /*----------Header--------*/
     .menu {
@@ -500,7 +499,7 @@ Modal animations
 }
 
 /*---------------------------iPad */
-@media (min-width: 768px) and (max-width: 900px) {
+@media (min-width: 768px) and (max-width: 900px) and (orientation: portrait) {
     /*----------Header--------*/
     .menu {
         margin-top: 20px;
@@ -561,61 +560,6 @@ Modal animations
         padding-top: 120px;
     }
 }
-
-/*---------------------------Breakpoints while reducing monitor size on laptop */
-/*@media (min-width: 900px) and (max-width: 991px) {
-    /*----------Game page Header--------*/
-    /*#menu-bar-levels {
-        height: 130px;
-    }
-}
-
-/*@media (min-width: 668px) and (max-width: 768px) {
-    /*----------Game button styling--------*/
-    /*.btn-group-lg > .btn,
-    .btn-lg {
-        padding: 72px 80px 72px 120px;
-    }
-}*/
-
-/*@media (min-width: 557px) and (max-width: 677px) {
-    /*----------Game page styling--------*/
-    /*.turns,
-    .gameLevel {
-        padding-top: 20px;
-    }
-}
-
-@media (min-width: 556px) and (max-width: 668px) {
-    /*----------Modals--------*/
-    /*.rule-content,
-    .score-content {
-        margin: 6% auto 2%;
-        height: 76%;
-    }
-    .rules-reminder-header h3,
-    .score-header {
-        margin-top: 20px;
-        font-size: 40px;
-    }
-
-    .rules-reminder-body,
-    .score-body,
-    .score-body a,
-    .play-again {
-        font-size: 20px;
-    }
-    .rules-reminder-footer p,
-    .rules-reminder-footer a,
-    .score-footer {
-        font-size: 16px;
-    }
-    /*----------Game button styling--------*/
-    /*.btn-group-lg > .btn,
-    .btn-lg {
-        padding: 72px 80px;
-    }
-}*/
 
 /*---------------------------Surface Duo  */
 @media (min-width: 480px) and (max-width: 556px) {
@@ -797,6 +741,47 @@ Modal animations
     .btn-group-lg > .btn,
     .btn-lg {
         padding: 46px;
+    }
+}
+
+/*---------------------------Breakpoints while reducing monitor size on laptop */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /*----------Game page Header--------*/
+    .btn-group-lg > .btn,
+    .btn-lg {
+        padding: 4.5rem 6rem;
+    }
+}
+
+
+@media (min-width: 900px) and (max-width: 991px) {
+    /*----------Game page Header--------*/
+    #menu-bar-levels {
+        height: 130px;
+    }
+}
+
+@media (min-width: 668px) and (max-width: 768px) {
+    /*----------Game button styling--------*/
+    .btn-group-lg > .btn,
+    .btn-lg {
+        padding: 72px 80px 72px 120px;
+    }
+}
+
+@media (min-width: 557px) and (max-width: 677px) {
+    /*----------Game page styling--------*/
+    .turns,
+    .gameLevel {
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: 556px) and (max-width: 668px) {
+    /*----------Game button styling--------*/
+    .btn-group-lg > .btn,
+    .btn-lg {
+        padding: 72px 80px;
     }
 }
 

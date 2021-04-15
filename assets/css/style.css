@@ -475,9 +475,7 @@ Modal animations
     }
 
     /*----------Modals--------*/
-    #modalNav {
-        margin: 0 12px 0 12px;
-    }
+
 
     .rule-content,
     .score-content,
@@ -518,9 +516,7 @@ Modal animations
         font-size: 34px;
     }
     /*----------Modals--------*/
-    #modalNav {
-        margin: 0 12px 0 12px;
-    }
+
     .rule-content,
     .score-content {
         margin: 12% auto 2%;
@@ -624,9 +620,6 @@ Modal animations
 /*---------------------------Surface Duo  */
 @media (min-width: 480px) and (max-width: 556px) {
     /*----------Modals--------*/
-    #modalNav {
-        margin: 0 12px 0;
-    }
 
     .closeNavModal {
         font-size: 34px;
@@ -682,9 +675,7 @@ Modal animations
         font-size: 30px;
     }
     /*----------Modals--------*/
-    #modalNav {
-        margin: 0 12px 0 12px;
-    }
+
 
     .closeNavModal {
         font-size: 34px;
@@ -757,9 +748,7 @@ Modal animations
         font-size: 26px;
     }
     /*----------Modals--------*/
-    #modalNav {
-        margin: 0 12px 0 12px;
-    }
+
 
     .rule-content,
     .score-content,

@@ -238,7 +238,7 @@ Start/Reset buttons - Gameboard
     border: 1px solid #edeffb;
 }
 
-/*-- Toggle function for Start/Reset buttons --*/
+/*-- Toggle function for mute and Start/Reset buttons by hiding when not in use--*/
 .hide-content {
     display: none !important;
 }

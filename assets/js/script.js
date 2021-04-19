@@ -35,8 +35,6 @@ const greyAudio = new Howl({
 });
 
 // Collection of html elements
-const muteAudio = document.querySelector("#toggleMute");
-const playAudio = document.querySelector("#toggleDisplay");
 const startButton = document.querySelector("#startBtn");
 const resetButton = document.querySelector("#resetBtn");
 const turnCounter = document.querySelector("#turnsTaken");
@@ -48,18 +46,18 @@ const highScore = document.querySelector("#highScore");
 const updateHighScore = localStorage.getItem("newHighScore");
 
 // Toggle speaker icons on and off whilst muting audio
-$("#toggleMute").click(function () {
-  $('#toggleMute').addClass('hide-content');
-  $('#toggleDisplay').removeClass('hide-content');
+$("#toggleToMute").click(function () {
+  $('#toggleToMute').addClass('hide-content');
+  $('#toggleToAudio').removeClass('hide-content');
   tealAudio.mute(true);
   purpleAudio.mute(true);
   whiteAudio.mute(true);
   greyAudio.mute(true);
 });
 
-$("#toggleDisplay").click(function () {
-  $('#toggleDisplay').addClass('hide-content');
-  $('#toggleMute').removeClass('hide-content');
+$("#toggleToAudio").click(function () {
+  $('#toggleToAudio').addClass('hide-content');
+  $('#toggleToMute').removeClass('hide-content');
   tealAudio.mute(false);
   purpleAudio.mute(false);
   whiteAudio.mute(false);

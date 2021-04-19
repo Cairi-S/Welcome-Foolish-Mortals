@@ -531,21 +531,34 @@ This project was developed using [Gitpod](https://www.gitpod.io/), committed to 
 This website was published using GitHub Pages. The procedure is outlined below.
 
 1. Go to the **[GitHub](https://github.com/)** website and log in.
-2. On the top right hand corner **click the dropdown icon** next to your avatar, and **select 'Your repositories'**. 
+2. On the top right-hand corner **click the dropdown icon** next to your avatar, and **select 'Your repositories'**. 
 3. **Select the appropriate repository** (for this project the repository would be 'Welcome-Foolish-Mortals').
-4. The header of your chosen repository will have a menu of different pages you can select (you automaticall should be on 'Code').  **Click on 'Settings'** located on the far right hand side.
+4. The header of your chosen repository will have a menu of different pages you can select (you automatically should be on 'Code').  **Click on 'Settings'** located on the far right-hand side.
 5. **Scroll down** until you see the heading **'GitHub Pages'**. 
 6. Under the subheading 'Source' there is a **dropdown menu titled 'Branch'** - click on this and **select 'master branch'**. 
 7. The page will reload and you will see the **link of your published page displayed within a green banner** under 'GitHub pages'.  The text will say 'Your site is published at *website*' (in this instance https://cairi-s.github.io/Welcome-Foolish-Mortals/).
 8. **Please note** it can take a few minutes for the site to be published, you must wait until the 'GitHub pages' banner turns green before trying to open the link.
+
+**Running the project locally**
+
+You are also able to clone 'Welcome Foolish Mortals' from Github using the procedure outlined below.
+
+1. Navigate to the **['Welcome Foolish Mortals' repository](https://github.com/Cairi-S/Welcome-Foolish-Mortals).
+2. Click the Code dropdown menu next to the green Gitpod button.
+3. In the dropdown copy the URL displayed under the header CLONE with the HTTPS title underlined (in this instance https://github.com/Cairi-S/Welcome-Foolish-Mortals.git).
+4. Open your local IDE and launch Git Bash.
+5. Create a new folder or navigate to the folder where you want the clone to be stored.
+6. Once opened type 'git clone' and HTTPS URL copied earlier (e.g. git clone https://github.com/Cairi-S/Welcome-Foolish-Mortals.git)
+7. Once you press enter the clone will be created.
 
 ### Credits ###
 
 The themeing for this website has taken inspiration from [The Walt Disney Company's](https://thewaltdisneycompany.com/) popular attraction [The Haunted Mansion](https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/).
 All likeness is for educational purposes only.
 
-
 ### Content ###
+
+- The text featured throughout the website has taken influence from the script of The Haunted Mansion.
 
 - User [Lazaefair](https://www.color-hex.com/member/lazaefair) for their Haunted Mansion color palette on [color-hex.com](https://www.color-hex.com/color-palette/93407).
 
@@ -563,7 +576,7 @@ The Haunted Mansion is owned and operated by [The Walt Disney Company](https://t
 
 ### Code ###
 
-Throughout the project I referenced a few online resources, these were:
+While building the project I referenced a few online resources.
 
 - Thank you to [Traversy Media](https://youtu.be/6ophW7Ask_0) - I referenced their 'Guide for creating a modal with HTML CSS and JavaScript' video when creating the modals on the home and game pages.
 
@@ -574,6 +587,6 @@ Throughout the project I referenced a few online resources, these were:
 ### Acknowledgements ###
 
 - The CI tutor support team, in particular Igor_ci and Jo_ci.
-- The Slack community for endless support and encouragement.
+- The Slack community for endless support and encouragement, in particular Ed B.
 - My mentor for all their help and guidance throughout this project.
 - And honestly, The Walt Disney Company, I love all things Disney but this ride is my 'must do' on a trip to any of their parks.

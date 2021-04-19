@@ -102,8 +102,8 @@ Hover functionality
 ----------*/
 
 .site-title:hover,
-.menu i:hover,
-.gamepage-menu i:hover,
+.menu-items i:hover,
+.gamepage-menu-items i:hover,
 .enter-game:hover,
 .closeNavModal:hover,
 .closeNavModal:focus {
@@ -413,8 +413,8 @@ MEDIA QUERIES
         justify-content: center !important;
     }
 
-    .menu i,
-    .gamepage-menu i {
+    .menu-items i,
+    .gamepage-menu-items i {
         font-size: 26px;
         margin: 0;
     }
@@ -466,11 +466,11 @@ MEDIA QUERIES
 /*---------------------------iPad Pro */
 @media (min-width: 900px) and (max-width: 1024px) and (orientation: portrait) {
     /*----------Header--------*/
-    .menu {
+    .menu-items {
         margin-top: 20px;
     }
-    .menu i,
-    .gamepage-menu i {
+    .menu-items i,
+    .gamepage-menu-items i {
         font-size: 40px;
     }
     .site-title {
@@ -504,13 +504,13 @@ MEDIA QUERIES
 /*---------------------------iPad */
 @media (min-width: 768px) and (max-width: 900px) and (orientation: portrait) {
     /*----------Header--------*/
-    .menu {
+    .menu-items {
         margin-top: 20px;
     }
-    .menu i {
+    .menu-items i {
         font-size: 40px;
     }
-    .gamepage-menu i {
+    .gamepage-menu-items i {
         font-size: 28px;
     }
 
@@ -531,7 +531,6 @@ MEDIA QUERIES
     }
 
     .win-header h3 {
-        margin-top: 160px;
         font-size: 50px;
     }
 
@@ -611,10 +610,10 @@ MEDIA QUERIES
 /*---------------------------Pixel 2/XL, iPhone 6/7/8/Plus/X  */
 @media (min-width: 360px) and (max-width: 480px) {
     /*----Navbars--*/
-    .menu {
+    .menu-items {
         margin-top: 20px;
     }
-    .gamepage-menu {
+    .gamepage-menu-items {
         margin-top: 0;
     }
     .title {
@@ -681,10 +680,10 @@ MEDIA QUERIES
 /*---------------------------Moto G4, Galaxy S5 and iPhone 5/SE  */
 @media (min-width: 320px) and (max-width: 360px) {
     /*----------Header--------*/
-    .menu {
+    .menu-items {
         margin-top: 20px;
     }
-    .gamepage-menu {
+    .gamepage-menu-items {
         margin-top: 0;
     }
 

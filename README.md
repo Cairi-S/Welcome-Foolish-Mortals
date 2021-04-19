@@ -27,7 +27,7 @@
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-Welcome Foolish Mortals is an audiovisual Memory game inspired by the popular Disney theme park attraction, [The Haunted Mansion](https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/). 
+**Welcome Foolish Mortals** is an audiovisual Memory game inspired by the popular Disney theme park attraction, [The Haunted Mansion](https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/). 
 
 ### UX ##
 
@@ -68,11 +68,11 @@ The fonts, icons, colors, audio and styling all take inspiration from The Haunte
 
 All fonts are provided by [Google fonts](https://fonts.google.com/) and were chosen for their likeness to those found within the attraction.
 
-- [Cormorant Upright](https://fonts.google.com/specimen/Cormorant+Upright?preview.text_type=custom) - Is used the page logo and headings.
+- [Cormorant Upright](https://fonts.google.com/specimen/Cormorant+Upright?preview.text_type=custom) is used the page logo and headings.
 
 ![Cormorant Upright example](/assets/images/readme/cormorantupright.png)
 
-- [Pathway Gothic One](https://fonts.google.com/specimen/Pathway+Gothic+One?preview.text_type=custom) - Is used for all other text.
+- [Pathway Gothic One](https://fonts.google.com/specimen/Pathway+Gothic+One?preview.text_type=custom) is used for all other text.
 
 ![Pathway Gothic One example](/assets/images/readme/pathwaygothicone.png)
 
@@ -84,7 +84,7 @@ All other icons are provided by [Font Awesome](https://fontawesome.com/).  These
 
 - The [HOME](https://fontawesome.com/icons/home?style=solid) takes the player back to the Home page.
 - The [QUESTION MARK](https://fontawesome.com/icons/question-circle?style=regular) gives a modal reminding the player of the rules.
-- The [SPEAKER](https://fontawesome.com/icons/volume-up) and [SPEAKER WITH CROSS](<https://fontawesome.com/icons/volume-mute?style=solid) mutes and unmutes the sound.
+- The [SPEAKER](https://fontawesome.com/icons/volume-up) and [SPEAKER WITH CROSS](https://fontawesome.com/icons/volume-mute?style=solid) mutes and unmutes the sound.
 
 #### Colors ####
 
@@ -92,34 +92,37 @@ The Haunted Mansion has a clear, easily identifiable color palette.
 
 ![IMAGE OF COLOR PALETTE](/assets/images/readme/disneyhauntedmansioncolorhex.png)
 
-The background color for the header, footer, text boxes and modals are dark grey (#040000) and use differing opacities to create a dark atmosphere.
+The background color for the header, footer, text boxes and modals are dark grey (#040000) and use differing opacities to create a dark, spooky atmosphere.
 
-The main text color will be white (#edeffb) to stand out against the background.
+The main text color will be off-white (#edeffb) to stand out against the background.
 
-Text of importance such as headers or text with hover functionality will be purple (#6c53a4).
+Text of importance, such as headers or text with hover functionality, will be purple (#6c53a4).
 
 The colors used for the game-play buttons are the most identifiable colors from the attractions theming: teal, purple, white and grey (#4ea0ae, #6c53a3, #edeffb, #040000).
 
-The start and reset buttons color takes inspiration from the attraction host's costume using the color green (#077f51).  On a hover the opacity of the button will change to make it clear where the user will be clicking
+The start and reset buttons take inspiration from the attraction host's costume using the color green (#077f51).  When hovered over, the opacity of the button will change to make it clear where the user will be clicking
 
-The play again link featured in the highest score and winners modals will be with a purple background and white text to stand out against the surrounding text and background.  On a hover the colors will invert to make it clear to the user where they are clicking.
+The play again link featured in the highest score and winners modals will feature a purple background and white text to highlight that this is a clickable feature.  When hovered over, the colors will invert to make it clear where the user is clicking.
 
-Many thanks to [color-hex.com](https://www.color-hex.com/color-palette/93407) and user [Lazaefair](https://www.color-hex.com/member/lazaefair) for help with sourcing the color palette.
+Many thanks to [color-hex.com](https://www.color-hex.com/color-palette/93407) and user [Lazaefair](https://www.color-hex.com/member/lazaefair) for providing the color palette.
 
 #### Backgrounds ####
 
-The Home screen background image is of the outside of the Haunted Mansion attraction chosen to seemingly 'invite' players into the game.  The photo used is by [Brian McGowan on Unsplash](https://unsplash.com/photos/he0-fswKsXk).
+The Home screen background image is of the outside of the Haunted Mansion attraction.  It is chosen to 'invite' players into the game.  The photo used is credited to [Brian McGowan on Unsplash](https://unsplash.com/photos/he0-fswKsXk).
 
-The Background of the game is of the iconic [Traditional Haunted Mansion Wallpaper](https://wallpaperaccess.com/haunted-mansion).
+The Background of the game is of the iconic [Traditional Haunted Mansion Wallpaper](https://wallpaperaccess.com/haunted-mansion).  It is chosen to make players feel inside the mansion.  Originally the image used was designed for use as a computer wallpaper and is owned by [The Walt Disney Company](https://thewaltdisneycompany.com/).
  
 #### Audio files ####
-The notes used in the gameplay are taken from the attractions soundtrack - Grim Grinning Ghosts.  These are A, E, D# and B and were created at home using [Sibelus](http://www.sibelius.com/download/index.html).
+
+The notes used in the gameplay are taken from the attraction's most recognizable song - Grim Grinning Ghosts.  These are A, E, D# and B.
+
+The audio was created by the developer using [Sibelus](http://www.sibelius.com/download/index.html) and the XXX organ sound.
 
 ### Wireframes ###
 
 The Wireframes for this project were created during the planning and design phase using [Balsamiq](https://balsamiq.com/).
 
-Some of the features shown in the wireframes, such as the avatar selection and dashboard, have not been included in this version of the game due to time contraints, but are features that will be implemented in the future.  Please see Future Features for more details.
+Some of the features shown in the wireframes, such as the avatar selection and dashboard, have not been included in this version of the game due to time constraints.  These are features that will be implemented in the future.  Please see Future Features for more details.
 
 - WIREFRAME HOME
 
@@ -226,7 +229,7 @@ The creation of this website would not have been possible without:
 
 [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Used for their navbar and grid layout.
 
-[Howler.js](https://howlerjs.com/) - Used this library to encorparate smooth audio across all devices.
+[Howler.js](https://howlerjs.com/) - Used library to encorparate smooth audio across all devices.
 
 [cdnjs.com](https://cdnjs.com/) - Used to deliver libraries such as Howler.js and jQuery.
 
@@ -273,7 +276,7 @@ Players requirements:
 - Have clear audio and visual cues which show where I have clicked.
   - To stay with the themeing of the site when a game button is clicked the opacity will change to a ghostly 0.5, this is accompanied by the corresponding audio.
 - Be able to play with and without audio.
-  - The player has the option to toggle between the audio being muted and on - this is clearly displayed in the navbar by easily recognisable icons.
+  - The player has the option to toggle between the audio being muted and on - this is clearly displayed in the navbar by easily recognizable icons.
 - Get clear feedback on the number of turns the player is on.
   - A turn counter has been implemented so the player can keep track of what turn they are on.
 - Get clear feedback on the users Highest Score.
@@ -281,7 +284,7 @@ Players requirements:
 - Be able to choose my difficulty level.
   - The user is not yet able to choose the difficulty level they begin on, however they have clear feedback throughout the game on the difficulty level that they have currently progressed to.
 - Visually rewarding images themed around The Haunted Mansion.
-  - The background images and themeing are all centered around the attraction.  Super fans will recognise everything down to the haunting organ notes used for the game play audio (and if you're really lucky the sequence plays in the order that you get the theme!)
+  - The background images and themeing are all centered around the attraction.  Super fans will recognie everything down to the haunting organ notes used for the game play audio (and if you're really lucky the sequence plays in the order that you get the theme!)
 
 
 MANUAL TESTING
@@ -522,7 +525,7 @@ The Haunted Mansion is owned and operated by [The Walt Disney Company](https://t
 
 - Favicon - Taken from [favicon.io](https://favicon.io/emoji-favicons/ghost/) and the open source project [Twemoji](https://twemoji.twitter.com/).
 - Home Page Background image - [Photo by Brian McGowan on Unsplash](https://unsplash.com/photos/he0-fswKsXk).
-- Game Page Background image - [Traditional Haunted Mansion Wallpaper](https://wallpaperaccess.com/haunted-mansion).
+- Game Page Background image - Taken from [Traditional Haunted Mansion Wallpaper](https://wallpaperaccess.com/haunted-mansion) and owned by [The Walt Disney Company](https://thewaltdisneycompany.com/).
 
 ### Audio ###
 

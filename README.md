@@ -306,7 +306,7 @@ Players requirements:
 - Visually rewarding images themed around The Haunted Mansion.
   - The background images and styling are all centered around the attraction.  Superfans will recognize many 'Easter Eggs', from the challenging text in the modals ("Hurry back...hurry back..."), to the haunting organ notes used for the gameplay audio.
 
-MANUAL TESTING
+ MANUAL TESTING
 
 FAVICON
 
@@ -322,7 +322,7 @@ HOME PAGE
 
 - Clicking the question mark icon and ensure it loads the rules modal.
 
-- Change the screen size to mobile device to verify that the navigation bar is responsive and switches position from the right of screen to center screen at the appropriate breakpoints.
+- Change the screen size to various mobile devices to verify that the navigation bar is responsive and switches position from the right of the screen to the center screen at the appropriate breakpoints.
 
 *Navigation bar modal (Rules modal)*
 
@@ -338,15 +338,15 @@ HOME PAGE
 
 - Click on links for 'The Haunted Mansion' and 'The Walt Disney Company', ensuring they open to the appropriate web pages in a separate tab.
 
-- Reduce screen size to various mobile device to verify that the modal is responsive and the modal size and inner text responds appropriately at the relevant breakpoints.
+- Reduce screen size to various mobile devices to verify that the modal is responsive and the modal size and inner text respond appropriately at the relevant breakpoints.
 
 *Hero image*
 
-- Reduce and expand width of window to confirm that the image height and width respond correctly with no horizontal scroll.
+- Reduce and expand the width of the window to confirm that the image height and width respond correctly with no horizontal scroll.
 
 *Body Text*
 
-- Reduce and expand width of window to confirm that the dimension of the text box respond appropriately and that the inner text size changes in an approprite manner.
+- Reduce and expand the width of the window to confirm that the dimension of the text box responds appropriately and that the inner text size changes in an appropriate manner.
 
 - Hover over the word 'Enter' to make sure that the color changes and that the pointer changes to the hand icon.
 
@@ -354,8 +354,8 @@ HOME PAGE
 
 *Footer*
 
-- Reduce and expand width of window to confirm that:
-  - The Copyright logo and text stays centered on all screen sizes.
+- Reduce and expand the width of the window to confirm that:
+  - The Copyright logo and text stay centered on all screen sizes.
   - The Inspiration text becomes hidden on smaller screen sizes.
 
 - Click on links for 'The Haunted Mansion' and 'The Walt Disney Company', ensuring they open to the appropriate web pages in a separate tab.
@@ -364,19 +364,19 @@ GAME PAGE
 
 *Logo*
 
-- Hover over logo and ensure there is no discernable change to the logo other than the pointer turning to a hand and the text changing color.
+- Hover over the logo and ensure there is no discernable change to the logo other than the pointer turning to a hand and the text changing color.
 
-- Click logo and ensure it links to the Home page.
+- Click the logo and ensure it links to the Home page.
 
 *Navigation Bar*
 
 - Repeated steps listed above.
 
-- Click on the mute sound icon and check it toggles between sound on and off icons.
+- Click on the mute sound icon and check it toggles between sound on and sound muted icons.
 
-- Start game and click the sound icon to ensure the sound toggles on and off as icon is pressed.
+- Start the game and click the sound icon to ensure the sound toggles on and off as the icon is pressed.
 
-- Expand and reduce screen size to make sure the logo and navbar become centered and stack at the appropriate breakpoints.
+- Expand and reduce the screen size to make sure the logo and navbar become centered and stack at the appropriate breakpoints.
 
 *Navigation bar modal (Rules modal)*
 
@@ -384,29 +384,31 @@ GAME PAGE
 
 *Hero image*
 
-- Reduce and expand width of window to confirm that the image height and width respond correctly with no horizontal scroll.
+- Reduce and expand the width of the window to confirm that the image height and width respond correctly with no horizontal scroll.
 
 *Gameplay area*
 
-- Reduce and expand width of window to confirm that all elements respond appropriately, remain centered and the the level and turn counter stack at the appropriate breakpoints.
+- Reduce and expand the width of the window to confirm that all elements respond appropriately, remain centered and the 'Level' and 'Turn counter' stack at the appropriate breakpoints.
 
 - Hover over the start button to make sure that the button opacity changes and that the pointer changes to the hand icon.
 
-- Click the start button to make sure that the button toggles to the reset button but the positioning remains the same.
+- Click the start button to make sure that the button toggles to the reset button.
 
 - Hover over the reset button to make sure that the button opacity changes and that the pointer changes to the hand icon.
 
-- Click the reset button to make sure that the button toggles to the start button but the positioning remains the same.
+- Click the reset button to make sure that the button toggles to the start button.
 
 *Footer*
 
 - Repeated steps listed above.
 
-GAME PLAY
+GAMEPLAY
 
-*Click start button*
+Please note to test gameplay efficiently the speed was set to increment after each turn and the game would end after 10 turns.
 
-- Check that start button toggles to reset button.
+*Click Start button*
+
+- Check that the start button toggles to the reset button.
 
 - Check that 'Level' remains at Easy.
 
@@ -414,23 +416,23 @@ GAME PLAY
 
 *Click reset button*
 
-- Check that reset button toggles to start button.
+- Check that the reset button toggles to the start button.
 
-- Check that 'Level' remains at most recent level.
+- Check that 'Level' remains at the most recent level.
 
 - Check that Turn changes to '-'.
 
 *Gameplay - Computers Turn*
 
-- Console log the computers sequence and check that it corresponds to the game buttons audio/visual cue's.
+- Console log the computer's sequence and check that it corresponds to the game buttons audio/visual cue's.
 
-- Hover over active buttons during computer's turn to check pointer shows as 'not allowed' (laptop only).
+- Hover over active buttons during the computer's turn to check pointer shows as 'not allowed' (laptop only).
 
-- Watch turn counter increase as the number of turns increases.
+- Watch 'Turn Counter' increase as the number of turns increases.
 
-- Watch the Level increase as the speed increases.
+- Watch the 'Level' increase as the speed increases.
 
-- Try to press game buttons during the computers turn to make sure that the user cannot play.
+- Try to press game buttons during the computer's turn to make sure that the user cannot play.
 
 - Follow the game through the different speeds to check flash/audio functionality at all levels.
 
@@ -452,9 +454,9 @@ GAME PLAY
 
 ADDITIONAL TESTING
 
-Throughout the project I used Google Chrome's DevTools to test styling, features and script.
+Throughout the project, I used Google Chrome's DevTools to test styling, features and script.
 
-In addition I have used the Lighthouse feature to check the sites performance, accessibility, best practice and SEO.  At present on a laptop the following are reported.
+Also, I have used the Lighthouse feature to check the site's performance, accessibility, best practice and SEO.  At present on a laptop, the following are reported.
 
 HOME PAGE
 
@@ -462,7 +464,7 @@ HOME PAGE
 
 GAME PAGE
 
-![Screen grab of Gamepage Lighthouse scores](/assets/images/readme/gamepage-lighthouse.png)
+![Screen grab of Game page Lighthouse scores](/assets/images/readme/gamepage-lighthouse.png)
 
 FURTHER TESTING
 
@@ -483,15 +485,11 @@ I invited friends and family to view the site on their devices and report any is
 
 Reported bugs/glitches included:
 
-Mobile phones: audio - a lag is sometimes apparent, I believe this is more prominent on Apple devices. Noone reported that this negatively affected their gameplay experience however in future I would like to investigate this and implement a fix.  Initial searches suggest that using a library such as Howler.js may help.
+Mobile phones: audio - a lag is sometimes apparent, I believe this is more prominent on Apple devices. Noone reported that this negatively affected their gameplay experience.  Initial searches suggest that using a library such as Howler.js may help.
 
-Highscore modal: 'x' button - Not closing the modal.  Class checked and renamed to enable responsiveness.
+Highscore modal: 'x' button not closing the modal.  Functionality removed due to clear 'Play again' link.
 
-
-
-
-
-
+Please see the 'Bugs' section for full information and solutions.
 
 ### Bugs ###
 

@@ -198,26 +198,33 @@ Should the user manage to complete the game they are congratulated and are invit
 
 ### Future Features ###
 
-- Being able to select the speed difficulty level you begin on so you don't always have to start from easy mode if you have completed the game a few times.
+- Player being able to select the starting speed of the game.
 
-- Player being able to create an account to log username, chosen avatar and Highest Score so multiple players can play on the one device
+- Player being able to create an account to log username, chosen avatar and Highest Score so multiple players can play on one device.
 
-- Being able to choose an avatar to play as.  The initial avatar images I had thought of are the four infamous stretching room paintings and will appeal to any fan of the attraction.
+- Being able to choose an avatar on the Home page.  The initial avatar images I had thought of are the four infamous stretching room paintings and will appeal to any fan of the attraction.
 
 ![IMAGE OF STRETCH ROOM PORTRAITS](/assets/images/readme/stretchroomportraits.png)
 
-- Unlock rewards for e.g after specific highest scores or game played 5, 10, 15 times the reward could be 
+- Unlock rewards for after specific targets such as specific highest scores or game played 5, 10, 15 times the reward could be:
  - play as other characters like the hitchhiking ghosts.
+ - additional facts about the attraction.
 
-- Additional music to trigger with the highest score and winning modals.
+- Additional music e.g. on the home page, triggered with the highest score and winning modals.
 
 ### Features Left to Implement ###
+
+Unfortunately, as I was working on the project I was having difficulty implementing all the features and ideas shown in my Wireframes to a standard I was happy with.  As removing these features would not majorly impact the player's experience I decided to remove them from my current game and list them as features left to implement.  In particular, I would like to include:
+
+**Home page** 
 
 - Avatar selection.
 
 - Username input.
 
-- Dashboard to left of game storing:
+**Game page**
+
+- Dashboard to the left of the game page storing:
 1. Username
 2. Avatar
 3. Difficulty Level
@@ -240,9 +247,9 @@ The creation of this website would not have been possible without:
 
 [JQuery](https://jquery.com/) - Used to reduce the amount of JavaScript code written.
 
-[Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Used for their navbar and grid layout.
+[Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Used for their navbar and grid layout.
 
-[Howler.js](https://howlerjs.com/) - Used library to encorparate smooth audio across all devices.
+[Howler.js](https://howlerjs.com/) - Used library to incorporate smooth audio across all devices.
 
 [cdnjs.com](https://cdnjs.com/) - Used to deliver libraries such as Howler.js and jQuery.
 
@@ -250,7 +257,7 @@ The creation of this website would not have been possible without:
 
 [Google Fonts](https://fonts.google.com/) - Used for font styles, namely XXX and YYY.
 
-[Font Awesome](https://fontawesome.com/) - Used for the home, question mark and speaker/mute icons used in the navbar.
+[Font Awesome](https://fontawesome.com/) - Used for the home, question mark and speaker/muted speaker icons used in the navbar.
 
 [AutoPrefixer](http://autoprefixer.github.io/) - Used for auto generation of CSS prefixes.
 
@@ -262,7 +269,7 @@ The creation of this website would not have been possible without:
 
 [TinyPNG](https://tinypng.com/) - Used to reduce the file sizes of all images.
 
-[FreeConvert.com](https://www.freeconvert.com/mp3-to-webm) - Used to convert mp3 audio files for use with Howler.js.
+[FreeConvert.com](https://www.freeconvert.com/mp3-to-webm) - Used to convert .mp3 audio files to .webm for use with Howler.js.
 
 [Sibelus](http://www.sibelius.com/download/index.html) - Used to create the custom audio files.
 

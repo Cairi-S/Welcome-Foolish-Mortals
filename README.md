@@ -136,51 +136,64 @@ Some of the features shown in the wireframes, such as the avatar selection and d
 
 #### Existing Features ####
 
-**Home page** 
+**Header**
 
-When the Home page loads the player is given a simplified version of the rules and is prompted to 'Enter' the mansion.
+The Home page will not feature a traditional logo within the header as the website name is prominently featured in this page's text container.  This is an intentional design choice so the title is positioned in front of the mansion image - welcoming them into the spooky old house.
 
-The Home page will not feature a logo as the games name is prominently featured in the opening text.
+The gameplay page returns to a more traditional website design and features a *logo* at the top left of the page which links to the Home page.
 
-The navigation bar will be visible so players can choose to read a more detailed version of the rules.
+The top right of the page will feature a *navigation bar* that contains three easily identifiable icons.
+
+- The *Home icon* links to the Home page.
+- The *Question mark icon* triggers a modal that contains a more detailed version of the rules as well as the inspiration behind the design of the site, including links.
+- Two *Speaker icons*, a speaker and speaker with a cross, will toggle allowing the player to mute and unmute the game's sound providing better UX.  As the home page does not currently feature audio it might be confusing for users to feature this icon so will be removed on this page.
 
 **Footer tab**
 
-The footer will feature copyright information and links to The Walt Disney Company and Haunted mansion pages.
+The *footer* will feature copyright information as well as information on the inspiration behind the design of the site, including *links* to official pages of The Walt Disney Company and The Haunted Mansion.  Links will open in a separate tab.
+
+On smaller screens, the inspiration information will be hidden and only available within the Question mark icon modal.
+
+**Home page**
+
+The *hero image* will be static with a text container centered on the page. 
+
+All text within this container will be themed to be in keeping with the game's style e.g using 'Enter' instead of 'Play game'.
+
+This page intentionally does feature too much text so as not to overload the user with information.
 
 **Gameplay pages**
 
-Header and Navigation Bar
-
-Returning to traditional website design the top left of the page will feature a logo which links to the Home page.
-
-The right of the page will feature a navigation bar of easily identifiable icons.
-
-- The Home icon - Allows the player to navigate back to the Home page.
-- The Questionmark icon - Allows the player to re-read the rules of the game.
-- The Speaker icon - Allows the player to mute and unmute the games sound.
-
 **Game board**
 
-The background of the game board is the classic wallpaper of The Haunted Mansion.
+The *hero image* of the game board is the classic The Haunted Mansion wallpaper and would be instantly recognizable to fans of the attraction.
 
-The four buttons for the game are each colored to the attractions color scheme.
-Each button will feature a slight box shadow to give the impression of elevation from the background.
+Underneath the header the user will be able to keep track of their turn and difficulty level using two counters:
 
-During the computers turn and when on the players click each button will change transparency to make the button appear to light up.  This clearly shows the player where they are clicking and allows the player to play with sound muted if preferred. 
+- *Level* will show which level the player is on and increments through Easy, Medium, Hard and Fiendish as the game progresses.
+- *Turn Counter* keeps track of which turn the player is on and increments as the game progresses.
 
+The *four game buttons* for the game are centered on the page and each one is styled within the attractions color scheme.  
 
-**Turns counter**
+During the computers turn and on the players click each button will *change opacity* to make the button appear to light up.  This clearly shows the player where they are clicking and allows the player to play with sound muted if preferred. 
 
-The turns Counter allows the user to keep track on how they are progressing through that difficulty level.  
+When the *audio is not muted* each button will be assigned a *different note* which will play when the corresponding button is active
 
-The game does not end when they reach the required number of turns to complete the level.  It continues allowing the player to try and also beat their highest score!
+**Score Modal**
 
-**High Score modal**
+The *Score modal* is triggered when the user makes an incorrect move.
 
-The high score modal features fun text inspired by the script from the attraction.
+The modal encourages the player and shows them the turn number they had made it to and features their highest score.
 
-It clearly shows the user their turn and the highest score from that device and encourages the user to play again.
+The *score* listed will correspond directly to the turn they were just on.
+
+The *highest score* will be stored from previous turns using *localStorage*.
+
+The footer of the modal provides a challenge and invited the player to play again via a styled *link* back to the game.
+
+**Winners Modal**
+
+Should the user manage to complete the game they are congratulated and are invited the player to play again via a styled *link* back to the game.
 
 
 ### Future Features ###

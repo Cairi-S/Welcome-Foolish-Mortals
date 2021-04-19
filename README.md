@@ -281,31 +281,30 @@ The creation of this website would not have been possible without:
 
 - [JSHint.com](https://jshint.com/)
 
-The most common path through the website would be index.html > game.html via pressing the 'Enter' link on the homepage.  Some users may wish for additional information which can be accessed by clicking the ? icon in the navbar.
+The most common path through the website would be index.html > game.html via clicking the 'Enter' link on the homepage.  Some users may wish for additional information which can be accessed by clicking the Question mark icon in the navbar.
 
 TESTING PLAYER AND DEVELOPER GOALS FROM UX SECTION
 
 Players requirements:
 
 - A game that is fun and exciting to play.
-  - With the game increasing in speed rather than the user having a set number of turns to complete the user is kept on their toes and in jeapordy as the difficulty increases over time.
+  - With the game gradually increasing in speed the user is kept on their toes and feels in jeopardy as the difficulty increases over time.
 - Easy to use controls on all devices.
-  - The buttons which help navigate around the website clearly show their use whilst the game buttons (teal, white, purple and grey) are large for frantic gameplay.
+  - The navigation buttons are easily identifiable whilst the game buttons (teal, white, purple and grey) are large for easy, frantic gameplay.
 - Have clear rules for the game for those that need them.
-  - A rough guide to the rules is visible on the Home page, anyone who needs a refresher or is unclear on the rules is able to find more information in the ? icon's modal available from the navbar on both the home and game pages.
+  - A rough guide to the rules is visible on the Home page, anyone who needs a refresher or is unclear on the rules can find more information in the question mark icon's modal.  This is available in the navbar on both the home and game pages.
 - Have clear audio and visual cues which show where I have clicked.
-  - To stay with the themeing of the site when a game button is clicked the opacity will change to a ghostly 0.5, this is accompanied by the corresponding audio.
+  - To stay with the style of the site when a game button is clicked the opacity will change to a ghostly 0.5, this is accompanied by the corresponding audio.
 - Be able to play with and without audio.
-  - The player has the option to toggle between the audio being muted and on - this is clearly displayed in the navbar by easily recognizable icons.
+  - The player has the option to toggle between the audio being muted and on - this is displayed in the navbar by easily recognizable icons.
 - Get clear feedback on the number of turns the player is on.
   - A turn counter has been implemented so the player can keep track of what turn they are on.
-- Get clear feedback on the users Highest Score.
-  - When the user fails a modal is displayed to show them their highest score vs the turn they are currently on.
+- Get clear feedback on the user's Highest Score.
+  - When the user fails, a modal is displayed to show them their highest score vs the turn they are currently on.
 - Be able to choose my difficulty level.
-  - The user is not yet able to choose the difficulty level they begin on, however they have clear feedback throughout the game on the difficulty level that they have currently progressed to.
+  - The user is not yet able to choose which difficulty the game begins on, however, users do have clear feedback on the game's difficulty throughout gameplay.  Competitive users will always want to get to the next difficulty level.
 - Visually rewarding images themed around The Haunted Mansion.
-  - The background images and themeing are all centered around the attraction.  Super fans will recognie everything down to the haunting organ notes used for the game play audio (and if you're really lucky the sequence plays in the order that you get the theme!)
-
+  - The background images and styling are all centered around the attraction.  Superfans will recognize many 'Easter Eggs', from the challenging text in the modals ("Hurry back...hurry back..."), to the haunting organ notes used for the gameplay audio.
 
 MANUAL TESTING
 

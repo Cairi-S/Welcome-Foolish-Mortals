@@ -21,13 +21,11 @@ let highestScoreCounter = 0;
 
 // Audio files
 // Thanks to https://howlerjs.com/ for their library to help smooth out audio at high game speeds.
-
 const tealAudio = new Howl({
   src: ["assets/audio/Ashort.webm", "assets/audio/Ashort.mp3"],
 });
 const whiteAudio = new Howl({
   src: ["assets/audio/Eshort.webm", "assets/audio/Eshort.mp3"],
-  
 });
 const purpleAudio = new Howl({
   src: ["assets/audio/Dsharpshort.webm", "assets/audio/Dsharpshort.mp3"],
@@ -36,9 +34,9 @@ const greyAudio = new Howl({
   src: ["assets/audio/Bshort.webm", "assets/audio/Bshort.mp3"],
 });
 
-const audioFileArray = [tealAudio, whiteAudio, purpleAudio, greyAudio];
-
 // Collection of html elements
+const muteAudio = document.querySelector("#toggleMute");
+const playAudio = document.querySelector("#toggleDisplay");
 const startButton = document.querySelector("#startBtn");
 const resetButton = document.querySelector("#resetBtn");
 const turnCounter = document.querySelector("#turnsTaken");
@@ -49,12 +47,23 @@ const highScore = document.querySelector("#highScore");
 // Stores new highest scores
 const updateHighScore = localStorage.getItem("newHighScore");
 
-// Toggle speaker icons on and off
+// Toggle speaker icons on and off whilst muting audio
 $("#toggleMute").click(function () {
-  $("i", this).toggleClass("fas fa-volume-up fas fa-volume-mute");
-  audioFileArray.forEach((eachAudio) => {
-    eachAudio.muted = !eachAudio.muted;
-  });
+  $('#toggleMute').addClass('hide-content');
+  $('#toggleDisplay').removeClass('hide-content');
+  tealAudio.mute(true);
+  purpleAudio.mute(true);
+  whiteAudio.mute(true);
+  greyAudio.mute(true);
+});
+
+$("#toggleDisplay").click(function () {
+  $('#toggleDisplay').addClass('hide-content');
+  $('#toggleMute').removeClass('hide-content');
+  tealAudio.mute(false);
+  purpleAudio.mute(false);
+  whiteAudio.mute(false);
+  greyAudio.mute(false);
 });
 
 //Event listening for click on start button

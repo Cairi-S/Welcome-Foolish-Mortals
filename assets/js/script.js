@@ -123,7 +123,7 @@ function prepareGame() {
 
 // Increments the speed of the flashes after the turn counter reaches specific break points.
 function checkForLevelIncrement(turn) {
-  if (turn <= 4) {
+if (turn <= 4) {
     flashInterval = 1500;
     $("#level").text(" Easy");
   } else if (turn >= 5 && turn < 7) {
@@ -134,7 +134,7 @@ function checkForLevelIncrement(turn) {
     $("#level").text(" Hard");
   } else if (turn >= 11 && turn < 15) {
     flashInterval = 800;
-    $("#level").text(" Feindish");
+    $("#level").text(" Fiendish");
   } else if (turn >= 16 && turn < maxFlashes) {
     flashInterval = 400;
     $("#level").text(" Ghastly");

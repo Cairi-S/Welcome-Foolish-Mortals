@@ -1,4 +1,4 @@
-// With thanks to Travery Media for their guide to creating modals
+// With thanks to Traversy Media for their guide to creating modals
 // Get navbar modal element
 let navbarModal = document.getElementById("navbarModal");
 let scoreModal = document.getElementById("scoreModal");

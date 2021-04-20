@@ -22,16 +22,16 @@ let highestScoreCounter = 0;
 // Audio files
 // Thanks to https://howlerjs.com/ for their library to help smooth out audio at high game speeds.
 const tealAudio = new Howl({
-  src: ["assets/audio/Ashort.webm", "assets/audio/Ashort.mp3"],
+  src: ["assets/audio/ashort.webm", "assets/audio/ashort.mp3"],
 });
 const whiteAudio = new Howl({
-  src: ["assets/audio/Eshort.webm", "assets/audio/Eshort.mp3"],
+  src: ["assets/audio/eshort.webm", "assets/audio/eshort.mp3"],
 });
 const purpleAudio = new Howl({
-  src: ["assets/audio/Dsharpshort.webm", "assets/audio/Dsharpshort.mp3"],
+  src: ["assets/audio/dsharpshort.webm", "assets/audio/dsharpshort.mp3"],
 });
 const greyAudio = new Howl({
-  src: ["assets/audio/Bshort.webm", "assets/audio/Bshort.mp3"],
+  src: ["assets/audio/bshort.webm", "assets/audio/bshort.mp3"],
 });
 
 // Collection of html elements

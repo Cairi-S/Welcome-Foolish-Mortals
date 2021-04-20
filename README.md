@@ -38,7 +38,7 @@ The main target audience for Welcome Foolish Mortals is fans of memory games and
 Players goals are to:
 - Play a game that is fun and exciting.
 - Have easy-to-use controls.
-- Have clear rules for the game for those that need them.
+- Have clear rules for the game if I need them.
 - Have clear audio and visual cues which show where I have clicked.
 - Be able to play with and without audio.
 - Get clear feedback on the number of turns I am on.
@@ -111,7 +111,7 @@ Many thanks to [color-hex.com](https://www.color-hex.com/color-palette/93407) an
 
 #### Backgrounds ####
 
-The Home screen background image is of the outside of the Haunted Mansion attraction.  It is chosen to 'invite' players into the game.  The photo used is credited to [Brian McGowan on Unsplash](https://unsplash.com/photos/he0-fswKsXk).
+The Home screen background image is of the outside of The Haunted Mansion attraction.  It is chosen to 'invite' players into the game.  The photo used is credited to [Brian McGowan on Unsplash](https://unsplash.com/photos/he0-fswKsXk).
 
 The Background of the game is of the iconic [Traditional Haunted Mansion Wallpaper](https://wallpaperaccess.com/haunted-mansion).  It has been chosen to make players feel like they are inside the mansion.  Originally the image used was designed for use as a computer wallpaper and is owned by [The Walt Disney Company](https://thewaltdisneycompany.com/).
  
@@ -212,8 +212,8 @@ Should the user manage to complete the game they are congratulated and are invit
 ![IMAGE OF STRETCH ROOM PORTRAITS](/assets/images/readme/stretchroomportraits.png)
 
 - Unlock rewards after reaching specific targets such as certain highest scores or if the game has been played 5, 10 or 15 times.  The reward could be:
- - play as other characters such as the hitchhiking ghosts.
- - additional facts about the attraction.
+  * play as other characters such as the hitchhiking ghosts.
+  * additional facts about the attraction.
 
 - Additional music e.g. on the Home page, triggered with the highest score and winning modals.
 
@@ -468,9 +468,17 @@ Please note to test gameplay efficiently the speed was set to increment after ea
 
 - Play the game to set a high score, replay the game and get a lower score to ensure that the previous high score remains, replay the game and get a larger high score to make sure that the highest score is updated.  Repeated multiple times.
 
+- Click the 'Play again' link to check it closes the modal and takes you back to the game page.
+
+*Win Modal*
+
+- Check that the win modal is triggered when the player's turn equals maxFlashes.
+
+- Click the 'Play again' link to check it closes the modal and takes you back to the game page.
+
 ADDITIONAL TESTING
 
-Throughout the project, I used Google Chrome's DevTools to test styling, features and script.
+Throughout the project, I used [Google Chrome's DevTools](https://developer.chrome.com/docs/devtools/) to test styling, features and script.
 
 Also, I have used the Lighthouse feature to check the site's performance, accessibility, best practice and SEO.  At present on a laptop, the following are reported.
 
@@ -484,7 +492,7 @@ GAME PAGE
 
 FURTHER TESTING
 
-I invited friends and family to view the site on their devices and report any issues they find. Devices used included:
+As well as testing across the in-built mobile sizing on devTools I invited friends and family to view the site on their devices and report any issues they find. Devices used included:
 
 - MacBook
 - MacBook Air
@@ -522,7 +530,7 @@ Highscore modal: 'x' button not closing the modal.  Functionality removed due to
 
 - Upon introducing Howlerjs I lost the ability to toggle mute on and off during gameplay.
 
-  - *Solved* - I began by commenting out the original forEach statement that I had written.  After reading the accompanying Howlerjs documentation I decided the best approach would be to add the .mute(true) and .mute(false) methods to each audio file to fix the problem.  To fully solve the problem I have now included both icons in separate buttons in the HTML file and use JavaScript to add and remove classes to show the necessary icon alongside using the previously mentioned method.  I am aware that this code is not DRY and in the future would look to rectify this.
+  - *Solved* - I began by commenting out the original forEach statement that I had written.  After re-reading the accompanying Howlerjs documentation I decided the best approach would be to add the .mute(true) and .mute(false) methods to each audio file to fix the problem.  To fully solve the problem I have now included both icons in separate buttons in the HTML file and use JavaScript to add and remove classes to show the necessary icon alongside using the previously mentioned method.  I am aware that this code is not DRY and in the future would look to rectify this.
 
 - Pressing the reset button was causing a new sequence to trigger on top of the existing sequence, so 2 sequences would be playing simultaneously.  
 

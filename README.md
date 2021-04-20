@@ -4,9 +4,9 @@
 
 ![Welcome Foolish Mortals Gamepage](/assets/images/readme/responsive-game.png)
 
-## An Audio memory game ##
+## An Audio Memory Game ##
 
-- [Welcome Foolish Mortals](#welcome-foolish-mortals)
+- [Table of Contents](#welcome-foolish-mortals)
     + [UX](#ux)
     + [Design](#design)
     + [Wireframes](#wireframes)
@@ -27,13 +27,13 @@
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-**Welcome Foolish Mortals** is an audiovisual Memory game inspired by the popular Disney theme park attraction, [The Haunted Mansion](https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/). 
+**Welcome Foolish Mortals** is an audiovisual memory game inspired by the popular Disney theme park attraction, [The Haunted Mansion](https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/). 
 
-### UX ##
+### UX ###
 
 #### Player goals ####
 
-The main target audience for Welcome Foolish Mortals is fans of memory games and fans of Disney Theme Parks, especially for The Haunted Mansion.  Although the game can be enjoyed by everyone younger audiences may find it a little spooky, so it is recommended for ages 8+.
+The main target audience for Welcome Foolish Mortals is fans of memory games and fans of Disney theme parks, especially for The Haunted Mansion.  Although the game can be enjoyed by everyone, younger audiences may find it a little spooky, so it is recommended for ages 8+.
 
 Players goals are to:
 - Have a game that is fun and exciting to play.
@@ -44,7 +44,7 @@ Players goals are to:
 - Have visually rewarding images themed around The Haunted Mansion.
 
 Developer Goals are to:
-- Create a fun game interactive game that myself and my friends can enjoy.
+- Create a fun and interactive game that my friends and I would enjoy.
 - Incorporate elements of my favorite attraction at Disney into a project.
 - Design and develop a project using new-found skills in JavaScript and JQuery.  
 
@@ -68,7 +68,7 @@ The fonts, icons, colors, audio and styling all take inspiration from The Haunte
 
 All fonts are provided by [Google fonts](https://fonts.google.com/) and were chosen for their likeness to those found within the attraction.
 
-- [Cormorant Upright](https://fonts.google.com/specimen/Cormorant+Upright?preview.text_type=custom) is used the page logo and headings.
+- [Cormorant Upright](https://fonts.google.com/specimen/Cormorant+Upright?preview.text_type=custom) is  for the page logo and headings.
 
 ![Cormorant Upright example](/assets/images/readme/cormorantupright.png)
 
@@ -98,7 +98,7 @@ The main text color will be off-white (#edeffb) to stand out against the backgro
 
 Text of importance, such as headers or text with hover functionality, will be purple (#6c53a4).
 
-The colors used for the game-play buttons are the most identifiable colors from the attractions theming: teal, purple, white and grey (#4ea0ae, #6c53a3, #edeffb, #040000).
+The colors used for the game-play buttons are the most identifiable colors from the attractions theming: teal, purple, white and black (#4ea0ae, #6c53a3, #edeffb, #040000).
 
 The start and reset buttons take inspiration from the attraction host's costume using the color green (#077f51).  When hovered over, the opacity of the button will change to make it clear where the user will be clicking
 
@@ -116,7 +116,9 @@ The Background of the game is of the iconic [Traditional Haunted Mansion Wallpap
 
 The notes used in the gameplay are taken from the attraction's most recognizable song - Grim Grinning Ghosts.  These are A, E, D# and B.
 
-The audio was created by the developer using [Sibelus](http://www.sibelius.com/download/index.html) and the XXX organ sound.
+The audio was created by the developer using [Sibelus](http://www.sibelius.com/download/index.html) and the organ sound from its standard set of instruments.
+
+The audio files created in Sibelius were modified and converted to mp3 files using [Audacity](https://www.audacityteam.org/). 
 
 ### Wireframes ###
 
@@ -146,7 +148,7 @@ The top right of the page will feature a *navigation bar* that contains three ea
 
 - The *Home icon* links to the Home page.
 - The *Question mark icon* triggers a modal that contains a more detailed version of the rules as well as the inspiration behind the design of the site, including links.
-- Two *Speaker icons*, a speaker and speaker with a cross, will toggle allowing the player to mute and unmute the game's sound providing better UX.  As the home page does not currently feature audio it might be confusing for users to feature this icon so will be removed on this page.
+- Two *Speaker icons*, a speaker and speaker with a cross, will toggle allowing the player to mute and unmute the game's sound providing better UX.  As the home page does not currently feature audio it might be confusing for users to feature this icon so it will be removed from this page.
 
 **Footer tab**
 
@@ -160,7 +162,7 @@ The *hero image* will be static with a text container centered on the page.
 
 All text within this container will be themed to be in keeping with the game's style e.g using 'Enter' instead of 'Play game'.
 
-This page intentionally does feature too much text so as not to overload the user with information.
+This page intentionally does not feature too much text so as not to overload the user with information.
 
 **Gameplay pages**
 
@@ -175,15 +177,15 @@ Underneath the header the user will be able to keep track of their turn and diff
 
 The *four game buttons* for the game are centered on the page and each one is styled within the attractions color scheme.  
 
-During the computers turn and on the players click each button will *change opacity* to make the button appear to light up.  This clearly shows the player where they are clicking and allows the player to play with sound muted if preferred. 
+During the computer's turn and on the player's click each button will *change opacity* to make the button appear to light up.  This clearly shows the player where they are clicking and allows the player to play with sound muted if preferred. 
 
 When the *audio is not muted* each button will be assigned a *different note* which will play when the corresponding button is active
 
-**Score Modal**
+**Score modal**
 
 The *Score modal* is triggered when the user makes an incorrect move.
 
-The modal encourages the player and shows them the turn number they had made it to and features their highest score.
+The modal encourages the player and shows them the turn number they had made it up to and features their highest score.
 
 The *score* listed will correspond directly to the turn they were just on.
 
@@ -191,7 +193,7 @@ The *highest score* will be stored from previous turns using *localStorage*.
 
 The footer of the modal provides a challenge and invited the player to play again via a styled *link* back to the game.
 
-**Winners Modal**
+**Winners modal**
 
 Should the user manage to complete the game they are congratulated and are invited the player to play again via a styled *link* back to the game.
 
@@ -206,15 +208,15 @@ Should the user manage to complete the game they are congratulated and are invit
 
 ![IMAGE OF STRETCH ROOM PORTRAITS](/assets/images/readme/stretchroomportraits.png)
 
-- Unlock rewards for after specific targets such as specific highest scores or game played 5, 10, 15 times the reward could be:
- - play as other characters like the hitchhiking ghosts.
+- Unlock rewards for after reaching specific targets such as, certain highest scores or if the game has been played 5, 10 or 15 times.  The reward could be:
+ - play as other characters such as the hitchhiking ghosts.
  - additional facts about the attraction.
 
-- Additional music e.g. on the home page, triggered with the highest score and winning modals.
+- Additional music e.g. on the Home page, triggered with the highest score and winning modals.
 
 ### Features Left to Implement ###
 
-Unfortunately, as I was working on the project I was having difficulty implementing all the features and ideas shown in my Wireframes to a standard I was happy with.  As removing these features would not majorly impact the player's experience I decided to remove them from my current game and list them as features left to implement.  In particular, I would like to include:
+Unfortunately, while working on the project I had difficulty implementing all the features and ideas shown in my Wireframes to a standard I was happy with.  As removing these features would not majorly impact the player's experience I decided to remove them from my current game and list them as features left to implement.  In particular, I would like to include:
 
 **Home page** 
 
@@ -224,7 +226,7 @@ Unfortunately, as I was working on the project I was having difficulty implement
 
 **Game page**
 
-- Dashboard to the left of the game page storing:
+- Dashboard to the left of the Game page storing:
 1. Username
 2. Avatar
 3. Difficulty Level
@@ -249,13 +251,13 @@ The creation of this website would not have been possible without:
 
 [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Used for their navbar and grid layout.
 
-[Howler.js](https://howlerjs.com/) - Used library to incorporate smooth audio across all devices.
+[Howler.js](https://howlerjs.com/) - Used to incorporate smooth audio across all devices.
 
 [cdnjs.com](https://cdnjs.com/) - Used to deliver libraries such as Howler.js and jQuery.
 
 [Multi Device Website Mockup Generator](http://techsini.com/multi-mockup/index.php) - used for website mockup at top of README.
 
-[Google Fonts](https://fonts.google.com/) - Used for font styles, namely XXX and YYY.
+[Google Fonts](https://fonts.google.com/) - Used for font styles, namely Cormorant Upright and Pathway Gothic One.
 
 [Font Awesome](https://fontawesome.com/) - Used for the home, question mark and speaker/muted speaker icons used in the navbar.
 
@@ -273,6 +275,8 @@ The creation of this website would not have been possible without:
 
 [Sibelus](http://www.sibelius.com/download/index.html) - Used to create the custom audio files.
 
+[Audacity](https://www.audacityteam.org/) - Used to modifiy audio files and convert them to mp3 files. 
+
 ### Testing ###
 
 - [W3C HTML Markup Validation service](https://validator.w3.org/) - HTML validator.
@@ -281,7 +285,7 @@ The creation of this website would not have been possible without:
 
 - [JSHint.com](https://jshint.com/)
 
-The most common path through the website would be index.html > game.html via clicking the 'Enter' link on the homepage.  Some users may wish for additional information which can be accessed by clicking the Question mark icon in the navbar.
+The most common path through the website would be index.html > game.html via clicking the 'Enter' link on the Home page.  Some users may wish for additional information which can be accessed by clicking the question mark icon in the navbar.
 
 TESTING PLAYER AND DEVELOPER GOALS FROM UX SECTION
 
@@ -290,9 +294,9 @@ Players requirements:
 - A game that is fun and exciting to play.
   - With the game gradually increasing in speed the user is kept on their toes and feels in jeopardy as the difficulty increases over time.
 - Easy to use controls on all devices.
-  - The navigation buttons are easily identifiable whilst the game buttons (teal, white, purple and grey) are large for easy, frantic gameplay.
+  - The navigation buttons are easily identifiable whilst the game buttons (teal, white, purple and black) are large for easy, frantic gameplay.
 - Have clear rules for the game for those that need them.
-  - A rough guide to the rules is visible on the Home page, anyone who needs a refresher or is unclear on the rules can find more information in the question mark icon's modal.  This is available in the navbar on both the home and game pages.
+  - A rough guide to the rules is visible on the Home page, anyone who needs a refresher or is unclear on the rules can find more information in the question mark icon's modal.  This is available in the navbar on both the Home and Game pages.
 - Have clear audio and visual cues which show where I have clicked.
   - To stay with the style of the site when a game button is clicked the opacity will change to a ghostly 0.5, this is accompanied by the corresponding audio.
 - Be able to play with and without audio.
@@ -310,7 +314,7 @@ Players requirements:
 
 FAVICON
 
-- Check that the Favicon is visible on both the home and game pages.
+- Check that the Favicon is visible on both the Home and Game pages.
 
 HOME PAGE
 
@@ -318,7 +322,7 @@ HOME PAGE
 
 - Hover over navigation icons and ensure there is no discernable change other than the pointer turning to a hand and the icons changing color.
 
-- Clicking the home icon and ensure it reloads the "Home" page.
+- Clicking the home icon and ensure it reloads the Home page.
 
 - Clicking the question mark icon and ensure it loads the rules modal.
 
@@ -418,13 +422,13 @@ Please note to test gameplay efficiently the speed was set to increment after ea
 
 - Check that the reset button toggles to the start button.
 
-- Check that 'Level' remains at the most recent level.
+- Check that 'Level' returns to Easy.
 
 - Check that Turn changes to '-'.
 
 *Gameplay - Computers Turn*
 
-- Console log the computer's sequence and check that it corresponds to the game buttons audio/visual cue's.
+- Console log the computer's sequence and check that it corresponds to the game button's audio/visual cues.
 
 - Hover over active buttons during the computer's turn to check pointer shows as 'not allowed' (laptop only).
 
@@ -460,7 +464,7 @@ Also, I have used the Lighthouse feature to check the site's performance, access
 
 HOME PAGE
 
-![Screen grab of Homepage Lighthouse scores](/assets/images/readme/homepage-lighthouse.png)
+![Screen grab of Home page Lighthouse scores](/assets/images/readme/homepage-lighthouse.png)
 
 GAME PAGE
 
@@ -477,6 +481,7 @@ I invited friends and family to view the site on their devices and report any is
 - iPad Pro
 - Samsung S20
 - Samsung J6
+- iPhone 5
 - iPhone 6S
 - iPhone XR
 - iPhone SE
@@ -485,7 +490,7 @@ I invited friends and family to view the site on their devices and report any is
 
 Reported bugs/glitches included:
 
-Mobile phones: audio - a lag is sometimes apparent, I believe this is more prominent on Apple devices. Noone reported that this negatively affected their gameplay experience.  Initial searches suggest that using a library such as Howler.js may help.
+Mobile phones: audio - a lag is sometimes apparent, I believe this is more prominent on Apple devices. No one reported that this negatively affected their gameplay experience.  Initial searches suggest that using a library such as Howler.js may help.
 
 Highscore modal: 'x' button not closing the modal.  Functionality removed due to clear 'Play again' link.
 
@@ -543,7 +548,7 @@ This website was published using GitHub Pages. The procedure is outlined below.
 
 You are also able to clone 'Welcome Foolish Mortals' from Github using the procedure outlined below.
 
-1. Navigate to the **['Welcome Foolish Mortals' repository](https://github.com/Cairi-S/Welcome-Foolish-Mortals).
+1. Navigate to the **['Welcome Foolish Mortals' repository](https://github.com/Cairi-S/Welcome-Foolish-Mortals)**.
 2. Click the Code dropdown menu next to the green Gitpod button.
 3. In the dropdown copy the URL displayed under the header CLONE with the HTTPS title underlined (in this instance https://github.com/Cairi-S/Welcome-Foolish-Mortals.git).
 4. Open your local IDE and launch Git Bash.
@@ -572,13 +577,13 @@ The Haunted Mansion is owned and operated by [The Walt Disney Company](https://t
 
 ### Audio ###
 
-- All audio files were created by myself using [Sibelus](http://www.sibelius.com/download/index.html).
+- All audio files were created by myself using [Sibelus](http://www.sibelius.com/download/index.html) and edited using [Audacity](https://www.audacityteam.org/).
 
 ### Code ###
 
 While building the project I referenced a few online resources.
 
-- Thank you to [Traversy Media](https://youtu.be/6ophW7Ask_0) - I referenced their 'Guide for creating a modal with HTML CSS and JavaScript' video when creating the modals on the home and game pages.
+- Thank you to [Traversy Media](https://youtu.be/6ophW7Ask_0) - I referenced their 'Guide for creating a modal with HTML CSS and JavaScript' video when creating the modals on the Home and Game pages.
 
 - Thank you to freeCodeCamp.org for their [Simon Video Tutorial](https://www.freecodecamp.org/news/simon-javascript-game-tutorial/) - I took inspiration and, when I was most frustrated, hope from this video.
 
@@ -589,4 +594,5 @@ While building the project I referenced a few online resources.
 - The CI tutor support team, in particular Igor_ci and Jo_ci.
 - The Slack community for endless support and encouragement, in particular Ed B.
 - My mentor for all their help and guidance throughout this project.
+- Tom Poulson who has been a great rubber duck whilst building this project.
 - And honestly, The Walt Disney Company, I love all things Disney but this ride is my 'must do' on a trip to any of their parks.

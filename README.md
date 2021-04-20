@@ -606,4 +606,3 @@ While building the project I referenced a few online resources.
 - My mentor for all their help and guidance throughout this project.
 - Tom Poulson, who has been a great rubber duck whilst building this project.
 - And honestly, The Walt Disney Company, I love all things Disney but this ride is my 'must do' on a trip to any of their parks.
-# Welcome Foolish Mortals #

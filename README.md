@@ -295,16 +295,22 @@ Players requirements:
   - With the game gradually increasing in speed the user is kept on their toes and feels in jeopardy as the difficulty increases over time.
 - Easy to use controls on all devices.
   - The navigation buttons are easily identifiable whilst the game buttons (teal, white, purple and black) are large for easy, frantic gameplay.
+![EASY TO USE CONTROLS](/assets/images/readme/easycontrols.png)
 - Have clear rules for the game for those that need them.
   - A rough guide to the rules is visible on the Home page, anyone who needs a refresher or is unclear on the rules can find more information in the question mark icon's modal.  This is available in the navbar on both the Home and Game pages.
+![RULES MODAL](/assets/images/readme/clearrules.png)
 - Have clear audio and visual cues which show where I have clicked.
   - To stay with the style of the site when a game button is clicked the opacity will change to a ghostly 0.5, this is accompanied by the corresponding audio.
+![BUTTON FLASH](/assets/images/readme/btnflash.png)
 - Be able to play with and without audio.
   - The player has the option to toggle between the audio being muted and on - this is displayed in the navbar by easily recognizable icons.
+![SOUND ICON](/assets/images/readme/audioon.png) ![MUTE ICON](/assets/images/readme/audiomute.png)
 - Get clear feedback on the number of turns the player is on.
   - A turn counter has been implemented so the player can keep track of what turn they are on.
+![TURN COUNTER](/assets/images/readme/turnlevelfeedback.png)
 - Get clear feedback on the user's Highest Score.
   - When the user fails, a modal is displayed to show them their highest score vs the turn they are currently on.
+![HIGH SCORE MODAL](/assets/images/readme/highscorefeedback.png)
 - Be able to choose my difficulty level.
   - The user is not yet able to choose which difficulty the game begins on, however, users do have clear feedback on the game's difficulty throughout gameplay.  Competitive users will always want to get to the next difficulty level.
 - Visually rewarding images themed around The Haunted Mansion.

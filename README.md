@@ -36,12 +36,15 @@
 The main target audience for Welcome Foolish Mortals is fans of memory games and fans of Disney theme parks, especially for The Haunted Mansion.  Although the game can be enjoyed by everyone, younger audiences may find it a little spooky, so it is recommended for ages 8+.
 
 Players goals are to:
-- Have a game that is fun and exciting to play.
-- Have easy-to-use controls on all devices.
-- Have clear rules for the game available to those that need them.
-- Get clear feedback on the number of turns the player is on.
-- Get clear feedback on the user's highest score.
-- Have visually rewarding images themed around The Haunted Mansion.
+- Play a game that is fun and exciting.
+- Have easy-to-use controls.
+- Have clear rules for the game for those that need them.
+- Have clear audio and visual cues which show where I have clicked.
+- Be able to play with and without audio.
+- Get clear feedback on the number of turns I am on.
+- Get clear feedback on my Highest Score.
+- Be able to choose my difficulty level.
+- See visually rewarding images themed around The Haunted Mansion.
 
 Developer Goals are to:
 - Create a fun and interactive game that my friends and I would enjoy.
@@ -68,7 +71,7 @@ The fonts, icons, colors, audio and styling all take inspiration from The Haunte
 
 All fonts are provided by [Google fonts](https://fonts.google.com/) and were chosen for their likeness to those found within the attraction.
 
-- [Cormorant Upright](https://fonts.google.com/specimen/Cormorant+Upright?preview.text_type=custom) is  for the page logo and headings.
+- [Cormorant Upright](https://fonts.google.com/specimen/Cormorant+Upright?preview.text_type=custom) is used for the page logo and headings.
 
 ![Cormorant Upright example](/assets/images/readme/cormorantupright.png)
 
@@ -98,7 +101,7 @@ The main text color will be off-white (#edeffb) to stand out against the backgro
 
 Text of importance, such as headers or text with hover functionality, will be purple (#6c53a4).
 
-The colors used for the game-play buttons are the most identifiable colors from the attractions theming: teal, purple, white and black (#4ea0ae, #6c53a3, #edeffb, #040000).
+The colors used for the game-play buttons are the most identifiable colors from the attractions theming: teal, purple, white and dark grey (#4ea0ae, #6c53a3, #edeffb, #040000).
 
 The start and reset buttons take inspiration from the attraction host's costume using the color green (#077f51).  When hovered over, the opacity of the button will change to make it clear where the user will be clicking
 
@@ -110,13 +113,13 @@ Many thanks to [color-hex.com](https://www.color-hex.com/color-palette/93407) an
 
 The Home screen background image is of the outside of the Haunted Mansion attraction.  It is chosen to 'invite' players into the game.  The photo used is credited to [Brian McGowan on Unsplash](https://unsplash.com/photos/he0-fswKsXk).
 
-The Background of the game is of the iconic [Traditional Haunted Mansion Wallpaper](https://wallpaperaccess.com/haunted-mansion).  It is chosen to make players feel inside the mansion.  Originally the image used was designed for use as a computer wallpaper and is owned by [The Walt Disney Company](https://thewaltdisneycompany.com/).
+The Background of the game is of the iconic [Traditional Haunted Mansion Wallpaper](https://wallpaperaccess.com/haunted-mansion).  It has been chosen to make players feel like they are inside the mansion.  Originally the image used was designed for use as a computer wallpaper and is owned by [The Walt Disney Company](https://thewaltdisneycompany.com/).
  
 #### Audio files ####
 
 The notes used in the gameplay are taken from the attraction's most recognizable song - Grim Grinning Ghosts.  These are A, E, D# and B.
 
-The audio was created by the developer using [Sibelus](http://www.sibelius.com/download/index.html) and the organ sound from its standard set of instruments.
+The audio was created by the developer using [Sibelus](http://www.sibelius.com/download/index.html) and the organ sound is part of its standard set of instruments.
 
 The audio files created in Sibelius were modified and converted to mp3 files using [Audacity](https://www.audacityteam.org/). 
 
@@ -208,7 +211,7 @@ Should the user manage to complete the game they are congratulated and are invit
 
 ![IMAGE OF STRETCH ROOM PORTRAITS](/assets/images/readme/stretchroomportraits.png)
 
-- Unlock rewards for after reaching specific targets such as, certain highest scores or if the game has been played 5, 10 or 15 times.  The reward could be:
+- Unlock rewards after reaching specific targets such as certain highest scores or if the game has been played 5, 10 or 15 times.  The reward could be:
  - play as other characters such as the hitchhiking ghosts.
  - additional facts about the attraction.
 
@@ -275,7 +278,9 @@ The creation of this website would not have been possible without:
 
 [Sibelus](http://www.sibelius.com/download/index.html) - Used to create the custom audio files.
 
-[Audacity](https://www.audacityteam.org/) - Used to modifiy audio files and convert them to mp3 files. 
+[Audacity](https://www.audacityteam.org/) - Used to modify audio files and convert them to mp3 files. 
+
+[markdown-toc](http://ecotrust-canada.github.io/markdown-toc/) - Used to generate README.md Table of Contents.
 
 ### Testing ###
 
@@ -283,7 +288,7 @@ The creation of this website would not have been possible without:
 
 - [W3C CSS Validation service](https://jigsaw.w3.org/css-validator/) - CSS validator.
 
-- [JSHint.com](https://jshint.com/)
+- [JSHint.com](https://jshint.com/) - linter.
 
 The most common path through the website would be index.html > game.html via clicking the 'Enter' link on the Home page.  Some users may wish for additional information which can be accessed by clicking the question mark icon in the navbar.
 
@@ -294,7 +299,7 @@ Players requirements:
 - A game that is fun and exciting to play.
   - With the game gradually increasing in speed the user is kept on their toes and feels in jeopardy as the difficulty increases over time.
 - Easy to use controls on all devices.
-  - The navigation buttons are easily identifiable whilst the game buttons (teal, white, purple and black) are large for easy, frantic gameplay.
+  - The navigation buttons are easily identifiable whilst the game buttons (teal, white, purple and dark grey) are large for easy, frantic gameplay.
 ![EASY TO USE CONTROLS](/assets/images/readme/easycontrols.png)
 - Have clear rules for the game for those that need them.
   - A rough guide to the rules is visible on the Home page, anyone who needs a refresher or is unclear on the rules can find more information in the question mark icon's modal.  This is available in the navbar on both the Home and Game pages.
@@ -304,6 +309,7 @@ Players requirements:
 ![BUTTON FLASH](/assets/images/readme/btnflash.png)
 - Be able to play with and without audio.
   - The player has the option to toggle between the audio being muted and on - this is displayed in the navbar by easily recognizable icons.
+
 ![SOUND ICON](/assets/images/readme/audioon.png) ![MUTE ICON](/assets/images/readme/audiomute.png)
 - Get clear feedback on the number of turns the player is on.
   - A turn counter has been implemented so the player can keep track of what turn they are on.
@@ -312,7 +318,7 @@ Players requirements:
   - When the user fails, a modal is displayed to show them their highest score vs the turn they are currently on.
 ![HIGH SCORE MODAL](/assets/images/readme/highscorefeedback.png)
 - Be able to choose my difficulty level.
-  - The user is not yet able to choose which difficulty the game begins on, however, users do have clear feedback on the game's difficulty throughout gameplay.  Competitive users will always want to get to the next difficulty level.
+  - The user is not yet able to choose which difficulty the game begins on, however, users do have clear feedback on the game's difficulty throughout gameplay (shown next to the turn counter in the above image).  Competitive users will always want to get to the next difficulty level.
 - Visually rewarding images themed around The Haunted Mansion.
   - The background images and styling are all centered around the attraction.  Superfans will recognize many 'Easter Eggs', from the challenging text in the modals ("Hurry back...hurry back..."), to the haunting organ notes used for the gameplay audio.
 
@@ -496,11 +502,9 @@ I invited friends and family to view the site on their devices and report any is
 
 Reported bugs/glitches included:
 
-Mobile phones: audio - a lag is sometimes apparent, I believe this is more prominent on Apple devices. No one reported that this negatively affected their gameplay experience.  Initial searches suggest that using a library such as Howler.js may help.
+Mobile phones: audio - a lag is sometimes apparent, I believe this is more prominent on Apple devices. No one reported that this negatively affected their gameplay experience.  Initial searches suggest that using a library such as Howler.js may help.  Please see the 'Bugs' section for full information and solutions.
 
-Highscore modal: 'x' button not closing the modal.  Functionality removed due to clear 'Play again' link.
-
-Please see the 'Bugs' section for full information and solutions.
+Highscore modal: 'x' button not closing the modal.  Functionality removed due to users reporting it felt unnecessary due to clear 'Play again' link.
 
 ### Bugs ###
 
@@ -526,16 +530,16 @@ Please see the 'Bugs' section for full information and solutions.
 
 - When implementing increasing speed the speed jump wasn't happening when requested e.g I was asking after test turns 3, 6 and 9 yet the speed jump was happening at turns 5, 7 and 11.
 
-  - *Solved* - Initially I had the function which controls the speed increase (checkForLevelIncrement()) set to pass in the flashCounter variable, using the flashCounter and calling the function where the flashCounter incremented during the computer play.  As I wanted the speed to increase with the turn counter I changed the variable passed in to checkForLevelIncrement() to turn and moved where this was called to after the turn is incremented as part of the checkAnswer() function.  This made the speed increase as expected.  I also checked and ensured that all statements in checkForLevelIncrement() were always going to be true.
+  - *Solved* - Initially I had the function which controls the speed increase (checkForLevelIncrement()) set to pass in the flashCounter variable, using the flashCounter and calling the function where the flashCounter incremented during the computer play.  As I wanted the speed to increase with the turn counter I changed the variable passed into checkForLevelIncrement() to turn and moved where this was called to after the turn is incremented as part of the checkAnswer() function.  This made the speed increase as expected.  I also checked and ensured that all statements in checkForLevelIncrement() were always going to be true.
 
 - When checking modals on mobile devices the margins, padding and modal heigh was often causing the text to overflow outside the container.
 
-  - *Solved* - By adding the 'and (orientation:portrait)' feature to the screen sizes that were having the biggest issues with text-overflow I was able to find a workable solution that allows nice styling whilst not having to write too much additional code.
+  - *Solved* - By adding the 'and (orientation:portrait)' feature to the screen sizes that were having the biggest issues with text overflow I was able to find a workable solution that allows nice styling whilst not having to write too much additional code.
 
 
 ### Deployment ###
 
-This project was developed using [Gitpod](https://www.gitpod.io/), committed to Git and pushed to GitHub using the built in functionality.
+This project was developed using [Gitpod](https://www.gitpod.io/), committed to Git and pushed to GitHub using the built-in functionality.
 
 **Publishing**
 
@@ -564,8 +568,8 @@ You are also able to clone 'Welcome Foolish Mortals' from Github using the proce
 
 ### Credits ###
 
-The themeing for this website has taken inspiration from [The Walt Disney Company's](https://thewaltdisneycompany.com/) popular attraction [The Haunted Mansion](https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/).
-All likeness is for educational purposes only.
+The theming for this website has taken inspiration from [The Walt Disney Company's](https://thewaltdisneycompany.com/) popular attraction [The Haunted Mansion](https://www.disneyworld.eu/attractions/magic-kingdom/haunted-mansion/).
+All likeness is credited toward them and the theme is in use for educational purposes only.
 
 ### Content ###
 
@@ -577,7 +581,7 @@ All likeness is for educational purposes only.
 
 The Haunted Mansion is owned and operated by [The Walt Disney Company](https://thewaltdisneycompany.com/).  Images and themes linking to The Haunted Mansion are used for educational purposes only.
 
-- Favicon - Taken from [favicon.io](https://favicon.io/emoji-favicons/ghost/) and the open source project [Twemoji](https://twemoji.twitter.com/).
+- Favicon - Taken from [favicon.io](https://favicon.io/emoji-favicons/ghost/) and the open-source project [Twemoji](https://twemoji.twitter.com/).
 - Home Page Background image - [Photo by Brian McGowan on Unsplash](https://unsplash.com/photos/he0-fswKsXk).
 - Game Page Background image - Taken from [Traditional Haunted Mansion Wallpaper](https://wallpaperaccess.com/haunted-mansion) and owned by [The Walt Disney Company](https://thewaltdisneycompany.com/).
 
@@ -600,5 +604,6 @@ While building the project I referenced a few online resources.
 - The CI tutor support team, in particular Igor_ci and Jo_ci.
 - The Slack community for endless support and encouragement, in particular Ed B.
 - My mentor for all their help and guidance throughout this project.
-- Tom Poulson who has been a great rubber duck whilst building this project.
+- Tom Poulson, who has been a great rubber duck whilst building this project.
 - And honestly, The Walt Disney Company, I love all things Disney but this ride is my 'must do' on a trip to any of their parks.
+# Welcome Foolish Mortals #

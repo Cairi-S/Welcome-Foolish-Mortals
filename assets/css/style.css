@@ -38,11 +38,11 @@ Header
 ----------*/
 
 #menu-bar,
-#menu-bar-levels {
+#menu-bar-game {
     height: 100px;
 }
 
-#menu-bar-levels {
+#menu-bar-game {
     background-color: rgba(4, 0, 0, 0.5);
 }
 .site-title {
@@ -754,7 +754,7 @@ MEDIA QUERIES
 
 @media (min-width: 900px) and (max-width: 991px) {
     /*----------Game page Header--------*/
-    #menu-bar-levels {
+    #menu-bar-game {
         height: 130px;
     }
 }

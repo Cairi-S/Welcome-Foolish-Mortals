@@ -47,8 +47,8 @@ const updateHighScore = localStorage.getItem("newHighScore");
 
 // Toggle speaker icons on and off whilst muting audio
 $("#toggleToMute").click(function () {
-  $('#toggleToMute').addClass('hide-content');
-  $('#toggleToAudio').removeClass('hide-content');
+  $("#toggleToMute").addClass("hide-content");
+  $("#toggleToAudio").removeClass("hide-content");
   tealAudio.mute(true);
   purpleAudio.mute(true);
   whiteAudio.mute(true);
@@ -56,8 +56,8 @@ $("#toggleToMute").click(function () {
 });
 
 $("#toggleToAudio").click(function () {
-  $('#toggleToAudio').addClass('hide-content');
-  $('#toggleToMute').removeClass('hide-content');
+  $("#toggleToAudio").addClass("hide-content");
+  $("#toggleToMute").removeClass("hide-content");
   tealAudio.mute(false);
   purpleAudio.mute(false);
   whiteAudio.mute(false);
@@ -70,9 +70,9 @@ startButton.addEventListener("click", startGame);
 //Event listening for click on reset button
 resetButton.addEventListener("click", resetGame);
 
-// Starts the game when start button is pressed. 
-// This changes the game button color, 
-// Alters the text on Turn and Level text 
+// Starts the game when start button is pressed.
+// This changes the game button color,
+// Alters the text on Turn and Level text
 // And hides the start button/shows the reset button on click
 function startGame() {
   startButton.classList.add("hide-content");
@@ -82,8 +82,8 @@ function startGame() {
   prepareGame();
 }
 
-// Resets the game when reset button is pressed. 
-// This clears the current sequence, interval and turns.  
+// Resets the game when reset button is pressed.
+// This clears the current sequence, interval and turns.
 // The reset button is hidden and start button appears prompting player.
 function resetGame() {
   computerSequence = [];
@@ -98,7 +98,7 @@ function resetGame() {
   startButton.classList.remove("hide-content");
 }
 
-// Prepares the game once start button is pressed. 
+// Prepares the game once start button is pressed.
 // This sets the variables, creates the sequence to be copied and starts the first turn.
 function prepareGame() {
   hasPlayerWon = false;
@@ -123,7 +123,7 @@ function prepareGame() {
 
 // Increments the speed of the flashes after the turn counter reaches specific break points.
 function checkForLevelIncrement(turn) {
-if (turn <= 4) {
+  if (turn <= 4) {
     flashInterval = 1500;
     $("#level").text(" Easy");
   } else if (turn >= 5 && turn < 7) {
@@ -277,7 +277,7 @@ function checkForNewHighScore() {
   }
 }
 
-// Updates the highest score if necessary 
+// Updates the highest score if necessary
 function setNewHighScore() {
   if (turn > highScore.innerHTML) {
     highScore.innerHTML = updateHighScore;
